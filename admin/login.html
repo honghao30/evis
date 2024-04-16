@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">    
+    <title>이비스프라임</title>    
+    <link rel="icon" type="image/svg+xml" href="" />
+    <link rel="stylesheet" href="../assets/css/admin.css" />  
+</head>
+<body>
+    <div class="login__wrap">
+        <div class="login__banner--top">
+            <h1>
+                <img src="../assets/images/admin/logo.svg" alt="Evis Prime" />
+            </h1>
+            <div class="mark">
+                <img src="../assets/images/admin/logo-mark.svg" alt="Evis" />
+            </div>
+            <div class="visual-text">
+                환영합니다!<br>
+                전기차 충전 플랫폼 EVIS PRIME 입니다.
+            </div>
+        </div>
+        <div class="login__banner--bottom">
+            <div class="login-form__wrap">
+                <div class="tit">LOGIN</div>
+                <div class="login-form">
+                    <label for="id" class="irtext">아이디</label>
+                    <input type="text" class="loin-text line" placeholder="관리자 아이디를 입력하세요" id="id" />
+                    <label for="pw" class="irtext">비밀번호</label>
+                    <input type="password" class="loin-text" placeholder="비밀번호를 입력하세요" id="pw" />                    
+                </div>
+                <div class="error-message">비밀번호가 틀립니다.</div>
+                <div class="login-button">
+                    <button type="button" class="btn-login" disabled>로그인</button>
+                </div>
+                <div class="login-util">
+                    <div class="checkbox">
+                        <input type="checkbox" id="auto"> 
+                        <label for="auto">비밀번호 저장하기</label>
+                    </div>
+                    <a href="#" class="btn-link-text">비밀번호 재설정</a>
+                </div>
+            </div>            
+        </div>        
+    </div>
+    <!-- 화면 테스트용 스크립트 -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const loginButton = document.querySelector('.btn-login');
+            const idInput = document.getElementById('id');
+            const pwInput = document.getElementById('pw');
+            const errorMessage = document.querySelector('.error-message');
+            const autoCheckbox = document.getElementById('auto');
+            const autoLabel = document.getElementById('auto-label');
+
+            function checkInputs() {
+                const idValue = idInput.value.trim();
+                const pwValue = pwInput.value.trim();
+
+                if (idValue === 'admin' && pwValue === '1234') {
+                    errorMessage.classList.remove('show');
+                    loginButton.disabled = false;
+                } else {
+                    errorMessage.classList.add('show');
+                    loginButton.disabled = true;
+                }
+            }
+
+            function showAlert() {
+                if (autoCheckbox.checked) {
+                    alert("비밀번호가 저장하시겠습니까?.");
+                }
+            }
+
+            idInput.addEventListener('input', checkInputs);
+            pwInput.addEventListener('input', checkInputs);
+            autoCheckbox.addEventListener('click', showAlert);        
+        });
+    </script>        
+    <script type="text/javascript" src="../assets/js/ui.js" ></script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">    
+    <title>이비스프라임</title>    
+    <link rel="icon" type="image/svg+xml" href="" />
+    <link rel="stylesheet" href="./assets/css/base.css" />
+    <style>        
+        .page-title {padding: 10px;font-size: 20px;color:#fff;font-weight: 800;height: 80px;background: rgba(22, 184, 96, 1);display: flex;align-items: center;}
+        .page-body {padding: 30px 20px;}
+        .page-body h2 {font-size: 18px;font-weight:500;}
+        .guide-table {margin-top: 10px;width: 100%;}
+        .guide-table th {font-size: 13px;text-align:center;font-weight: 400;height: 40px;color: #222222;text-align: center;border-right: 1px #E2E3E7 solid;border-bottom: 1px #E2E3E7 solid;background-color: rgba(226, 227, 231, 1);}
+        .guide-table td {height: 40px;font-size: 13px; color: #5A5C5F;text-align: center;border-right: 1px #E2E3E7 solid; border-bottom: 1px #E2E3E7 solid;padding: 5px 10px;}
+        .guide-table tbody tr:hover td {background-color: #F8F9FA;}
+        .guide-table thead tr th:last-child {border-right:0;}
+        .guide-table tbody tr th:last-child {border-right:0;}
+        .guide-table tbody tr td:last-child {border-right:0;}
+        .guide-table td.text-l {text-align: left;}
+    </style>    
+</head>
+<body>
+   <div class="guide-wrap">
+        <div class="page-title">
+            <h1>이비스프라임</h1>
+        </div>
+        <div class="page-body">
+            <h2>관리자</h2>
+            <table class="guide-table">
+                <colgroup>
+                    <col width="" />                    
+                    <col width="30%" />
+                    <col width="10%" />
+                    <col width="25%" />
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th scope="col">메뉴</th>                        
+                        <th scope="col">경로</th>
+                        <th scope="col">링크</th>
+                        <th scope="col">비고</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="text-l">로그인</td>
+                        <td class="text-l path">/admin/login.html</td>
+                        <td class="link"><a href="" target="_blank">바로가기</a></td>
+                        <td class="text-l"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+   </div>
+    <script>
+        const menuPaths = document.querySelectorAll('.guide-table td.path')
+        menuPaths.forEach(path => {
+            const link = path.innerText;
+            const linkTarget = path.nextElementSibling.querySelector('a')
+            linkTarget.setAttribute('href', `.${link}`);
+            console.log(path.innerText, linkTarget);
+        })
+    </script>    
+</body>
+</html>
