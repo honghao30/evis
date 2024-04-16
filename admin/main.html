@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">    
+    <title>이비스프라임</title>    
+    <link rel="icon" type="image/svg+xml" href="" />
+    <link rel="stylesheet" href="../assets/css/common.css" />
+    <link rel="stylesheet" href="../assets/css/admin.css" />
+</head>
+<body>
+    <div class="adm-wrap">
+        <div class="header">
+            <div class="header__nav--left">
+                <h1 class="logo">
+                    <a href="/">
+                        <img src="../assets/images/admin/logo-wt.svg" alt="Evis Prime" />
+                    </a>
+                </h1>
+                <ul class="admin-menu">
+                    <li class="is-active">
+                        <a href="#">홈</a>
+                    </li>
+                    <li>
+                        <a href="#">관리자</a>
+                    </li>                    
+                </ul>
+            </div>
+            <!-- //헤더 left -->
+            <ul class="header_util--right">
+                <li>
+                    <a href="#">로그아웃</a>
+                </li>
+                <li>
+                    <a href="#" class="btn btn-icon-porson">
+                        <span class="irtext">정보</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="btn btn-icon-setting">
+                        <span class="irtext">설정</span>
+                    </a>
+                </li>                              
+            </ul>
+        </div>
+        <!-- // 헤더 -->
+        <div class="admin__content">
+            <h2 class="page-title">홈</h2>
+             <div class="full-between-area">
+                <div class="msg">
+                    현재 <strong>9</strong>개의 비즈니스가 등록되어 있습니다.
+                </div>
+                <div class="button__wrap">
+                    <button type="button" class="btn btn-black icon-plus">비즈니스 등록</button>
+                </div>
+             </div>
+             <div class="table__wrap">                
+                <table class="table table-list">
+                    <colgroup>
+                        <col width="15%" />
+                        <col width="15%" />
+                        <col width="15%" />
+                        <col width="15%" />
+                        <col width="15%" />
+                        <col width="15%" />
+                        <col width="" />
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th scope="col">번호</th>
+                            <th scope="col">지점명</th>
+                            <th scope="col">특성</th>
+                            <th scope="col">등록</th>
+                            <th scope="col">관리자</th>
+                            <th scope="col">Station</th>
+                            <th scope="col"></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Evis 직영 비즈니스</td>
+                            <td>Evis 직영 거점 사이트</td>
+                            <td>2024.03.01</td>
+                            <td><a href="#">0001</a></td>
+                            <td><a href="#">0001</a></td>
+                            <td>
+                                <div class="button__wrap gap10">
+                                    <a href="#" class="btn btn-icon-write">
+                                        <span class="irtext">작성</span>
+                                    </a>
+                                    <a href="#" class="btn btn-icon-remove" onclick="deleteRow(this)">
+                                        <span class="irtext">삭제</span>
+                                    </a>                      
+                                </div>          
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Evis 직영 비즈니스</td>
+                            <td>Evis 직영 거점 사이트</td>
+                            <td>2024.03.01</td>
+                            <td><a href="#">0001</a></td>
+                            <td><a href="#">0001</a></td>
+                            <td>
+                                <div class="button__wrap gap10">
+                                    <a href="#" class="btn btn-icon-write">
+                                        <span class="irtext">작성</span>
+                                    </a>
+                                    <a href="#" class="btn btn-icon-remove" onclick="deleteRow(this)">
+                                        <span class="irtext">삭제</span>
+                                    </a>                      
+                                </div>          
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Evis 직영 비즈니스</td>
+                            <td>Evis 직영 거점 사이트</td>
+                            <td>2024.03.01</td>
+                            <td><a href="#">0001</a></td>
+                            <td><a href="#">0001</a></td>
+                            <td>
+                                <div class="button__wrap gap10">
+                                    <a href="#" class="btn btn-icon-write">
+                                        <span class="irtext">작성</span>
+                                    </a>
+                                    <a href="#" class="btn btn-icon-remove" onclick="deleteRow(this)">
+                                        <span class="irtext">삭제</span>
+                                    </a>                      
+                                </div>          
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Evis 직영 비즈니스</td>
+                            <td>Evis 직영 거점 사이트</td>
+                            <td>2024.03.01</td>
+                            <td><a href="#">0001</a></td>
+                            <td><a href="#">0001</a></td>
+                            <td>
+                                <div class="button__wrap gap10">
+                                    <a href="#" class="btn btn-icon-write">
+                                        <span class="irtext">작성</span>
+                                    </a>
+                                    <a href="#" class="btn btn-icon-remove" onclick="deleteRow(this)">
+                                        <span class="irtext">삭제</span>
+                                    </a>                      
+                                </div>          
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Evis 직영 비즈니스</td>
+                            <td>Evis 직영 거점 사이트</td>
+                            <td>2024.03.01</td>
+                            <td><a href="#">0001</a></td>
+                            <td><a href="#">0001</a></td>
+                            <td>
+                                <div class="button__wrap gap10">
+                                    <a href="#" class="btn btn-icon-write">
+                                        <span class="irtext">작성</span>
+                                    </a>
+                                    <a href="#" class="btn btn-icon-remove" onclick="deleteRow(this)">
+                                        <span class="irtext">삭제</span>
+                                    </a>                      
+                                </div>          
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>Evis 직영 비즈니스</td>
+                            <td>Evis 직영 거점 사이트</td>
+                            <td>2024.03.01</td>
+                            <td><a href="#">0001</a></td>
+                            <td><a href="#">0001</a></td>
+                            <td>
+                                <div class="button__wrap gap10">
+                                    <a href="#" class="btn btn-icon-write">
+                                        <span class="irtext">작성</span>
+                                    </a>
+                                    <a href="#" class="btn btn-icon-remove" onclick="deleteRow(this)">
+                                        <span class="irtext">삭제</span>
+                                    </a>                      
+                                </div>          
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>Evis 직영 비즈니스</td>
+                            <td>Evis 직영 거점 사이트</td>
+                            <td>2024.03.01</td>
+                            <td><a href="#">0001</a></td>
+                            <td><a href="#">0001</a></td>
+                            <td>
+                                <div class="button__wrap gap10">
+                                    <a href="#" class="btn btn-icon-write">
+                                        <span class="irtext">작성</span>
+                                    </a>
+                                    <a href="#" class="btn btn-icon-remove" onclick="deleteRow(this)">
+                                        <span class="irtext">삭제</span>
+                                    </a>                      
+                                </div>          
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>Evis 직영 비즈니스</td>
+                            <td>Evis 직영 거점 사이트</td>
+                            <td>2024.03.01</td>
+                            <td><a href="#">0001</a></td>
+                            <td><a href="#">0001</a></td>
+                            <td>
+                                <div class="button__wrap gap10">
+                                    <a href="#" class="btn btn-icon-write">
+                                        <span class="irtext">작성</span>
+                                    </a>
+                                    <a href="#" class="btn btn-icon-remove" onclick="deleteRow(this)">
+                                        <span class="irtext">삭제</span>
+                                    </a>                      
+                                </div>          
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td>Evis 직영 비즈니스</td>
+                            <td>Evis 직영 거점 사이트</td>
+                            <td>2024.03.01</td>
+                            <td><a href="#">0001</a></td>
+                            <td><a href="#">0001</a></td>
+                            <td>
+                                <div class="button__wrap gap10">
+                                    <a href="#" class="btn btn-icon-write">
+                                        <span class="irtext">작성</span>
+                                    </a>
+                                    <a href="#" class="btn btn-icon-remove" onclick="deleteRow(this)">
+                                        <span class="irtext">삭제</span>
+                                    </a>                      
+                                </div>          
+                            </td>
+                        </tr>                                                                                                                                                                                                  
+                    </tbody>
+                </table>
+             </div>
+        </div>
+    </div>
+    <!-- 예시용 스크립트 -->
+    <script>
+        function deleteRow(btn) {
+            var row = btn.parentNode.parentNode.parentNode;
+            row.parentNode.removeChild(row);
+        }
+    </script>    
+    <script type="text/javascript" src="../assets/js/ui.js" ></script>
+</body>
+</html>
