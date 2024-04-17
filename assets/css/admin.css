@@ -160,7 +160,11 @@
   .header_util--right li:last-child::after {display: none;}
 
   .admin__content {padding: 40px 48px;}
-  .admin__content .page-title {font-weight: 700;font-size: 28px;line-height: 33px;color:#000;}
 
   .full-between-area {width: 100%;display: flex; justify-content: space-between;margin-top: 16px;}
   .full-between-area .msg {font-size: 20px;line-height: 24px;color:#5A5C5F;}
+
+  /* 모달 */
+  .form-el-list li {margin-bottom: 20px;}
+  .form-el-list li:last-child {margin-bottom: 0;}
+  .modal-confirm-msg {color:#35AD68;}
