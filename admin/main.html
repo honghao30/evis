@@ -44,7 +44,7 @@
         </div>
         <!-- // 헤더 -->
         <div class="admin__content">
-            <h2 class="page-title">홈</h2>
+            <h2 class="font-type-h2">홈</h2>
              <div class="full-between-area">
                 <div class="msg">
                     현재 <strong>9</strong>개의 비즈니스가 등록되어 있습니다.
@@ -241,7 +241,54 @@
                     </tbody>
                 </table>
              </div>
+             <div class="pagination">
+                <a href="#" class="btn-first"><span class="irtext">처음으로</span></a>
+                <a href="#" class="btn-prev"><span class="irtext">이전</span></a>
+                <a href="#" class="btn-next"><span class="irtext">다음</span></a>
+                <a href="#" class="btn-last"><span class="irtext">마지막페이지</span></a>
+             </div>
         </div>
+        <!-- 모달창 -->
+        <div class="modal__wrap--bg">
+            <div class="modal__wrap size-default ">
+                <div class="modal-header">
+                    <h3 class="font-type-h3">Business 정보 등록하기</h3>
+                    <button type="button" class="btn btn-icon-close">
+                        <span class="irtext">닫기</span>
+                    </button>
+                </div>
+                <div class="modal-cont">
+                    <form>
+                        <ul class="form-el-list">
+                            <li>
+                                <div class="form-element__wrap">
+                                    <label for="code01" class="font-type-h5-bold">지점명</label>
+                                    <span  class="form-element__inner input-type">
+                                        <input type="text" class="font-type-h5-regular" value="" placeholder="지점명을 입력 하세요" id="code01" />
+                                    </span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="form-element__wrap">
+                                    <label for="code02" class="font-type-h5-bold">특성</label>
+                                    <span  class="form-element__inner text-area">
+                                        <textarea name="" id="code02" class="font-type-h5-regular" maxlength="1000"  placeholder="특성을 입력 하세요"  style="height: 119px;"></textarea>  
+                                        <p class="font-type-cont-regular text-count">0/1000</p>                                  
+                                    </span>
+                                </div>                                
+                            </li>
+                        </ul>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <div class="button__wrap gap10 flex-end">
+                        <button type="button" class="btn btn-cancel">취소</button>
+                        <button type="button" class="btn btn-black">등록하기</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- //모달창 -->
     </div>
     <!-- 예시용 스크립트 -->
     <script>

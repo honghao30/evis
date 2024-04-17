@@ -8,78 +8,315 @@
     <link rel="stylesheet" href="./assets/css/admin.css" />
     <style>        
         .page-title {padding: 10px;font-size: 20px;color:#fff;font-weight: 800;height: 80px;background: rgba(22, 184, 96, 1);display: flex;align-items: center;}
-        .page-body {padding: 30px 20px;}
-        .page-body h2 {font-size: 18px;font-weight:500;}
-        .guide-table {margin-top: 10px;width: 100%;}
+        .page-body {padding: 30px 20px;}              
+        .guide-table {margin-top: 10px 0;width: 100%;}
         .guide-table th {font-size: 13px;text-align:center;font-weight: 400;height: 40px;color: #222222;text-align: center;border-right: 1px #E2E3E7 solid;border-bottom: 1px #E2E3E7 solid;background-color: rgba(226, 227, 231, 1);}
-        .guide-table td {height: 40px;font-size: 13px; color: #5A5C5F;text-align: center;border-right: 1px #E2E3E7 solid; border-bottom: 1px #E2E3E7 solid;padding: 5px 10px;}
+        .guide-table tbody td {height: 40px;background: #fff; font-size: 13px; color: #5A5C5F;text-align: center;border-right: 1px #E2E3E7 solid; border-bottom: 1px #E2E3E7 solid;padding: 5px 10px;}
         .guide-table tbody tr:hover td {background-color: #F8F9FA;}
         .guide-table thead tr th:last-child {border-right:0;}
         .guide-table tbody tr th:last-child {border-right:0;}
         .guide-table tbody tr td:last-child {border-right:0;}
         .guide-table td.text-l {text-align: left;}
-        .page-body-content {padding: 20px 0;}
+        .page-body-content {padding: 20px 20px;}
     </style>    
 </head>
 <body>
    <div class="guide-wrap">
         <div class="page-title">
             <h1>이비스프라임 퍼블리싱 가이드</h1>
+        </div>        
+        <div class="page-body-content">
+            <h2 class="font-type-h2">Typeface</h2><br>
+            <table class="table table-list">
+                <colgroup>
+                    <col width="15%" />
+                    <col width="15%" />
+                    <col width="" />
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th scope="col">Core class</th>
+                        <th scope="col">class</th>
+                        <th scope="col">Example</th>
+                    </tr>
+                </thead>                
+                <tbody>
+                    <tr>
+                        <td>h1</td>
+                        <td>.font-type-h1</td>
+                        <td>
+                            <span class="font-type-h1">이비스프라임</span>
+                        </td>
+                    </tr>       
+                    <tr>
+                        <td>h2</td>
+                        <td>.font-type-h2</td>
+                        <td>
+                            <span class="font-type-h2">이비스프라임</span>
+                        </td>
+                    </tr>         
+                    <tr>
+                        <td>h3</td>
+                        <td>.font-type-h3</td>
+                        <td>
+                            <span class="font-type-h3">이비스프라임</span>
+                        </td>
+                    </tr> 
+                    <tr>
+                        <td rowspan="3">h4</td>
+                        <td>.font-type-h4-bold</td>
+                        <td>
+                            <span class="font-type-h4-bold">이비스프라임</span>
+                        </td>
+                    </tr>  
+                    <tr>                        
+                        <td>.font-type-h4-middle</td>
+                        <td>
+                            <span class="font-type-h4-middle">이비스프라임</span>
+                        </td>
+                    </tr> 
+                    <tr>                        
+                        <td>.font-type-h4-regular</td>
+                        <td>
+                            <span class="font-type-h4-regular">이비스프라임</span>
+                        </td>
+                    </tr>      
+                    <tr>
+                        <td rowspan="3">h5</td>
+                        <td>.font-type-h5-bold</td>
+                        <td>
+                            <span class="font-type-h5-bold">이비스프라임</span>
+                        </td>
+                    </tr>  
+                    <tr>                        
+                        <td>.font-type-h5-middle</td>
+                        <td>
+                            <span class="font-type-h5-middle">이비스프라임</span>
+                        </td>
+                    </tr> 
+                    <tr>                        
+                        <td>.font-type-h5-regular</td>
+                        <td>
+                            <span class="font-type-h5-regular">이비스프라임</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="3">h6</td>
+                        <td>.font-type-h6-bold</td>
+                        <td>
+                            <span class="font-type-h6-bold">이비스프라임</span>
+                        </td>
+                    </tr>  
+                    <tr>                        
+                        <td>.font-type-h6-middle</td>
+                        <td>
+                            <span class="font-type-h6-middle">이비스프라임</span>
+                        </td>
+                    </tr> 
+                    <tr>                        
+                        <td>.font-type-h6-regular</td>
+                        <td>
+                            <span class="font-type-h6-regular">이비스프라임</span>
+                        </td>
+                    </tr>   
+                    <tr>
+                        <td rowspan="2">default</td>
+                        <td>.font-type-cont-semi</td>
+                        <td>
+                            <span class="font-type-cont-semi">이비스프라임</span>
+                        </td>
+                    </tr>  
+                    <tr>                        
+                        <td>.font-type-cont-regular</td>
+                        <td>
+                            <span class="font-type-cont-regular">이비스프라임</span>
+                        </td>
+                    </tr>                                        
+                </tbody>
+            </table>            
+        </div> 
+        <div class="page-body-content">  
+            <h2  class="font-type-h2">테이블 리스트형</h2>                
+            <div class="table__wrap">
+                <table class="table table-list">
+                    <colgroup>
+                        <col width="20%" />
+                        <col width="20%" />
+                        <col width="20%" />
+                        <col width="20%" />
+                        <col width="20%" />
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th scope="col">항목1</th>
+                            <th scope="col">항목2</th>
+                            <th scope="col">항목3</th>
+                            <th scope="col">항목4</th>
+                            <th scope="col">항목5</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>항목1</td>
+                            <td>항목2</td>
+                            <td>항목3</td>
+                            <td>항목4</td>
+                            <td><a href="#">항목5</a></td>
+                        </tr>
+                        <tr>
+                            <td>항목1</td>
+                            <td>항목2</td>
+                            <td>항목3</td>
+                            <td>항목4</td>
+                            <td><a href="#">항목5</a></td>
+                        </tr>                        
+                    </tbody>
+                </table>
+            </div>        
+        </div> 
+        <div class="page-body-content">         
+            <h2  class="font-type-h2">버튼</h2>
+            <p>버튼은 .button__wrap 의 클래스로 깜싼다. </p>            
+            <table class="table table-list">
+                <colgroup>
+                    <col width="15%" />
+                    <col width="15%" />
+                    <col width="" />
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th scope="col">Core class</th>
+                        <th scope="col">class</th>
+                        <th scope="col">Example</th>
+                    </tr>
+                </thead>                
+                <tbody>
+                    <tr>
+                        <td>btn-login full type</td>
+                        <td>.btn-login</td>
+                        <td>
+                            <button type="button" class="btn-login">로그인</button>
+                        </td>
+                    </tr>                    
+                    <tr>
+                        <td>btn-black</td>
+                        <td>.btn btn-black /  disabled / icon</td>
+                        <td>
+                            <div class="button__wrap gap10"> 
+                                <button type="button" class="btn btn-black">비즈니스 등록</button>
+                                <button type="button" class="btn btn-black icon-plus">비즈니스 등록</button>
+                                <button type="button" class="btn btn-black" disabled>비즈니스 등록</button>
+                            </div>
+                            
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>btn-cancel</td>
+                        <td>.btn-cancel</td>
+                        <td>
+                            <div class="button__wrap gap10"> 
+                                <button type="button" class="btn btn-cancel">취소</button>                                    
+                            </div>
+                            
+                        </td>
+                    </tr>  
+                    <tr>
+                        <td>btn-icon-write <br> btn-icon-remove</td>
+                        <td>.btn-icon-write <br> .btn-icon-remove</td>
+                        <td>
+                            <div class="button__wrap gap10"> 
+                                <button type="button" class="btn btn-icon-write">
+                                    <span class="irtext">편집</span>
+                                </button>   
+                                <button type="button" class="btn btn-icon-remove">
+                                    <span class="irtext">삭제</span>
+                                </button>                                                                  
+                            </div>
+                            
+                        </td>
+                    </tr>                                                                          
+                </tbody>
+            </table>                                             
         </div>
-        <div class="page-body">
-            <h2>버튼</h2>
-            <div class="page-body-content">
-                <p>버튼은 .button__wrap 의 클래스로 깜싼다. </p>
-                <p>버튼 클래스는 btn btn-black icon-plus </p>
-                <br>
-                <div class="button__wrap">
-                    <button type="button" class="btn btn-black icon-plus">비즈니스 등록</button>
-                </div>
-            </div>
-            <h2>아이콘형</h2>
-            <div class="page-body-content">
- 
-            </div>            
-            <h2>테이블 리스트형</h2>
-            <div class="page-body-content">
-                <div class="table__wrap">
-                    <table class="table table-list">
-                        <colgroup>
-                            <col width="20%" />
-                            <col width="20%" />
-                            <col width="20%" />
-                            <col width="20%" />
-                            <col width="20%" />
-                        </colgroup>
-                        <thead>
-                            <tr>
-                                <th scope="col">항목1</th>
-                                <th scope="col">항목2</th>
-                                <th scope="col">항목3</th>
-                                <th scope="col">항목4</th>
-                                <th scope="col">항목5</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>항목1</td>
-                                <td>항목2</td>
-                                <td>항목3</td>
-                                <td>항목4</td>
-                                <td><a href="#">항목5</a></td>
-                            </tr>
-                            <tr>
-                                <td>항목1</td>
-                                <td>항목2</td>
-                                <td>항목3</td>
-                                <td>항목4</td>
-                                <td><a href="#">항목5</a></td>
-                            </tr>                        
-                        </tbody>
-                    </table>
-                </div>
-            </div>            
-        </div>
+        <div class="page-body-content">         
+            <h2  class="font-type-h2">폼 요소</h2>
+            <table class="table table-list">
+                <colgroup>
+                    <col width="15%" />
+                    <col width="15%" />
+                    <col width="" />
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th scope="col">Core class</th>
+                        <th scope="col">class</th>
+                        <th scope="col">Example</th>
+                    </tr>
+                </thead>                
+                <tbody>
+                    <tr>
+                        <td>Input type</td>
+                        <td>.form-element__wrap</td>
+                        <td>
+                            <div class="form-element__wrap">
+                                <label for="code01" class="font-type-h5-bold">지점명</label>
+                                <span  class="form-element__inner input-type">
+                                    <input type="text" class="font-type-h5-regular" value="" placeholder="부산 광역시" id="code01" />
+                                </span>
+                            </div>
+                        </td>
+                    </tr>   
+                    <tr>
+                        <td>Select type</td>
+                        <td>.form-element__wrap</td>
+                        <td>
+                            <div class="form-element__wrap">
+                                <label for="code01" class="font-type-h5-bold">지점명</label>
+                                <span  class="form-element__inner select-wrap">
+                                    <select class="font-type-h5-regular">
+                                        <option>항목1</option>
+                                        <option>항목2</option>
+                                        <option>항목3</option>
+                                    </select>
+                                </span>
+                            </div>
+                        </td>
+                    </tr>                     
+                    <tr>
+                        <td>textArea type</td>
+                        <td>.form-element__wrap</td>
+                        <td>
+                            <div class="form-element__wrap">
+                                <label for="code02" class="font-type-h5-bold">지점명</label>
+                                <span  class="form-element__inner text-area">
+                                    <textarea name="" id="code02" class="font-type-h5-regular" style="height: 119px;"></textarea>  
+                                    <p class="font-type-cont-regular text-count">6/1000</p>                                  
+                                </span>
+                            </div>
+                        </td>
+                    </tr>                                     
+                </tbody>
+            </table>  
+        </div>        
+        <div class="page-body-content">  
+            <h2  class="font-type-h2">페이지네이션</h2>                
+            <div class="table__wrap">
+                <div class="pagination">
+                    <a href="#" class="btn-first"><span class="irtext">처음으로</span></a>
+                    <a href="#" class="btn-prev"><span class="irtext">이전</span></a>
+                    <a href="#" class="btn-next"><span class="irtext">다음</span></a>
+                    <a href="#" class="btn-last"><span class="irtext">마지막페이지</span></a>
+                 </div>
+                 <div class="pagination">
+                    <a href="#" class="btn-first"><span class="irtext">처음으로</span></a>
+                    <a href="#" class="btn-prev"><span class="irtext">이전</span></a>
+                    <a href="#" class="num is-active">1</a>
+                    <a href="#" class="num">2</a>
+                    <a href="#" class="btn-next"><span class="irtext">다음</span></a>
+                    <a href="#" class="btn-last"><span class="irtext">마지막페이지</span></a>
+                 </div>                 
+            </div>        
+        </div>         
    </div>  
 </body>
 </html>
