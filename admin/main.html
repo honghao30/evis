@@ -17,7 +17,7 @@
                     </a>
                 </h1>
                 <ul class="admin-menu">
-                    <li class="is-active">
+                    <li>
                         <a href="#">홈</a>
                     </li>
                     <li>
@@ -346,5 +346,16 @@
         <!-- //모달창 -->
     </div>   
     <script type="text/javascript" src="../assets/js/ui.js" ></script>
+    <!-- // 메뉴 활성화 스크립트  -->
+    <script>
+        const currentPage = window.location.href;
+        if (currentPage.indexOf("main") !== -1) {
+            document.querySelector('.admin-menu li:nth-child(1)').classList.add('is-active');
+            console.log("The current page URL contains 'main'.");
+        } else {
+            document.querySelector('.admin-menu li:nth-child(2)').classList.add('is-active');
+        }
+    </script>
+    
 </body>
 </html>
