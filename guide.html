@@ -316,7 +316,100 @@
                     <a href="#" class="btn-last"><span class="irtext">마지막페이지</span></a>
                  </div>                 
             </div>        
-        </div>         
-   </div>  
+        </div>  
+        <div class="page-body-content">         
+            <h2  class="font-type-h2">모달</h2>                      
+            <table class="table table-list">
+                <colgroup>
+                    <col width="15%" />
+                    <col width="15%" />
+                    <col width="" />
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th scope="col">Core class</th>
+                        <th scope="col">class</th>
+                        <th scope="col">Example</th>
+                    </tr>
+                </thead>                
+                <tbody>
+                    <tr>
+                        <td>default modal</td>
+                        <td>.open-modal <br> modal-id="add-business"<br> onclick="openModal(event)"</td>
+                        <td>
+                            <div class="button__wrap"> 
+                                <button type="button" class="btn btn-black  open-modal" modal-id="add-business" onclick="openModal(event)"> 일반 모달</button>
+                            </div>
+                        </td>
+                    </tr>                    
+                    <tr>
+                        <td>확인 메시지</td>
+                        <td>.open-modal <br> modal-id="add-business"<br> onclick="openModal(event)"</td>
+                        <td>
+                            <div class="button__wrap"> 
+                                <button type="button" class="btn btn-black open-modal"  modal-id="remove-business" onclick="confirmMsg(event)"> confirm 메시지</button>
+                            </div>
+                        </td>
+                    </tr>                                                                                             
+                </tbody>
+            </table>                                             
+        </div>               
+   </div> 
+   <!-- // 모달  -->
+    <!-- 등록하기 -->
+    <div class="modal__wrap--bg" id="add-business">
+        <div class="modal__wrap size-default ">
+            <div class="modal-header">
+                <h3 class="font-type-h3">Business 정보 등록하기</h3>
+                <button type="button" class="btn btn-icon-close close-modal" onclick="closeModal(event)">
+                    <span class="irtext">닫기</span>
+                </button>
+            </div>
+            <div class="modal-cont">
+                <form>
+                    <ul class="form-el-list">
+                        <li>
+                            <div class="form-element__wrap">
+                                <label for="code01" class="font-type-h5-bold">지점명</label>
+                                <span  class="form-element__inner input-type">
+                                    <input type="text" class="font-type-h5-regular" value="" placeholder="지점명을 입력 하세요" id="code01" />
+                                </span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="form-element__wrap">
+                                <label for="code02" class="font-type-h5-bold">특성</label>
+                                <span  class="form-element__inner text-area">
+                                    <textarea name="" id="code02" class="font-type-h5-regular" maxlength="1000"  placeholder="특성을 입력 하세요"  style="height: 119px;"></textarea>  
+                                    <p class="font-type-cont-regular text-count"><span>0</span>/1000</p>                                  
+                                </span>
+                            </div>                                
+                        </li>
+                    </ul>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <div class="button__wrap gap10 flex-end">
+                    <button type="button" class="btn btn-cancel close-modal"  onclick="closeModal(event)">취소</button>
+                    <button type="button" class="btn btn-black">등록하기</button>
+                </div>
+            </div>
+        </div>
+    </div>   
+        <!-- 메시지 창 -->
+        <div class="modal__wrap--bg" id="remove-business">
+            <div class="modal__wrap size-default ">
+                <div class="modal-cont">
+                    <div class="font-type-h3 modal-confirm-msg">선택하신 항목을 삭제하시겠어요?</div>
+                </div>
+                <div class="modal-footer">
+                    <div class="button__wrap gap10 flex-end">
+                        <button type="button" class="btn btn-cancel close-modal"  onclick="closeModal(event)">취소</button>
+                        <button type="button" class="btn btn-black">삭제하기</button>
+                    </div>
+                </div>
+            </div>
+        </div>       
+    <script type="text/javascript" src="./assets/js/ui.js" ></script>
 </body>
 </html>
