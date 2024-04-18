@@ -158,6 +158,7 @@
 
 .full-between-area {width: 100%;display: flex; justify-content: space-between;margin-top: 16px;}
 .full-between-area .msg {font-size: 20px;line-height: 24px;color:#5A5C5F;}
+.full-between-area .msg:only-child {padding-top: 15px;}
 .full-between-area .location {color:#909293;}
 .full-between-area .location strong {color:#222;}
 .staion-data {display: flex;gap: 16px;align-items: center;}

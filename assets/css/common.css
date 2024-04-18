@@ -26,6 +26,22 @@
 .color-gray06 {color:#EFF0F2;}
 .color-gray07 {color:#F8F9FA;}
 
+/* flag */
+.flag {background-color: #fff;display: flex;align-items: center;gap: 2px;margin: 0 auto; border-radius: 100px;width: 93px;height: 32px;padding: 0 12px 0 6px;font-size: 15px;font-weight: 600;line-height: 17px;}
+.flag::before {content: '';display: block;width:24px;height:24px;}
+.flag.type1 {border: 1px solid #0D6EFD;color:#0D6EFD;}
+.flag.type1::before {background: url('../images/admin/icon-flag-ac.svg') no-repeat;}
+.flag.type2 {border: 1px solid #00BDE7;color:#00BDE7;}
+.flag.type2::before {background: url('../images/admin/icon-flag-ccs.svg') no-repeat;}
+.flag.type3 {border: 1px solid #00BDE7;color:#00BDE7;}
+.flag.type3::before {background: url('../images/admin/icon-flag-chademo.svg') no-repeat;}
+.flag.type4 {border: 1px solid #35AD68;color:#35AD68;}
+.flag.type4::before {background: url('../images/admin/icon-flag-ac3.svg') no-repeat;}
+.flag.type5 {border: 1px solid #984ED2;color:#984ED2;}
+.flag.type5::before {background: url('../images/admin/icon-flag-ccs2.svg') no-repeat;}
+.flag.type6 {border: 1px solid #FF4135;color:#FF4135;}
+.flag.type6::before {background: url('../images/admin/icon-flag-tesla.svg') no-repeat;}
+
 /* table */
 .table__wrap {margin-top: 12px;border-radius: 8px;overflow: hidden;}
 .table-list {width: 100%;}
