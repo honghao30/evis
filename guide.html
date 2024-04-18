@@ -355,47 +355,46 @@
             </table>                                             
         </div>               
    </div> 
-   <!-- // 모달  -->
-    <!-- 등록하기 -->
-    <div class="modal__wrap--bg" id="add-business">
-        <div class="modal__wrap size-default ">
-            <div class="modal-header">
-                <h3 class="font-type-h3">Business 정보 등록하기</h3>
-                <button type="button" class="btn btn-icon-close close-modal" onclick="closeModal(event)">
-                    <span class="irtext">닫기</span>
-                </button>
-            </div>
-            <div class="modal-cont">
-                <form>
-                    <ul class="form-el-list">
-                        <li>
-                            <div class="form-element__wrap">
-                                <label for="code01" class="font-type-h5-bold">지점명</label>
-                                <span  class="form-element__inner input-type">
-                                    <input type="text" class="font-type-h5-regular" value="" placeholder="지점명을 입력 하세요" id="code01" />
-                                </span>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="form-element__wrap">
-                                <label for="code02" class="font-type-h5-bold">특성</label>
-                                <span  class="form-element__inner text-area">
-                                    <textarea name="" id="code02" class="font-type-h5-regular" maxlength="1000"  placeholder="특성을 입력 하세요"  style="height: 119px;"></textarea>  
-                                    <p class="font-type-cont-regular text-count"><span>0</span>/1000</p>                                  
-                                </span>
-                            </div>                                
-                        </li>
-                    </ul>
-                </form>
-            </div>
-            <div class="modal-footer">
-                <div class="button__wrap gap10 flex-end">
-                    <button type="button" class="btn btn-cancel close-modal"  onclick="closeModal(event)">취소</button>
-                    <button type="button" class="btn btn-black">등록하기</button>
+    <!-- // 모달  -->
+        <div class="modal__wrap--bg" id="add-business">
+            <div class="modal__wrap size-default ">
+                <div class="modal-header">
+                    <h3 class="font-type-h3">Business 정보 등록하기</h3>
+                    <button type="button" class="btn btn-icon-close close-modal" onclick="closeModal(event)">
+                        <span class="irtext">닫기</span>
+                    </button>
+                </div>
+                <div class="modal-cont">
+                    <form>
+                        <ul class="form-el-list">
+                            <li>
+                                <div class="form-element__wrap">
+                                    <label for="code01" class="font-type-h5-bold">지점명</label>
+                                    <span  class="form-element__inner input-type">
+                                        <input type="text" class="font-type-h5-regular" value="" placeholder="지점명을 입력 하세요" id="code01" />
+                                    </span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="form-element__wrap">
+                                    <label for="code02" class="font-type-h5-bold">특성</label>
+                                    <span  class="form-element__inner text-area">
+                                        <textarea name="" id="code02" class="font-type-h5-regular" maxlength="1000"  placeholder="특성을 입력 하세요"  style="height: 119px;"></textarea>  
+                                        <p class="font-type-cont-regular text-count"><span>0</span>/1000</p>                                  
+                                    </span>
+                                </div>                                
+                            </li>
+                        </ul>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <div class="button__wrap gap10 flex-end">
+                        <button type="button" class="btn btn-cancel close-modal"  onclick="closeModal(event)">취소</button>
+                        <button type="button" class="btn btn-black btn-add" disabled>등록하기</button>
+                    </div>
                 </div>
             </div>
-        </div>
-    </div>   
+        </div>   
         <!-- 메시지 창 -->
         <div class="modal__wrap--bg" id="remove-business">
             <div class="modal__wrap size-default ">

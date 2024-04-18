@@ -44,199 +44,147 @@
         </div>
         <!-- // 헤더 -->
         <div class="admin__content">
-            <h2 class="font-type-h2">관리자</h2>
-             <div class="full-between-area">
-                <div class="msg">
-                    현재 <strong>9</strong>개의 관리자가 등록되어 있습니다.
+            <div class="full-between-area">
+                <h2 class="font-type-h2">Evis 직영 비즈니스의 <span class="color-primary">스테이션</span></h2>
+                <p class="font-type-h6-regular location">
+                    홈 > <strong>Evis 직영 비스니스 스테이션</strong>
+                </p>
+            </div>
+            <div class="station-board">
+                <div class="staion-name">
+                    <div class="staion-logo"><img src="../assets/images/admin/big-logo.svg" alt="" /></div>
+                    <div class="staion-info">
+                        <p class="font-type-h3 color-black">Evis 직영 비즈니스</p>
+                        <p class="sub-info">Evis 직영 거점 사이트 <span>등록일 : 2024-03-10</span></p>
+                    </div>
                 </div>
+                <div class="staion-data">
+                    <div class="data-info font-type-h5-middle color-gray02">관리자 <strong class="font-type-h2 color-black">1</strong></div>
+                    <div class="data-info font-type-h5-middle color-gray02">스테이션<strong class="font-type-h2 color-black">10</strong></div>
+                </div>
+            </div>
+            <div class="full-between-area">
+                <div class="msg">
+                    현재 <strong>9</strong>개의 <strong>스테이션</strong>이 등록되어 있습니다.
+                </div>   
                 <div class="button__wrap">
                     <button type="button" class="btn btn-black icon-plus open-modal" modal-id="add-business" onclick="openModal(event)">비즈니스 등록</button>
                 </div>
-             </div>
-             <div class="table__wrap">                
+            </div>
+            <div class="table__wrap">                
                 <table class="table table-list">
                     <colgroup>
+                        <col width="5%" />
                         <col width="15%" />
-                        <col width="18%" />
-                        <col width="18%" />
-                        <col width="15%" />
-                        <col width="10%" />
-                        <col width="10%" />
                         <col width="" />
+                        <col width="10%" />
+                        <col width="10%" />
+                        <col width="10%" />
+                        <col width="10%" />
+                        <col width="10%" />                        
                     </colgroup>
                     <thead>
                         <tr>
                             <th scope="col">번호</th>
-                            <th scope="col">지점명</th>
-                            <th scope="col">특성</th>
+                            <th scope="col">명칭</th>
+                            <th scope="col">주소</th>
                             <th scope="col">등록</th>
                             <th scope="col">관리자</th>
-                            <th scope="col">Station</th>
-                            <th scope="col"></th>
+                            <th scope="col">사용자</th>
+                            <th scope="col">충전기</th>
+                            <th scope="col">충전존</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
                             <td>1</td>
                             <td>Evis 직영 비즈니스</td>
-                            <td>Evis 직영 거점 사이트</td>
+                            <td>경기도 성남시 분당구 판교역로2번길 1(백햔동)수정빌딩 1234</td>
                             <td>2024.03.01</td>
                             <td><a href="#">0001</a></td>
-                            <td><a href="admin_station.html">0001</a></td>
-                            <td>
-                                <div class="button__wrap gap10">
-                                    <a href="#" class="btn btn-icon-write" modal-id="edit-business" onclick="openModal(event)">
-                                        <span class="irtext">편집</span>
-                                    </a>
-                                    <a href="#" class="btn btn-icon-remove" modal-id="remove-business" onclick="confirmMsg(event)">
-                                        <span class="irtext">삭제</span>
-                                    </a>                      
-                                </div>          
-                            </td>
+                            <td><a href="#">0001</a></td>
+                            <td><a href="#">0001</a></td>  
+                            <td><a href="#">0001</a></td>                              
                         </tr>
                         <tr>
                             <td>2</td>
                             <td>Evis 직영 비즈니스</td>
-                            <td>Evis 직영 거점 사이트</td>
+                            <td>경기도 성남시 분당구 판교역로2번길 1(백햔동)수정빌딩 1234</td>
                             <td>2024.03.01</td>
                             <td><a href="#">0001</a></td>
-                            <td><a href="admin_station.html">0001</a></td>
-                            <td>
-                                <div class="button__wrap gap10">
-                                    <a href="#" class="btn btn-icon-write"  modal-id="edit-business" onclick="openModal(event)">
-                                        <span class="irtext">편집</span>
-                                    </a>
-                                    <a href="#" class="btn btn-icon-remove" modal-id="remove-business" onclick="confirmMsg(event)">
-                                        <span class="irtext">삭제</span>
-                                    </a>                      
-                                </div>          
-                            </td>
+                            <td><a href="#">0001</a></td>
+                            <td><a href="#">0001</a></td>  
+                            <td><a href="#">0001</a></td>
                         </tr>
                         <tr>
                             <td>3</td>
                             <td>Evis 직영 비즈니스</td>
-                            <td>Evis 직영 거점 사이트</td>
+                            <td>경기도 성남시 분당구 판교역로2번길 1(백햔동)수정빌딩 1234</td>
                             <td>2024.03.01</td>
                             <td><a href="#">0001</a></td>
-                            <td><a href="admin_station.html">0001</a></td>
-                            <td>
-                                <div class="button__wrap gap10">
-                                    <a href="#" class="btn btn-icon-write"  modal-id="edit-business" onclick="openModal(event)">
-                                        <span class="irtext">편집</span>
-                                    </a>
-                                    <a href="#" class="btn btn-icon-remove" modal-id="remove-business" onclick="confirmMsg(event)">
-                                        <span class="irtext">삭제</span>
-                                    </a>                      
-                                </div>          
-                            </td>
+                            <td><a href="#">0001</a></td>
+                            <td><a href="#">0001</a></td>  
+                            <td><a href="#">0001</a></td>
                         </tr>
                         <tr>
                             <td>4</td>
                             <td>Evis 직영 비즈니스</td>
-                            <td>Evis 직영 거점 사이트</td>
+                            <td>경기도 성남시 분당구 판교역로2번길 1(백햔동)수정빌딩 1234</td>
                             <td>2024.03.01</td>
                             <td><a href="#">0001</a></td>
                             <td><a href="#">0001</a></td>
-                            <td>
-                                <div class="button__wrap gap10">
-                                    <a href="#" class="btn btn-icon-write"  modal-id="edit-business" onclick="openModal(event)">
-                                        <span class="irtext">편집</span>
-                                    </a>
-                                    <a href="#" class="btn btn-icon-remove" modal-id="remove-business" onclick="confirmMsg(event)">
-                                        <span class="irtext">삭제</span>
-                                    </a>                      
-                                </div>          
-                            </td>
+                            <td><a href="#">0001</a></td>  
+                            <td><a href="#">0001</a></td>
                         </tr>
                         <tr>
                             <td>5</td>
                             <td>Evis 직영 비즈니스</td>
-                            <td>Evis 직영 거점 사이트</td>
+                            <td>경기도 성남시 분당구 판교역로2번길 1(백햔동)수정빌딩 1234</td>
                             <td>2024.03.01</td>
                             <td><a href="#">0001</a></td>
                             <td><a href="#">0001</a></td>
-                            <td>
-                                <div class="button__wrap gap10">
-                                    <a href="#" class="btn btn-icon-write"  modal-id="edit-business" onclick="openModal(event)">
-                                        <span class="irtext">편집</span>
-                                    </a>
-                                    <a href="#" class="btn btn-icon-remove" modal-id="remove-business" onclick="confirmMsg(event)">
-                                        <span class="irtext">삭제</span>
-                                    </a>                      
-                                </div>          
-                            </td>
+                            <td><a href="#">0001</a></td>  
+                            <td><a href="#">0001</a></td>
                         </tr>
                         <tr>
                             <td>6</td>
                             <td>Evis 직영 비즈니스</td>
-                            <td>Evis 직영 거점 사이트</td>
+                            <td>경기도 성남시 분당구 판교역로2번길 1(백햔동)수정빌딩 1234</td>
                             <td>2024.03.01</td>
                             <td><a href="#">0001</a></td>
                             <td><a href="#">0001</a></td>
-                            <td>
-                                <div class="button__wrap gap10">
-                                    <a href="#" class="btn btn-icon-write"  modal-id="edit-business" onclick="openModal(event)">
-                                        <span class="irtext">편집</span>
-                                    </a>
-                                    <a href="#" class="btn btn-icon-remove" modal-id="remove-business"  onclick="confirmMsg(event)">
-                                        <span class="irtext">삭제</span>
-                                    </a>                      
-                                </div>          
-                            </td>
+                            <td><a href="#">0001</a></td>  
+                            <td><a href="#">0001</a></td>
                         </tr>
                         <tr>
                             <td>7</td>
                             <td>Evis 직영 비즈니스</td>
-                            <td>Evis 직영 거점 사이트</td>
+                            <td>경기도 성남시 분당구 판교역로2번길 1(백햔동)수정빌딩 1234</td>
                             <td>2024.03.01</td>
                             <td><a href="#">0001</a></td>
                             <td><a href="#">0001</a></td>
-                            <td>
-                                <div class="button__wrap gap10">
-                                    <a href="#" class="btn btn-icon-write"  modal-id="edit-business" onclick="openModal(event)">
-                                        <span class="irtext">편집</span>
-                                    </a>
-                                    <a href="#" class="btn btn-icon-remove" modal-id="remove-business" onclick="confirmMsg(event)">
-                                        <span class="irtext">삭제</span>
-                                    </a>                      
-                                </div>          
-                            </td>
+                            <td><a href="#">0001</a></td>  
+                            <td><a href="#">0001</a></td>
                         </tr>
                         <tr>
                             <td>8</td>
                             <td>Evis 직영 비즈니스</td>
-                            <td>Evis 직영 거점 사이트</td>
+                            <td>경기도 성남시 분당구 판교역로2번길 1(백햔동)수정빌딩 1234</td>
                             <td>2024.03.01</td>
                             <td><a href="#">0001</a></td>
                             <td><a href="#">0001</a></td>
-                            <td>
-                                <div class="button__wrap gap10">
-                                    <a href="#" class="btn btn-icon-write" modal-id="edit-business" onclick="openModal(event)">
-                                        <span class="irtext">편집</span>
-                                    </a>
-                                    <a href="#" class="btn btn-icon-remove" modal-id="remove-business" onclick="confirmMsg(event)">
-                                        <span class="irtext">삭제</span>
-                                    </a>                      
-                                </div>          
-                            </td>
+                            <td><a href="#">0001</a></td>  
+                            <td><a href="#">0001</a></td>
                         </tr>
                         <tr>
                             <td>9</td>
                             <td>Evis 직영 비즈니스</td>
-                            <td>Evis 직영 거점 사이트</td>
+                            <td>경기도 성남시 분당구 판교역로2번길 1(백햔동)수정빌딩 1234</td>
                             <td>2024.03.01</td>
                             <td><a href="#">0001</a></td>
                             <td><a href="#">0001</a></td>
-                            <td>
-                                <div class="button__wrap gap10">
-                                    <a href="#" class="btn btn-icon-write" modal-id="edit-business" onclick="openModal(event)">
-                                        <span class="irtext">편집</span>
-                                    </a>
-                                    <a href="#" class="btn btn-icon-remove" modal-id="remove-business" onclick="confirmMsg(event)">
-                                        <span class="irtext">삭제</span>
-                                    </a>                      
-                                </div>          
-                            </td>
+                            <td><a href="#">0001</a></td>  
+                            <td><a href="#">0001</a></td>
                         </tr>                                                                                                                                                                                                  
                     </tbody>
                 </table>
@@ -355,6 +303,5 @@
             document.querySelector('.admin-menu li:nth-child(1)').classList.add('is-active');
         }
     </script>
-    
 </body>
 </html>

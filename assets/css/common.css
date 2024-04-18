@@ -15,11 +15,22 @@
 .font-type-cont-semi {font-size: 15px;font-weight: 600;line-height: 17px;color:#111;}
 .font-type-cont-regular {font-size: 15px;font-weight: 500;line-height: 17px;color:#111;}
 
+/* color */
+.color-primary {color:#35AD68;}
+.color-black {color:#222;}
+.color-gray01 {color:#5A5C5F;}
+.color-gray02 {color:#909293;}
+.color-gray03 {color:#AFB5BC;}
+.color-gray04 {color:#CFD4DA;}
+.color-gray05 {color:#E2E3E7;}
+.color-gray06 {color:#EFF0F2;}
+.color-gray07 {color:#F8F9FA;}
+
 /* table */
 .table__wrap {margin-top: 12px;border-radius: 8px;overflow: hidden;}
 .table-list {width: 100%;}
 .table-list th {padding: 22px 0;background-color: #E2E3E7;text-align: center;font-size: 18px;line-height: 21px;color:#222;font-weight: 600;}
-.table-list td {padding: 25px 0;text-align: center;font-size: 18px;line-height: 21px;border-bottom: 1px solid #E2E3E7;background-color: #FFFFFF;}
+.table-list td {padding: 25px 0;text-align: center;color:#5A5C5F; font-size: 18px;line-height: 21px;border-bottom: 1px solid #E2E3E7;background-color: #FFFFFF;}
 .table-list td a {text-decoration: underline;color:#0D6EFD;}
 .table-list tbody tr:hover td {background-color: #F8F9FA;}
 
