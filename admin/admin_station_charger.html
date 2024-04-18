@@ -94,7 +94,7 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td>CP-001</td>
+                            <td><a href="#" class="noline" modal-id="charge-info"  onclick="openModal(event)">CP-001</a></td>
                             <td>LG456789876</td>
                             <td>Samsung</td>
                             <td>SSEVS1.5-1</td>
@@ -105,7 +105,7 @@
                             <td>1주차장 지하1층 벽면</td>                            
                         </tr>    
                         <tr>
-                            <td>CP-001</td>
+                            <td><a href="#" class="noline" modal-id="charge-info"  onclick="openModal(event)">CP-001</a></td>
                             <td>LG456789876</td>
                             <td>Samsung</td>
                             <td>SSEVS1.5-1</td>
@@ -116,7 +116,7 @@
                             <td>1주차장 지하1층 벽면</td>                            
                         </tr> 
                         <tr>
-                            <td>CP-001</td>
+                            <td><a href="#" class="noline">CP-001</a></td>
                             <td>LG456789876</td>
                             <td>Samsung</td>
                             <td>SSEVS1.5-1</td>
@@ -127,7 +127,7 @@
                             <td>1주차장 지하1층 벽면</td>                            
                         </tr>
                         <tr>
-                            <td>CP-001</td>
+                            <td><a href="#" class="noline">CP-001</a></td>
                             <td>LG456789876</td>
                             <td>Samsung</td>
                             <td>SSEVS1.5-1</td>
@@ -138,7 +138,7 @@
                             <td>1주차장 지하1층 벽면</td>                            
                         </tr> 
                         <tr>
-                            <td>CP-001</td>
+                            <td><a href="#" class="noline">CP-001</a></td>
                             <td>LG456789876</td>
                             <td>Samsung</td>
                             <td>SSEVS1.5-1</td>
@@ -149,7 +149,7 @@
                             <td>1주차장 지하1층 벽면</td>                            
                         </tr>
                         <tr>
-                            <td>CP-001</td>
+                            <td><a href="#" class="noline">CP-001</a></td>
                             <td>LG456789876</td>
                             <td>Samsung</td>
                             <td>SSEVS1.5-1</td>
@@ -161,109 +161,167 @@
                         </tr>                                                                                                                                                                                                                                                                                                           
                     </tbody>
                 </table>
-             </div>
-             <div class="pagination">
+            </div>
+            <!--
+            <div class="pagination">
                 <a href="#" class="btn-first"><span class="irtext">처음으로</span></a>
                 <a href="#" class="btn-prev"><span class="irtext">이전</span></a>
                 <a href="#" class="btn-next"><span class="irtext">다음</span></a>
                 <a href="#" class="btn-last"><span class="irtext">마지막페이지</span></a>
-             </div>
+            </div>
+            -->
         </div>
+        
         <!-- 모달창 -->
         <!-- 등록하기 -->
-        <div class="modal__wrap--bg" id="add-business">
-            <div class="modal__wrap size-default ">
+        <div class="modal__wrap--bg" id="charge-info">
+            <div class="modal__wrap size-large ">
                 <div class="modal-header">
-                    <h3 class="font-type-h3">Business 정보 등록하기</h3>
+                    <h3 class="font-type-h3">충전기 CP-001</h3>
                     <button type="button" class="btn btn-icon-close close-modal" onclick="closeModal(event)">
                         <span class="irtext">닫기</span>
                     </button>
                 </div>
                 <div class="modal-cont">
                     <form>
-                        <ul class="form-el-list">
+                        <ul class="form-el-list table-row-type">
                             <li>
                                 <div class="form-element__wrap">
-                                    <label for="code01" class="font-type-h5-bold">지점명</label>
+                                    <label for="code01" class="font-type-h5-bold">ID</label>
                                     <span  class="form-element__inner input-type">
-                                        <input type="text" class="font-type-h5-regular" value="" placeholder="지점명을 입력 하세요" id="code01" />
+                                        <input type="text" class="font-type-h5-regular" value="" placeholder="CP-001" id="code01" />
                                     </span>
                                 </div>
                             </li>
                             <li>
                                 <div class="form-element__wrap">
-                                    <label for="code02" class="font-type-h5-bold">특성</label>
-                                    <span  class="form-element__inner text-area">
-                                        <textarea name="" id="code02" class="font-type-h5-regular" maxlength="1000"  placeholder="특성을 입력 하세요"  style="height: 119px;"></textarea>  
-                                        <p class="font-type-cont-regular text-count"><span>0</span>/1000</p>                                  
+                                    <label for="code02" class="font-type-h5-bold">Meter Serial</label>
+                                    <span  class="form-element__inner input-type">
+                                        <input type="text" class="font-type-h5-regular" value="" placeholder="null" id="code02" />
                                     </span>
                                 </div>                                
                             </li>
-                        </ul>
-                    </form>
-                </div>
-                <div class="modal-footer">
-                    <div class="button__wrap gap10 flex-end">
-                        <button type="button" class="btn btn-cancel close-modal"  onclick="closeModal(event)">취소</button>
-                        <button type="button" class="btn btn-black btn-add" disabled>등록하기</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- 수정하기 -->
-        <div class="modal__wrap--bg" id="edit-business">
-            <div class="modal__wrap size-default ">
-                <div class="modal-header">
-                    <h3 class="font-type-h3">Business 정보 수정하기</h3>
-                    <button type="button" class="btn btn-icon-close close-modal" onclick="closeModal(event)">
-                        <span class="irtext">닫기</span>
-                    </button>
-                </div>
-                <div class="modal-cont">
-                    <form>
-                        <ul class="form-el-list">
+
                             <li>
                                 <div class="form-element__wrap">
-                                    <label for="code01" class="font-type-h5-bold">지점명</label>
+                                    <label for="code03" class="font-type-h5-bold">Occp Version</label>
                                     <span  class="form-element__inner input-type">
-                                        <input type="text" class="font-type-h5-regular" value="Evis 직영 서비스" placeholder="지점명을 입력 하세요" id="code01" />
+                                        <input type="text" class="font-type-h5-regular" value="" placeholder="null" id="code03" />
                                     </span>
                                 </div>
                             </li>
                             <li>
                                 <div class="form-element__wrap">
-                                    <label for="code02" class="font-type-h5-bold">특성</label>
-                                    <span  class="form-element__inner text-area">
-                                        <textarea name="" id="code02" class="font-type-h5-regular" maxlength="1000"  placeholder="특성을 입력 하세요"  style="height: 119px;">Evis 거점 직영 서비스</textarea>  
-                                        <p class="font-type-cont-regular text-count"><span>0</span>/1000</p>                                  
+                                    <label for="code04" class="font-type-h5-bold">Location</label>
+                                    <span  class="form-element__inner input-type">
+                                        <input type="text" class="font-type-h5-regular" value="" placeholder="null" id="code04" />
                                     </span>
                                 </div>                                
+                            </li>    
+                            
+                            <li>
+                                <div class="form-element__wrap">
+                                    <label for="code05" class="font-type-h5-bold">Vender</label>
+                                    <span  class="form-element__inner input-type">
+                                        <input type="text" class="font-type-h5-regular" value="" placeholder="null" id="code05" />
+                                    </span>
+                                </div>
                             </li>
+                            <li>
+                                <div class="form-element__wrap">
+                                    <label for="code06" class="font-type-h5-bold">F/W Version</label>
+                                    <span  class="form-element__inner input-type">
+                                        <input type="text" class="font-type-h5-regular" value="" placeholder="null" id="code06" />
+                                    </span>
+                                </div>                                
+                            </li>    
+                           
+                            <li>
+                                <div class="form-element__wrap">
+                                    <label for="code07" class="font-type-h5-bold">Model</label>
+                                    <span  class="form-element__inner input-type">
+                                        <input type="text" class="font-type-h5-regular" value="" placeholder="null" id="code07" />
+                                    </span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="form-element__wrap">
+                                    <label for="code08" class="font-type-h5-bold">F/W 갱신 상태</label>
+                                    <span  class="form-element__inner input-type">
+                                        <input type="text" class="font-type-h5-regular" value="" placeholder="null" id="code08" />
+                                    </span>
+                                </div>                                
+                            </li>    
+                            
+                            <li>
+                                <div class="form-element__wrap">
+                                    <label for="code09" class="font-type-h5-bold">SerialNumber</label>
+                                    <span  class="form-element__inner input-type">
+                                        <input type="text" class="font-type-h5-regular" value="" placeholder="null" id="code09" />
+                                    </span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="form-element__wrap">
+                                    <label for="code10" class="font-type-h5-bold">F/W 갱신 일시</label>
+                                    <span  class="form-element__inner input-type">
+                                        <input type="text" class="font-type-h5-regular" value="" placeholder="null" id="code10" />
+                                    </span>
+                                </div>                                
+                            </li>   
+                            
+                            <li>
+                                <div class="form-element__wrap">
+                                    <label for="code11" class="font-type-h5-bold">IccID</label>
+                                    <span  class="form-element__inner input-type">
+                                        <input type="text" class="font-type-h5-regular" value="" placeholder="null" id="code11" />
+                                    </span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="form-element__wrap">
+                                    <label for="code12" class="font-type-h5-bold">기기 점검 상태</label>
+                                    <span  class="form-element__inner input-type">
+                                        <input type="text" class="font-type-h5-regular" value="" placeholder="null" id="code12" />
+                                    </span>
+                                </div>                                
+                            </li>       
+                            
+                            <li>
+                                <div class="form-element__wrap">
+                                    <label for="code13" class="font-type-h5-bold">IMSI</label>
+                                    <span  class="form-element__inner input-type">
+                                        <input type="text" class="font-type-h5-regular" value="" placeholder="null" id="code13" />
+                                    </span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="form-element__wrap">
+                                    <label for="code14" class="font-type-h5-bold">기기 점검 일시</label>
+                                    <span  class="form-element__inner input-type">
+                                        <input type="text" class="font-type-h5-regular" value="" placeholder="null" id="code14" />
+                                    </span>
+                                </div>                                
+                            </li>  
+                            
+                            <li>
+                                <div class="form-element__wrap">
+                                    <label for="code15" class="font-type-h5-bold">Meter Type</label>
+                                    <span  class="form-element__inner input-type">
+                                        <input type="text" class="font-type-h5-regular" value="" placeholder="null" id="code15" />
+                                    </span>
+                                </div>
+                            </li>                            
                         </ul>
                     </form>
                 </div>
                 <div class="modal-footer">
-                    <div class="button__wrap gap10 flex-end">
-                        <button type="button" class="btn btn-cancel close-modal"  onclick="closeModal(event)">취소</button>
-                        <button type="button" class="btn btn-black">수정하기</button>
+                    <div class="button__wrap gap10 flex-end">                        
+                        <button type="button" class="btn btn-black btn-add"  onclick="closeModal(event)">닫기</button>
                     </div>
                 </div>
             </div>
-        </div>        
-        <!-- 메시지 창 -->
-        <div class="modal__wrap--bg" id="remove-business">
-            <div class="modal__wrap size-default ">
-                <div class="modal-cont">
-                    <div class="font-type-h3 modal-confirm-msg">선택하신 항목을 삭제하시겠어요?</div>
-                </div>
-                <div class="modal-footer">
-                    <div class="button__wrap gap10 flex-end">
-                        <button type="button" class="btn btn-cancel close-modal"  onclick="closeModal(event)">취소</button>
-                        <button type="button" class="btn btn-black" onclick="deleteRow(_thisParent)">삭제하기</button>
-                    </div>
-                </div>
-            </div>
-        </div>                
+        </div>         
         <!-- //모달창 -->
     </div>   
     <script type="text/javascript" src="../assets/js/ui.js" ></script>
