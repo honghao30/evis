@@ -68,7 +68,7 @@
                     현재 <strong>2</strong>개의 <strong>관리자</strong>가 등록되어 있습니다.
                 </div>   
                 <div class="button__wrap">
-                    <button type="button" class="btn btn-black icon-plus open-modal" modal-id="add-business" onclick="openModal(event)">비즈니스 등록</button>
+                    <button type="button" class="btn btn-black icon-plus open-modal" modal-id="add-business" onclick="openModal(event)">관리자 등록</button>
                 </div>
             </div>
             <div class="table__wrap">                
@@ -127,7 +127,7 @@
         <div class="modal__wrap--bg" id="add-business">
             <div class="modal__wrap size-default ">
                 <div class="modal-header">
-                    <h3 class="font-type-h3">Business 정보 등록하기</h3>
+                    <h3 class="font-type-h3">관리자 등록하기</h3>
                     <button type="button" class="btn btn-icon-close close-modal" onclick="closeModal(event)">
                         <span class="irtext">닫기</span>
                     </button>
@@ -137,18 +137,53 @@
                         <ul class="form-el-list">
                             <li>
                                 <div class="form-element__wrap">
-                                    <label for="code01" class="font-type-h5-bold">지점명</label>
+                                    <label for="code01" class="font-type-h5-bold">관리자 ID</label>
                                     <span  class="form-element__inner input-type">
-                                        <input type="text" class="font-type-h5-regular" value="" placeholder="지점명을 입력 하세요" id="code01" />
+                                        <input type="text" class="font-type-h5-regular" value="" placeholder="관리자 ID를 입력 하세요" id="code01" />
                                     </span>
                                 </div>
                             </li>
                             <li>
                                 <div class="form-element__wrap">
-                                    <label for="code02" class="font-type-h5-bold">특성</label>
-                                    <span  class="form-element__inner text-area">
-                                        <textarea name="" id="code02" class="font-type-h5-regular" maxlength="1000"  placeholder="특성을 입력 하세요"  style="height: 119px;"></textarea>  
-                                        <p class="font-type-cont-regular text-count"><span>0</span>/1000</p>                                  
+                                    <label for="code01" class="font-type-h5-bold">비밀번호</label>
+                                    <span  class="form-element__inner input-type">
+                                        <input type="password" class="font-type-h5-regular" value="" placeholder="비밀번호를 입력 하세요" id="code01" />
+                                    </span>
+                                </div>
+                            </li>            
+                            <li>
+                                <div class="form-element__wrap">
+                                    <label for="code01" class="font-type-h5-bold">비밀번호 확인</label>
+                                    <span  class="form-element__inner input-type">
+                                        <input type="password" class="font-type-h5-regular" value="" placeholder="비밀번호 확인를 입력 하세요" id="code01" />
+                                    </span>
+                                </div>
+                            </li>                                             
+                            <li>
+                                <div class="form-element__wrap">
+                                    <label for="code02" class="font-type-h5-bold">관리자 역할</label>
+                                    <span  class="form-element__inner select-wrap">
+                                        <select class="font-type-h5-regular" id="code02">
+                                            <option>Super Manager</option>
+                                            <option>Super Manager</option>
+                                            <option>Super Manager</option>
+                                        </select>
+                                    </span>
+                                </div>                                
+                            </li>
+                            <li>
+                                <div class="form-element__wrap">
+                                    <label for="code03" class="font-type-h5-bold">연락처</label>
+                                    <span  class="form-element__inner input-type">
+                                        <input type="text" class="font-type-h5-regular" value="" placeholder="연락처를 입력 하세요" id="code03" />
+                                    </span>
+                                </div>                                
+                            </li>
+                            <li>
+                                <div class="form-element__wrap">
+                                    <label for="code04" class="font-type-h5-bold">이메일</label>
+                                    <span  class="form-element__inner input-type">
+                                        <input type="text" class="font-type-h5-regular" value="" placeholder="이메일을 입력 하세요" id="code04" />
                                     </span>
                                 </div>                                
                             </li>
@@ -162,61 +197,7 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <!-- 수정하기 -->
-        <div class="modal__wrap--bg" id="edit-business">
-            <div class="modal__wrap size-default ">
-                <div class="modal-header">
-                    <h3 class="font-type-h3">Business 정보 수정하기</h3>
-                    <button type="button" class="btn btn-icon-close close-modal" onclick="closeModal(event)">
-                        <span class="irtext">닫기</span>
-                    </button>
-                </div>
-                <div class="modal-cont">
-                    <form>
-                        <ul class="form-el-list">
-                            <li>
-                                <div class="form-element__wrap">
-                                    <label for="code01" class="font-type-h5-bold">지점명</label>
-                                    <span  class="form-element__inner input-type">
-                                        <input type="text" class="font-type-h5-regular" value="Evis 직영 서비스" placeholder="지점명을 입력 하세요" id="code01" />
-                                    </span>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="form-element__wrap">
-                                    <label for="code02" class="font-type-h5-bold">특성</label>
-                                    <span  class="form-element__inner text-area">
-                                        <textarea name="" id="code02" class="font-type-h5-regular" maxlength="1000"  placeholder="특성을 입력 하세요"  style="height: 119px;">Evis 거점 직영 서비스</textarea>  
-                                        <p class="font-type-cont-regular text-count"><span>0</span>/1000</p>                                  
-                                    </span>
-                                </div>                                
-                            </li>
-                        </ul>
-                    </form>
-                </div>
-                <div class="modal-footer">
-                    <div class="button__wrap gap10 flex-end">
-                        <button type="button" class="btn btn-cancel close-modal"  onclick="closeModal(event)">취소</button>
-                        <button type="button" class="btn btn-black">수정하기</button>
-                    </div>
-                </div>
-            </div>
-        </div>        
-        <!-- 메시지 창 -->
-        <div class="modal__wrap--bg" id="remove-business">
-            <div class="modal__wrap size-default ">
-                <div class="modal-cont">
-                    <div class="font-type-h3 modal-confirm-msg">선택하신 항목을 삭제하시겠어요?</div>
-                </div>
-                <div class="modal-footer">
-                    <div class="button__wrap gap10 flex-end">
-                        <button type="button" class="btn btn-cancel close-modal"  onclick="closeModal(event)">취소</button>
-                        <button type="button" class="btn btn-black" onclick="deleteRow(_thisParent)">삭제하기</button>
-                    </div>
-                </div>
-            </div>
-        </div>                
+        </div>               
         <!-- //모달창 -->
     </div>   
     <script type="text/javascript" src="../assets/js/ui.js" ></script>
