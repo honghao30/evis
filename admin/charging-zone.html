@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">    
+    <title>이비스프라임</title>    
+    <link rel="icon" type="image/svg+xml" href="" />
+    <link rel="stylesheet" href="../assets/css/common.css" />
+    <link rel="stylesheet" href="../assets/css/admin.css" />
+</head>
+<body>
+    <div class="adm-wrap">
+        <div class="header">
+            <div class="header__nav--left">
+                <h1 class="logo">
+                    <a href="/">
+                        <img src="../assets/images/admin/logo-wt.svg" alt="Evis Prime" />
+                    </a>
+                </h1>
+                <ul class="admin-menu">
+                    <li>
+                        <a href="main.html">홈</a>
+                    </li>
+                    <li>
+                        <a href="manage.html">관리자</a>
+                    </li>                     
+                </ul>
+            </div>
+            <!-- //헤더 left -->
+            <ul class="header_util--right">
+                <li>
+                    <a href="#">로그아웃</a>
+                </li>
+                <li>
+                    <a href="#" class="btn btn-icon-porson">
+                        <span class="irtext">정보</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="btn btn-icon-setting">
+                        <span class="irtext">설정</span>
+                    </a>
+                </li>                              
+            </ul>
+        </div>
+        <!-- // 헤더 -->
+        <div class="admin__content">
+            <div class="full-between-area">
+                <h2 class="font-type-h2"><span class="color-primary">스테이션 1</span>의 충전존</h2>
+                <p class="font-type-h6-regular location">
+                    홈 > 스테이션1 > <strong>충전기</strong>
+                </p>
+            </div>
+            <div class="station-board">
+                <div class="staion-name">
+                    <div class="staion-logo"><img src="../assets/images/admin/big-logo.svg" alt="" /></div>
+                    <div class="staion-info">
+                        <p class="font-type-h3 color-black">스테이션1</p>
+                        <p class="sub-info">경기도 성남시 분당구 판교역로2번길 <span>등록일 : 2024-03-10</span></p>
+                    </div>
+                </div>
+                <div class="staion-data">
+                    <div class="data-info font-type-h5-middle color-gray02">관리자 <strong class="font-type-h2 color-black">1</strong></div>
+                    <div class="data-info font-type-h5-middle color-gray02">사용자<strong class="font-type-h2 color-black">10</strong></div>
+                    <div class="data-info font-type-h5-middle color-gray02">충전기<strong class="font-type-h2 color-black">10</strong></div>
+                    <div class="data-info font-type-h5-middle color-gray02">충전존<strong class="font-type-h2 color-black">10</strong></div>
+                </div>
+            </div>
+            <div class="full-between-area">
+                <div class="msg">
+                    현재 <strong>1</strong>개의 <strong>충전존</strong>이 등록되어 있습니다.
+                </div>   
+                <div class="button__wrap">
+                    <button type="button" class="btn btn-black icon-plus open-modal" modal-id="add=charge-zone" onclick="openModal(event)">충전존 등록</button>
+                </div>                
+            </div>
+            <div class="table__wrap">                
+                <table class="table table-list">
+                    <colgroup>
+                        <col width="10%" />
+                        <col width="10%" />                        
+                        <col width="" />                       
+                        <col width="10%" /> 
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th scope="col">번호</th>
+                            <th scope="col">명칭</th>
+                            <th scope="col">등록일</th>                          
+                            <th scope="col"></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>1주차장 지하2층</td>
+                            <td>2024.03.01</td>                         
+                            <td>
+                                <div class="button__wrap gap10">
+                                    <a href="#" class="btn btn-icon-write" modal-id="edit=charge-zone" onclick="openModal(event)">
+                                        <span class="irtext">편집</span>
+                                    </a>                                    
+                                    <a href="#" class="btn btn-icon-remove" modal-id="remove-business" onclick="confirmMsg(event)">
+                                        <span class="irtext">삭제</span>
+                                    </a>                      
+                                </div>                                 
+                            </td>      
+                        </tr>                                                                                                                                                                                                                                                                                                   
+                    </tbody>
+                </table>
+            </div>
+            
+            <div class="pagination">
+                <a href="#" class="btn-first"><span class="irtext">처음으로</span></a>
+                <a href="#" class="btn-prev"><span class="irtext">이전</span></a>
+                <a href="#" class="btn-next"><span class="irtext">다음</span></a>
+                <a href="#" class="btn-last"><span class="irtext">마지막페이지</span></a>
+            </div>
+        </div>
+        
+        <!-- 모달창 -->
+        <!-- 등록하기 -->
+        <div class="modal__wrap--bg" id="add=charge-zone">
+            <div class="modal__wrap size-large ">
+                <div class="modal-header">
+                    <h3 class="font-type-h3">충전존 등록</h3>
+                    <button type="button" class="btn btn-icon-close close-modal" onclick="closeModal(event)">
+                        <span class="irtext">닫기</span>
+                    </button>
+                </div>
+                <div class="modal-cont">
+                    <form>
+                        <ul class="form-el-list">
+                            <li>
+                                <div class="form-element__wrap">
+                                    <label for="code01" class="font-type-h5-bold">지점명</label>
+                                    <span  class="form-element__inner input-type">
+                                        <input type="text" class="font-type-h5-regular" value="" placeholder="지점명 입력 " id="code01" />
+                                    </span>
+                                </div>
+                            </li>
+                        </ul>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <div class="button__wrap gap10 flex-end">                        
+                        <button type="button" class="btn btn-cancel close-modal"  onclick="closeModal(event)">취소</button>
+                        <button type="button" class="btn btn-black btn-add" disabled>등록하기</button>
+                    </div>
+                </div>
+            </div>
+        </div>         
+        <!-- 수정하기 -->
+        <div class="modal__wrap--bg" id="edit=charge-zone">
+            <div class="modal__wrap size-large ">
+                <div class="modal-header">
+                    <h3 class="font-type-h3">충전존 정보 수정</h3>
+                    <button type="button" class="btn btn-icon-close close-modal" onclick="closeModal(event)">
+                        <span class="irtext">닫기</span>
+                    </button>
+                </div>
+                <div class="modal-cont">
+                    <form>
+                        <ul class="form-el-list">
+                            <li>
+                                <div class="form-element__wrap">
+                                    <label for="code01" class="font-type-h5-bold">지점명</label>
+                                    <span  class="form-element__inner input-type">
+                                        <input type="text" class="font-type-h5-regular" value="" placeholder="지점명 입력 " id="code01" />
+                                    </span>
+                                </div>
+                            </li>
+                        </ul>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <div class="button__wrap gap10 flex-end">                        
+                        <button type="button" class="btn btn-cancel close-modal"  onclick="closeModal(event)">취소</button>
+                        <button type="button" class="btn btn-black btn-add" disabled>등록하기</button>
+                    </div>
+                </div>
+            </div>
+        </div>         
+        <!-- 메시지 창 -->
+        <div class="modal__wrap--bg" id="remove-business">
+            <div class="modal__wrap size-default ">
+                <div class="modal-cont">
+                    <div class="font-type-h3 modal-confirm-msg">선택하신 항목을 삭제하시겠어요?</div>
+                </div>
+                <div class="modal-footer">
+                    <div class="button__wrap gap10 flex-end">
+                        <button type="button" class="btn btn-cancel close-modal"  onclick="closeModal(event)">취소</button>
+                        <button type="button" class="btn btn-black" onclick="deleteRow(_thisParent)">삭제하기</button>
+                    </div>
+                </div>
+            </div>
+        </div>          
+        <!-- //모달창 -->
+    </div>   
+    <script type="text/javascript" src="../assets/js/ui.js" ></script>
+    <!-- // 메뉴 활성화 스크립트  -->
+    <script>
+        const currentPage = window.location.href;
+        if (currentPage.indexOf("manage") !== -1) {
+            document.querySelector('.admin-menu li:nth-child(2)').classList.add('is-active');            
+        } else {
+            document.querySelector('.admin-menu li:nth-child(1)').classList.add('is-active');
+        }
+    </script>
+</body>
+</html>

@@ -157,7 +157,7 @@
 .admin__content {padding: 40px 48px;}
 
 .full-between-area {width: 100%;display: flex; justify-content: space-between;margin-top: 16px;}
-.full-between-area .msg {font-size: 20px;line-height: 24px;color:#5A5C5F;}
+.full-between-area .msg {font-size: 20px;line-height: 24px;color:#5A5C5F;display: flex;align-items: flex-end;padding-bottom: 5px;}
 .full-between-area .msg:only-child {padding-top: 15px;}
 .full-between-area .location {color:#909293;}
 .full-between-area .location strong {color:#222;}
@@ -169,6 +169,8 @@
 .station-board .staion-name {display: flex;align-items: center;gap:24px;}
 .station-board .staion-name .sub-info {margin-top: 6px;font-size: 12px;color:#5A5C5F;}
 .station-board .staion-name .sub-info span {margin-left: 12px;color:#AFB5BC;}
+
+.page-subtitle {margin-top: 40px;}
 
 /* 모달 */
 .form-el-list li {margin-bottom: 20px;}

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">    
+    <title>이비스프라임</title>    
+    <link rel="icon" type="image/svg+xml" href="" />
+    <link rel="stylesheet" href="../assets/css/common.css" />
+    <link rel="stylesheet" href="../assets/css/admin.css" />
+</head>
+<body>
+    <div class="adm-wrap">
+        <div class="header">
+            <div class="header__nav--left">
+                <h1 class="logo">
+                    <a href="/">
+                        <img src="../assets/images/admin/logo-wt.svg" alt="Evis Prime" />
+                    </a>
+                </h1>
+                <ul class="admin-menu">
+                    <li>
+                        <a href="main.html">홈</a>
+                    </li>
+                    <li>
+                        <a href="manage.html">관리자</a>
+                    </li>                     
+                </ul>
+            </div>
+            <!-- //헤더 left -->
+            <ul class="header_util--right">
+                <li>
+                    <a href="#">로그아웃</a>
+                </li>
+                <li>
+                    <a href="#" class="btn btn-icon-porson">
+                        <span class="irtext">정보</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="btn btn-icon-setting">
+                        <span class="irtext">설정</span>
+                    </a>
+                </li>                              
+            </ul>
+        </div>
+        <!-- // 헤더 -->
+        <div class="admin__content">
+            <div class="full-between-area">
+                <h2 class="font-type-h2"><span class="color-primary">USER-001</span> 의 정보</h2>
+                <p class="font-type-h6-regular location">
+                    홈 > 스테이션 1 > <strong>USER-001</strong>
+                </p>
+            </div>
+            <div class="station-board">
+                <div class="staion-name">                    
+                    <div class="staion-info">
+                        <p class="font-type-h3 color-black">USER-001</p>                        
+                        <p class="sub-info">등록일 <strong>2024.03.01</strong></p>
+                    </div>
+                </div>
+                <div class="staion-data">
+                    <div class="data-info font-type-h5-middle color-gray02">Parent <strong class="font-type-h2 color-black">P-01</strong></div>
+                    <div class="data-info font-type-h5-middle color-gray02">만기일<strong class="font-type-h2 color-black">NULL</strong></div>
+                    <div class="data-info font-type-h5-middle color-gray02">동・호수<strong class="font-type-h2 color-black">110동 1201</strong></div>
+                    <div class="data-info font-type-h5-middle color-gray02">충전여부<strong class="font-type-h2 color-black">O</strong></div>
+                    <div class="data-info font-type-h5-middle color-gray02">보류여부<strong class="font-type-h2 color-black">O</strong></div>
+                    <div class="data-info font-type-h5-middle color-gray02">예약여부<strong class="font-type-h2 color-black">X</strong></div>
+                </div>
+            </div>      
+            <div class="font-type-h3 color-black page-subtitle">
+                <strong class="color-primary">USER-001</strong>
+                충전내역
+            </div>      
+            <div class="full-between-area">
+                <div class="msg">
+                    현재 <strong>2</strong>개의 <strong>충전내역</strong>이 등록되어 있습니다.
+                </div>   
+                <div class="button__wrap">                    
+                    <button type="button" class="btn btn-icon-print" onclick="print()"><span class="irtext">프린트</span></button>
+                </div>                
+            </div>
+            <div class="table__wrap">                
+                <table class="table table-list">
+                    <colgroup>
+                        <col width="" />
+                        <col width="16%" />
+                        <col width="16%" />
+                        <col width="16%" />                        
+                        <col width="20%" />
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th scope="col">충전기간</th>
+                            <th scope="col">충전전력량</th>
+                            <th scope="col">충전 종료이유</th>
+                            <th scope="col">사용충전기 ID</th>
+                            <th scope="col">사용 컨넥터ID</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>023.12.10 01:00 ~ 2023-12-12 02:30</td>                            
+                            <td>Local</td>
+                            <td><i class="icon-flash-on"></i> 100wh</td>
+                            <td>CP-001</td>  
+                            <td>1</td> 
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+             <!-- <div class="pagination">
+                <a href="#" class="btn-first"><span class="irtext">처음으로</span></a>
+                <a href="#" class="btn-prev"><span class="irtext">이전</span></a>
+                <a href="#" class="btn-next"><span class="irtext">다음</span></a>
+                <a href="#" class="btn-last"><span class="irtext">마지막페이지</span></a>
+             </div> -->
+        </div>
+    </div>   
+
+    <script type="text/javascript" src="../assets/js/ui.js" ></script>
+    <!-- // 메뉴 활성화 스크립트  -->
+    <script>
+        const currentPage = window.location.href;
+        if (currentPage.indexOf("manage") !== -1) {
+            document.querySelector('.admin-menu li:nth-child(2)').classList.add('is-active');            
+        } else {
+            document.querySelector('.admin-menu li:nth-child(1)').classList.add('is-active');
+        }
+    </script>
+</body>
+</html>

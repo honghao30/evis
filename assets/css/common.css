@@ -59,8 +59,9 @@
 .btn-black {background-color: #222;height: 56px;padding: 0 24px;font-size: 18px;color:#fff;font-weight: 600;}
 .btn-black:disabled {background-color: #E2E3E7;color:#AFB5BC;cursor: default;}
 .btn-cancel {background-color: #E2E3E7;height: 56px;padding: 0 24px;font-size: 18px;color:#5A5C5F;font-weight: 600;}
+.icon-flash-on {display: inline-flex; width:24px;height: 24px; background: url('../images/admin/icon-flash-on.svg') no-repeat center;vertical-align: middle;}
 .icon-plus {display: flex;align-items: center;gap: 5px;}
-.icon-plus::before {content: '';display: inline-block; width:12px;height:12px;background: url('../images/admin/icon-add.svg') no-repeat center;}
+.icon-plus::before {content: '';display: inline-block; width:12px;height:12px;background: url('../images/admin/icon-add.svg') no-repeat center center;}
 .btn-icon-porson {display:block;width:24px;height: 24px;background: url('../images/admin/icon-pp.svg') no-repeat center;}
 .btn-icon-setting {display:block;width:24px;height: 24px;background: url('../images/admin/icon-setting.svg') no-repeat center;}
 .btn-icon-write {display:block;width:40px;height: 40px;background: url('../images/admin/icon-edit.svg') no-repeat center;}
@@ -119,5 +120,5 @@ body.modal-open {height: 100%;overflow: hidden;}
 .modal__wrap--bg .modal__wrap .modal-header {background-color: #35AD68;height: 72px; position: relative;display: flex;align-items: center;}
 .modal__wrap--bg .modal__wrap .modal-header h3 {margin-left: 30px;color:#fff;}
 .modal__wrap--bg .modal__wrap .modal-header .btn-icon-close {position: absolute;right: 30px;top: 50%;transform: translateY(-50%);}
-.modal__wrap--bg .modal__wrap .modal-cont {background-color: #fff;padding: 32px 40px;}
-.modal__wrap--bg .modal__wrap .modal-footer {padding: 0 40px 32px;}
+.modal__wrap--bg .modal__wrap .modal-cont {background-color: #fff;padding: 32px 40px 0;max-height: 550px;overflow-y: auto;}
+.modal__wrap--bg .modal__wrap .modal-footer {padding: 0 40px 32px;margin-top: 30px;}
