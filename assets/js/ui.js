@@ -71,3 +71,12 @@ const deleteRow = (rowElement) => {
     rowElement.remove();
     document.body.classList.remove('modal-open');
 };
+
+// 모달창 영역 외를 클릭하면 드랍다운 닫기
+document.addEventListener("click", function(e) {    
+    if (e.target.classList.contains('modal__wrap--bg')) {
+        const activeModal = document.querySelector('.modal__wrap--bg.is-active');
+        activeModal.classList.remove('is-active');
+        document.body.classList.remove('modal-open');
+    }
+});
