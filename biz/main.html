@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">    
+    <title>이비스프라임</title>    
+    <link rel="icon" type="image/svg+xml" href="" />
+    <link rel="stylesheet" href="../assets/css/common.css" />
+    <link rel="stylesheet" href="../assets/css/admin.css" />
+</head>
+<body>
+    <div class="adm-wrap">
+        <div class="header">
+            <div class="header__nav--left">
+                <h1 class="logo">
+                    <a href="/">
+                        <img src="../assets/images/admin/logo-wt.svg" alt="Evis Prime" />
+                    </a>
+                </h1>
+                <ul class="admin-menu">
+                    <li class="is-active">
+                        <a href="main.html">홈</a>
+                    </li>                  
+                </ul>
+            </div>
+            <!-- //헤더 left -->
+            <ul class="header_util--right">
+                <li>
+                    <a href="#">로그아웃</a>
+                </li>
+                <li>
+                    <a href="#" class="btn btn-icon-porson">
+                        <span class="irtext">정보</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="btn btn-icon-setting">
+                        <span class="irtext">설정</span>
+                    </a>
+                </li>                              
+            </ul>
+        </div>
+        <!-- // 헤더 -->
+        <div class="admin__content">
+            <h2 class="font-type-h2">Business 정보</h2>
+            <div class="station-board">
+                <div class="staion-name">
+                    <div class="staion-logo"><img src="../assets/images/admin/big-logo.svg" alt="" /></div>
+                    <div class="staion-info">
+                        <p class="font-type-h3 color-black">Evis 직영 비즈니스</p>
+                        <p class="sub-info"><span>지점명</span> Evis 직영 거점 사이트 </p>
+                        <p class="sub-info"><span>등록일</span> 2024.03.01 </p>
+                    </div>
+                </div>
+                <div class="staion-data">
+                    <div class="data-info font-type-h5-middle color-gray02">관리자 <strong class="font-type-h2 color-black">1</strong></div>
+                    <div class="data-info font-type-h5-middle color-gray02">스테이션<strong class="font-type-h2 color-black">10</strong></div>
+                </div>
+            </div>
+            <div class="tab-menu">
+                <a href="main.html" class="is-active">관리자</a>
+                <a href="station.html">스테이션</a>
+            </div>
+            <div class="full-between-area">
+                <div class="msg">
+                    현재 <strong>1</strong>개의 관리자가 등록되어 있습니다.
+                </div>
+                <div class="button__wrap">
+                    <button type="button" class="btn btn-black icon-plus open-modal" modal-id="add-business" onclick="openModal(event)">관리자 등록</button>
+                </div>
+            </div>
+            <div class="table__wrap">                
+                <table class="table table-list">
+                    <colgroup>
+                        <col width="10%" />
+                        <col width="13%" />
+                        <col width="13%" />
+                        <col width="13%" />
+                        <col width="13%" />
+                        <col width="" />
+                        <col width="11%" />
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th scope="col">번호</th>
+                            <th scope="col">관리자 ID</th>
+                            <th scope="col">역할</th>
+                            <th scope="col">관리범주</th>
+                            <th scope="col">연락처</th>
+                            <th scope="col">이메일</th>
+                            <th scope="col">등록일</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Admin1</td>
+                            <td>Station Manager</td>
+                            <td>스테이션1</td>
+                            <td>010-0000-0000</td>
+                            <td>asdffg@gmail.com</td>
+                            <td>2024.03.01</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Admin2</td>
+                            <td>Station Manager</td>
+                            <td>스테이션1</td>
+                            <td>010-0000-0000</td>
+                            <td>asdffg@gmail.com</td>
+                            <td>2024.03.01</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- <div class="pagination">
+                <a href="#" class="btn-first"><span class="irtext">처음으로</span></a>
+                <a href="#" class="btn-prev"><span class="irtext">이전</span></a>
+                <a href="#" class="btn-next"><span class="irtext">다음</span></a>
+                <a href="#" class="btn-last"><span class="irtext">마지막페이지</span></a>
+            </div> -->
+        </div>
+        <!-- 모달창 -->
+        <!-- 등록하기 -->
+        <div class="modal__wrap--bg" id="add-business">
+            <div class="modal__wrap size-default ">
+                <div class="modal-header">
+                    <h3 class="font-type-h3">관리자 등록하기</h3>
+                    <button type="button" class="btn btn-icon-close close-modal" onclick="closeModal(event)">
+                        <span class="irtext">닫기</span>
+                    </button>
+                </div>
+                <div class="modal-cont">
+                    <form>
+                        <ul class="form-el-list">
+                            <li>
+                                <div class="form-element__wrap">
+                                    <label for="code01" class="font-type-h5-bold">관리자 ID</label>
+                                    <span  class="form-element__inner input-type">
+                                        <input type="text" class="font-type-h5-regular" value="" placeholder="관리자 ID를 입력 하세요" id="code01" />
+                                    </span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="form-element__wrap">
+                                    <label for="code02" class="font-type-h5-bold">관리자 역할</label>
+                                    <span  class="form-element__inner select-wrap">
+                                        <select class="font-type-h5-regular" id="code02">
+                                            <option>Super Manager</option>
+                                            <option>Super Manager</option>
+                                            <option>Super Manager</option>
+                                        </select>
+                                    </span>
+                                </div>                                
+                            </li>
+                            <li>
+                                <div class="form-element__wrap">
+                                    <label for="code03" class="font-type-h5-bold">연락처</label>
+                                    <span  class="form-element__inner input-type">
+                                        <input type="text" class="font-type-h5-regular" value="" placeholder="연락처를 입력 하세요" id="code03" />
+                                    </span>
+                                </div>                                
+                            </li>
+                            <li>
+                                <div class="form-element__wrap">
+                                    <label for="code04" class="font-type-h5-bold">이메일</label>
+                                    <span  class="form-element__inner input-type">
+                                        <input type="text" class="font-type-h5-regular" value="" placeholder="이메일을 입력 하세요" id="code04" />
+                                    </span>
+                                </div>                                
+                            </li>
+                            <li>
+                                <div class="form-element__wrap">
+                                    <label for="code05" class="font-type-h5-bold">관리범주 선택</label>
+                                    <span  class="form-element__inner select-wrap">
+                                        <select class="font-type-h5-regular" id="code05">
+                                            <option>Evis 직영 비즈니스</option>
+                                            <option>Evis 직영 비즈니스</option>
+                                            <option>Evis 직영 비즈니스</option>
+                                        </select>
+                                    </span>
+                                </div>                                
+                            </li>                                                                                  
+                        </ul>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <div class="button__wrap gap10 flex-end">
+                        <button type="button" class="btn btn-cancel close-modal"  onclick="closeModal(event)">취소</button>
+                        <button type="button" class="btn btn-black">등록하기</button>
+                    </div>
+                </div>
+            </div>
+        </div>                   
+        <!-- //모달창 -->
+    </div>   
+    <script type="text/javascript" src="../assets/js/ui.js" ></script>    
+</body>
+</html>

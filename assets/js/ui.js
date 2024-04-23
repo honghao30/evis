@@ -80,3 +80,8 @@ document.addEventListener("click", function(e) {
         document.body.classList.remove('modal-open');
     }
 });
+
+const clearButton = document.getElementById('address-form');
+clearButton.addEventListener('input', () => {
+    document.querySelector('.btn-icon-clear-value').classList.remove('hide');
+})

@@ -68,6 +68,9 @@
 .btn-icon-remove {display:block;width:40px;height: 40px;background: url('../images/admin/icon-delect.svg') no-repeat center;}
 .btn-icon-close {display:block;width:24px;height: 24px;background: url('../images/admin/icon-close-large.svg') no-repeat center;}
 .btn-icon-print {display:block;width:56px;height: 56px;background: #0D6EFD url('../images/admin/icon-print.svg') no-repeat center;}
+.btn-icon-back {display:block;width:24px;height: 24px;background: url('../images/admin/icon-btn-back.svg') no-repeat center;}
+.btn-icon-clear-value {display:block;width:46px;height: 32px;background: url('../images/admin/icon-delect small.svg') no-repeat center;}
+.btn-select-add {background-color: #E3FBE0;color:#35AD68;width: 46px; height: 32px;font-size: 15px;font-weight: 500;line-height: 17px;}
 
 /* 폼요소 */
 .form-element__wrap {display: flex;flex-direction: column;align-items: flex-start;gap: 10px;width: 100%;}
@@ -96,6 +99,12 @@ select {
 .form-el-list.table-row-type li .form-element__wrap {flex-direction: row;justify-content: flex-start;align-items: center;}
 .form-el-list.table-row-type li .form-element__wrap label {width: 186px;}
 .form-el-list.table-row-type li:nth-child(even) {margin-left: 32px;}
+.form-el-list.harf-width {display: flex; flex-wrap: wrap;justify-content: space-between;margin-top: 20px;}
+.form-el-list.harf-width li {width: calc(50% - 12px);margin-bottom:20px;}
+.input-has-button {width: 100%;display: flex;gap: 10px;justify-content: space-between;}
+.input-has-button .btn {min-width: 72px;padding: 0 19px;}
+.input-has-button .input-type {position: relative;}
+.input-has-button .btn-icon-clear-value {min-width: fit-content !important;}
 
 /* 페이지네이션 */
 .pagination {border-radius: 8px;border: 1px solid #CFD4DA;width: fit-content; margin: 15px auto;display: flex;justify-content: center;height: 40px;} 

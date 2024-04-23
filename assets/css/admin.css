@@ -177,3 +177,23 @@
 .form-el-list li:last-child {margin-bottom: 0;}
 .modal-confirm-msg {color:#35AD68;}
 
+/* 탭메뉴 */
+.tab-menu {border-bottom: 1.5px solid #222;display: flex;align-items: center;height:46px;margin-top: 16px;}
+.tab-menu a {font-size: 18px;height: 100%;font-weight: 600;line-height: 21px;color:#222;padding:0 32px;display: flex;align-items: center;}
+.tab-menu a.is-active {background-color: #222;color:#fff;border-top-left-radius: 8px;border-top-right-radius: 8px;}
+
+/* 우편번호 */
+.address-container {margin-top: 24px;}
+.address-search .address-container {height: 330px; overflow-y: auto;margin-bottom: 30px;}
+.address-container dt {font-size: 16px;font-weight: 600;line-height: 19px;color:#222;}
+.address-container dd {font-size: 16px;font-weight: 400;line-height: 19px;color:#909293;padding: 6px 0 0 10px;}
+.address-container dd + dt {margin-top: 16px;}
+.address-search .btn-icon-back {position: absolute;left: 24px;top: 50%;transform: translateY(-50%);}
+.address-search h3 {margin-left: 52px !important;}
+.address-container li {border-bottom: 1px solid #E2E3E7;padding: 22px 0 16px;position: relative;}
+.address-container li .tit {font-size: 16px;font-weight: 500;line-height:19px;color:#000;}
+.address-container li .add {margin-top: 6px;font-size: 15px;font-weight: 500;line-height: 17px;color:#909293;}
+.address-container li .add + .add {padding-top: 5px;}
+.address-container li .add .label-default {border: 1px solid #cfd4da;padding: 4px 6px;width: 33px;height: 22px;margin-right: 6px;font-size: 12px;color:#909293;font-weight: 500;line-height: 14px;}
+.address-container li .btn-select-add {position: absolute;right: 0;top: 16px;}
+.hide {display: none;}
