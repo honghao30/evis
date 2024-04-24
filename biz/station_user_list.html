@@ -17,12 +17,9 @@
                     </a>
                 </h1>
                 <ul class="admin-menu">
-                    <li>
+                    <li class="is-active">
                         <a href="main.html">홈</a>
-                    </li>
-                    <li>
-                        <a href="manage.html">관리자</a>
-                    </li>                     
+                    </li>                  
                 </ul>
             </div>
             <!-- //헤더 left -->
@@ -45,31 +42,31 @@
         <!-- // 헤더 -->
         <div class="admin__content">
             <div class="full-between-area">
-                <h2 class="font-type-h2">스테이션 1 <span class="color-primary">사용자</span></h2>
+                <h2 class="font-type-h2"><span class="color-primary">스테이션1</span>의 사용자</h2>
                 <p class="font-type-h6-regular location">
                     홈 > 스테이션 1 > <strong>사용자</strong>
                 </p>
-            </div>
+            </div>                        
             <div class="station-board">
-                <div class="staion-name">                    
+                <div class="staion-name">
+                    <div class="staion-logo"><img src="../assets/images/admin/big-logo.svg" alt="" /></div>
                     <div class="staion-info">
-                        <p class="font-type-h3 color-black">USER-001</p>                        
-                        <p class="sub-info font-type-h6-regular">등록일 <strong>2024.03.01</strong></p>
+                        <p class="font-type-h3 color-black">스테이션 1</p>
+                        <p class="sub-info"><span>경기도 성남시 분당구 판교역로2번길 1 </span> </p>
+                        <p class="sub-info"><span>등록일</span> 2024.03.01 </p>
                     </div>
                 </div>
                 <div class="staion-data">
-                    <div class="data-info font-type-h5-middle color-gray02">Parent <strong class="font-type-h4-bold color-black">P-01</strong></div>
-                    <div class="data-info font-type-h5-middle color-gray02">만기일<strong class="font-type-h4-bold color-black">NULL</strong></div>
-                    <div class="data-info font-type-h5-middle color-gray02">동・호수<strong class="font-type-h4-bold color-black">110동 1201</strong></div>
-                    <div class="data-info font-type-h5-middle color-gray02">충전여부<strong class="font-type-h4-bold color-black">O</strong></div>
-                    <div class="data-info font-type-h5-middle color-gray02">보류여부<strong class="font-type-h4-bold color-black">O</strong></div>
-                    <div class="data-info font-type-h5-middle color-gray02">예약여부<strong class="font-type-h4-bold color-black">X</strong></div>
+                    <div class="data-info font-type-h5-middle color-gray02">관리자 <strong class="font-type-h2 color-black">1</strong></div>
+                    <div class="data-info font-type-h5-middle color-gray02">사용자<strong class="font-type-h2 color-black">10</strong></div>
+                    <div class="data-info font-type-h5-middle color-gray02">충전기<strong class="font-type-h2 color-black">10</strong></div>
+                    <div class="data-info font-type-h5-middle color-gray02">충전존<strong class="font-type-h2 color-black">10</strong></div>
                 </div>
-            </div>        
+            </div>
             <div class="full-between-area">
                 <div class="msg">
-                    현재 <strong>2</strong>명의 <strong>사용자</strong>가 등록되어 있습니다.
-                </div>   
+                    현재 <strong>1</strong>개의 <strong>사용자</strong>가 등록되어 있습니다.
+                </div>
                 <div class="button__wrap gap10">
                     <button type="button" class="btn btn-black icon-plus open-modal" modal-id="add-business" onclick="openModal(event)">사용자 등록</button>
                     <button type="button" class="btn btn-icon-print" onclick="print()"><span class="irtext">프린트</span></button>
@@ -103,7 +100,7 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td><a href="admin_userinfo_detail.html">USER-001</a></td>
+                            <td><a href="station_user_detail.html">USER-001</a></td>
                             <td>P-01</td>
                             <td>2024.03.01</td>
                             <td>2024.03.01</td>
@@ -270,16 +267,7 @@
             </div>
         </div>
     </div>                
-    <!-- //모달창 -->    
-    <script type="text/javascript" src="../assets/js/ui.js" ></script>
-    <!-- // 메뉴 활성화 스크립트  -->
-    <script>
-        const currentPage = window.location.href;
-        if (currentPage.indexOf("manage") !== -1) {
-            document.querySelector('.admin-menu li:nth-child(2)').classList.add('is-active');            
-        } else {
-            document.querySelector('.admin-menu li:nth-child(1)').classList.add('is-active');
-        }
-    </script>
+    <!-- //모달창 -->        
+    <script type="text/javascript" src="../assets/js/ui.js" ></script>    
 </body>
 </html>

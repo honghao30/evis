@@ -68,22 +68,18 @@
             <div class="full-between-area">
                 <div class="msg">
                     현재 <strong>6</strong>개의 <strong>충전기</strong>가 등록되어 있습니다.
-                </div>   
-                <div class="button__wrap">
-                    <button type="button" class="btn btn-black icon-plus open-modal" modal-id="add-charge" onclick="openModal(event)">충전기 등록</button>
-                </div>                
+                </div>               
             </div>
             <div class="table__wrap">                
                 <table class="table table-list">
                     <colgroup>
-                        <col width="8%" />
                         <col width="10%" />
-                        <col width="10%" />
-                        <col width="10%" />
-                        <col width="10%" />
-                        <col width="10%" />
-                        <col width="" />                       
-                        <col width="10%" /> 
+                        <col width="12%" />
+                        <col width="12%" />
+                        <col width="12%" />
+                        <col width="12%" />
+                        <col width="12%" />
+                        <col width="" />                                               
                     </colgroup>
                     <thead>
                         <tr>
@@ -93,13 +89,12 @@
                             <th scope="col">Model</th>
                             <th scope="col">컨넥터타입</th>
                             <th scope="col">컨넥터 수</th>
-                            <th scope="col">설치장소</th>                            
-                            <th scope="col"></th>
+                            <th scope="col">설치장소</th>                                                        
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td><a href="#" class="noline" modal-id="add-charge"  onclick="openModal(event)">CP-001</a></td>
+                            <td><a href="#" class="noline" modal-id="charge-detail"  onclick="openModal(event)">CP-001</a></td>
                             <td>LG456789876</td>
                             <td>Samsung</td>
                             <td>SSEVS1.5-1</td>
@@ -107,14 +102,7 @@
                                 <span class="flag type1">AC단상</span>
                             </td>
                             <td>01</td>
-                            <td>1주차장 지하1층 벽면</td>                            
-                            <td>
-                                <div class="button__wrap gap10">
-                                    <a href="#" class="btn btn-icon-remove" modal-id="remove-business" onclick="confirmMsg(event)">
-                                        <span class="irtext">삭제</span>
-                                    </a>                      
-                                </div>                                 
-                            </td>      
+                            <td>1주차장 지하1층 벽면</td>                                
                         </tr>    
                         <tr>
                             <td><a href="#" class="noline" modal-id="charge-info"  onclick="openModal(event)">CP-001</a></td>
@@ -125,14 +113,7 @@
                                 <span class="flag type2">CCS1</span>
                             </td>
                             <td>01</td>
-                            <td>1주차장 지하1층 벽면</td>        
-                            <td>
-                                <div class="button__wrap gap10">
-                                    <a href="#" class="btn btn-icon-remove" modal-id="remove-business" onclick="confirmMsg(event)">
-                                        <span class="irtext">삭제</span>
-                                    </a>                      
-                                </div>                                 
-                            </td>                                                  
+                            <td>1주차장 지하1층 벽면</td>                                               
                         </tr> 
                         <tr>
                             <td><a href="#" class="noline">CP-001</a></td>
@@ -143,14 +124,7 @@
                                 <span class="flag type3">차데모</span>
                             </td>
                             <td>01</td>
-                            <td>1주차장 지하1층 벽면</td> 
-                            <td>
-                                <div class="button__wrap gap10">
-                                    <a href="#" class="btn btn-icon-remove" modal-id="remove-business" onclick="confirmMsg(event)">
-                                        <span class="irtext">삭제</span>
-                                    </a>                      
-                                </div>                                 
-                            </td>                                                         
+                            <td>1주차장 지하1층 벽면</td>                                                        
                         </tr>
                         <tr>
                             <td><a href="#" class="noline">CP-001</a></td>
@@ -161,14 +135,7 @@
                                 <span class="flag type4">AC단상</span>
                             </td>
                             <td>01</td>
-                            <td>1주차장 지하1층 벽면</td>    
-                            <td>
-                                <div class="button__wrap gap10">
-                                    <a href="#" class="btn btn-icon-remove" modal-id="remove-business" onclick="confirmMsg(event)">
-                                        <span class="irtext">삭제</span>
-                                    </a>                      
-                                </div>                                 
-                            </td>                                                      
+                            <td>1주차장 지하1층 벽면</td>                                                         
                         </tr> 
                         <tr>
                             <td><a href="#" class="noline">CP-001</a></td>
@@ -179,14 +146,7 @@
                                 <span class="flag type5">CCS2</span>
                             </td>
                             <td>01</td>
-                            <td>1주차장 지하1층 벽면</td>     
-                            <td>
-                                <div class="button__wrap gap10">
-                                    <a href="#" class="btn btn-icon-remove" modal-id="remove-business" onclick="confirmMsg(event)">
-                                        <span class="irtext">삭제</span>
-                                    </a>                      
-                                </div>                                 
-                            </td>                                                     
+                            <td>1주차장 지하1층 벽면</td>
                         </tr>
                         <tr>
                             <td><a href="#" class="noline">CP-001</a></td>
@@ -198,128 +158,162 @@
                             </td>
                             <td>01</td>
                             <td>1주차장 지하1층 벽면</td>  
-                            <td>
-                                <div class="button__wrap gap10">
-                                    <a href="#" class="btn btn-icon-remove" modal-id="remove-business" onclick="confirmMsg(event)">
-                                        <span class="irtext">삭제</span>
-                                    </a>                      
-                                </div>                                 
-                            </td>                                                        
                         </tr>                                                                                                                                                                                                                                                                                                           
                     </tbody>
                 </table>
             </div>
             
-            <div class="pagination">
+            <!-- <div class="pagination">
                 <a href="#" class="btn-first"><span class="irtext">처음으로</span></a>
                 <a href="#" class="btn-prev"><span class="irtext">이전</span></a>
                 <a href="#" class="btn-next"><span class="irtext">다음</span></a>
                 <a href="#" class="btn-last"><span class="irtext">마지막페이지</span></a>
+            </div> -->
+        </div>
+    </div>   
+    <!-- 모달 -->
+    <div class="modal__wrap--bg" id="charge-detail">
+        <div class="modal__wrap size-large ">
+            <div class="modal-header">
+                <h3 class="font-type-h3">충전기 CP-001</h3>
+                <button type="button" class="btn btn-icon-close close-modal" onclick="closeModal(event)">
+                    <span class="irtext">닫기</span>
+                </button>
+            </div>
+            <div class="modal-cont">
+                <form>
+                    <ul class="form-el-list table-row-type">
+                        <li>
+                            <div class="form-element__wrap">
+                                <label for="code01" class="font-type-h5-bold">ID</label>
+                                <span  class="form-element__inner input-type">
+                                    <input type="text" class="font-type-h5-regular" value="CP-001" placeholder="ID를 입력 하세요" id="code01" />
+                                </span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="form-element__wrap">
+                                <label for="code02" class="font-type-h5-bold">Meter Serial</label>
+                                <span  class="form-element__inner input-type">
+                                    <input type="text" class="font-type-h5-regular" value="Meter Serial" placeholder="ID를 입력 하세요" id="code02" />
+                                </span>
+                            </div>
+                        </li>  
+                        <li>
+                            <div class="form-element__wrap">
+                                <label for="code03" class="font-type-h5-bold">Occp Version</label>
+                                <span  class="form-element__inner input-type">
+                                    <input type="text" class="font-type-h5-regular" value="Occp Version" placeholder="Occp Version를 입력 하세요" id="code03" />
+                                </span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="form-element__wrap">
+                                <label for="code04" class="font-type-h5-bold">Location</label>
+                                <span  class="form-element__inner input-type">
+                                    <input type="text" class="font-type-h5-regular" value="Location" placeholder="Location을 입력 하세요" id="code04" />
+                                </span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="form-element__wrap">
+                                <label for="code05" class="font-type-h5-bold">Vender</label>
+                                <span  class="form-element__inner input-type">
+                                    <input type="text" class="font-type-h5-regular" value="Vender" placeholder="Vender를 입력 하세요" id="code05" />
+                                </span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="form-element__wrap">
+                                <label for="code06" class="font-type-h5-bold">F/W Version</label>
+                                <span  class="form-element__inner input-type">
+                                    <input type="text" class="font-type-h5-regular" value="null" placeholder="F/W Version을 입력 하세요" id="code06" />
+                                </span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="form-element__wrap">
+                                <label for="code07" class="font-type-h5-bold">Model</label>
+                                <span  class="form-element__inner input-type">
+                                    <input type="text" class="font-type-h5-regular" value="null" placeholder="Model을 입력 하세요" id="code07" />
+                                </span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="form-element__wrap">
+                                <label for="code08" class="font-type-h5-bold">F/W 갱신 상태</label>
+                                <span  class="form-element__inner input-type">
+                                    <input type="text" class="font-type-h5-regular" value="null" placeholder="F/W 갱신 상태를 입력 하세요" id="code08" />
+                                </span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="form-element__wrap">
+                                <label for="code09" class="font-type-h5-bold">SerialNumber</label>
+                                <span  class="form-element__inner input-type">
+                                    <input type="text" class="font-type-h5-regular" value="null" placeholder="SerialNumber를 입력 하세요" id="code09" />
+                                </span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="form-element__wrap">
+                                <label for="code10" class="font-type-h5-bold">F/W 갱신 일시</label>
+                                <span  class="form-element__inner input-type">
+                                    <input type="text" class="font-type-h5-regular" value="null" placeholder="F/W 갱신 일시를 입력 하세요" id="code10" />
+                                </span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="form-element__wrap">
+                                <label for="code11" class="font-type-h5-bold">IccID</label>
+                                <span  class="form-element__inner input-type">
+                                    <input type="text" class="font-type-h5-regular" value="null" placeholder="IccID를 입력 하세요" id="code11" />
+                                </span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="form-element__wrap">
+                                <label for="code12" class="font-type-h5-bold">기기 점검 상태</label>
+                                <span  class="form-element__inner input-type">
+                                    <input type="text" class="font-type-h5-regular" value="null" placeholder="기기 점검 상태를 입력 하세요" id="code12" />
+                                </span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="form-element__wrap">
+                                <label for="code13" class="font-type-h5-bold">IMSI</label>
+                                <span  class="form-element__inner input-type">
+                                    <input type="text" class="font-type-h5-regular" value="null" placeholder="IMSI를 입력 하세요" id="code13" />
+                                </span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="form-element__wrap">
+                                <label for="code14" class="font-type-h5-bold">기기 점검 일시</label>
+                                <span  class="form-element__inner input-type">
+                                    <input type="text" class="font-type-h5-regular" value="null" placeholder="기기 점검 일시를 입력 하세요" id="code14" />
+                                </span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="form-element__wrap">
+                                <label for="code15" class="font-type-h5-bold">Meter Type</label>
+                                <span  class="form-element__inner input-type">
+                                    <input type="text" class="font-type-h5-regular" value="null" placeholder="Meter Type을 입력 하세요" id="code15" />
+                                </span>
+                            </div>
+                        </li>                                                                                                                                                                                                                                     
+                    </ul>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <div class="button__wrap gap10 flex-end">
+                    <button type="button" class="btn btn-black close-modal"  onclick="closeModal(event)">닫기</button>
+                </div>
             </div>
         </div>
-        
-        <!-- 모달창 -->
-        <!-- 등록하기 -->
-        <div class="modal__wrap--bg" id="add-charge">
-            <div class="modal__wrap size-large ">
-                <div class="modal-header">
-                    <h3 class="font-type-h3">충전기 등록</h3>
-                    <button type="button" class="btn btn-icon-close close-modal" onclick="closeModal(event)">
-                        <span class="irtext">닫기</span>
-                    </button>
-                </div>
-                <div class="modal-cont">
-                    <form>
-                        <ul class="form-el-list">
-                            <li>
-                                <div class="form-element__wrap">
-                                    <label for="code01" class="font-type-h5-bold">충전기 이름</label>
-                                    <span  class="form-element__inner input-type">
-                                        <input type="text" class="font-type-h5-regular" value="" placeholder="충전기 이름 입력 " id="code01" />
-                                    </span>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="form-element__wrap">
-                                    <label for="code02" class="font-type-h5-bold">충전기 시리얼 번호</label>
-                                    <span  class="form-element__inner input-type">
-                                        <input type="text" class="font-type-h5-regular" value="" placeholder="충전기 시리얼 번호 입력" id="code02" />
-                                    </span>
-                                </div>                                
-                            </li>
+    </div>    
 
-                            <li>
-                                <div class="form-element__wrap">
-                                    <label for="code03" class="font-type-h5-bold">충전기 벤더</label>
-                                    <span  class="form-element__inner input-type">
-                                        <input type="text" class="font-type-h5-regular" value="" placeholder="충전기 벤더 입력" id="code03" />
-                                    </span>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="form-element__wrap">
-                                    <label for="code04" class="font-type-h5-bold">충전기 모델</label>
-                                    <span  class="form-element__inner input-type">
-                                        <input type="text" class="font-type-h5-regular" value="" placeholder="충전기 모델 입력" id="code04" />
-                                    </span>
-                                </div>                                
-                            </li>    
-                            
-                            <li>
-                                <div class="form-element__wrap">
-                                    <label for="code05" class="font-type-h5-bold">컨넥터 수</label>
-                                    <span  class="form-element__inner input-type">
-                                        <input type="text" class="font-type-h5-regular" value="" placeholder="컨넥터 수 입력" id="code05" />
-                                    </span>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="form-element__wrap">
-                                    <label for="code06" class="font-type-h5-bold">컨넥터 타입</label>
-                                    <span  class="form-element__inner select-wrap">
-                                        <select class="font-type-h5-regular">
-                                            <option>AC 1상 (5핀) 완속</option>
-                                            <option>항목2</option>
-                                            <option>항목3</option>
-                                        </select>
-                                    </span>
-                                </div>                                
-                            </li>    
-                            <li>
-                                <div class="form-element__wrap">
-                                    <label for="code07" class="font-type-h5-bold">설치장소</label>
-                                    <span  class="form-element__inner input-type">
-                                        <input type="text" class="font-type-h5-regular" value="" placeholder="설치장소 입력" id="code07" />
-                                    </span>
-                                </div>
-                            </li>
-                        </ul>
-                    </form>
-                </div>
-                <div class="modal-footer">
-                    <div class="button__wrap gap10 flex-end">
-                        <button type="button" class="btn btn-cancel close-modal"  onclick="closeModal(event)">취소</button>
-                        <button type="button" class="btn btn-black btn-add" disabled>등록하기</button>
-                    </div>
-                </div>
-            </div>
-        </div> 
-        <!-- 삭제확인      -->
-        <div class="modal__wrap--bg" id="remove-business">
-            <div class="modal__wrap size-default ">
-                <div class="modal-cont">
-                    <div class="font-type-h3 modal-confirm-msg">선택하신 항목을 삭제하시겠어요?</div>
-                </div>
-                <div class="modal-footer">
-                    <div class="button__wrap gap10 flex-end">
-                        <button type="button" class="btn btn-cancel close-modal"  onclick="closeModal(event)">취소</button>
-                        <button type="button" class="btn btn-black" onclick="deleteRow(_thisParent)">삭제하기</button>
-                    </div>
-                </div>
-            </div>
-        </div>                                   
-        <!-- //모달창 -->
-    </div>   
     <script type="text/javascript" src="../assets/js/ui.js" ></script>
     <!-- // 메뉴 활성화 스크립트  -->
     <script>

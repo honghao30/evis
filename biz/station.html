@@ -100,9 +100,9 @@
                             <td>Evis 직영 비즈니스</td>
                             <td>경기도 성남시 분당구 판교역로2번길 1(백햔동)수정빌딩 1234</td>
                             <td>2024.03.01</td>
-                            <td><a href="#">0001</a></td>
-                            <td><a href="#">0001</a></td>
-                            <td><a href="#">0001</a></td>  
+                            <td><a href="station_manage.html">0001</a></td>
+                            <td><a href="station_user_list.html">0001</a></td>
+                            <td><a href="station_charge.html">0001</a></td>  
                             <td><a href="#">0001</a></td>  
                             <td>
                                 <div class="button__wrap gap10">
@@ -120,9 +120,9 @@
                             <td>Evis 직영 비즈니스</td>
                             <td>경기도 성남시 분당구 판교역로2번길 1(백햔동)수정빌딩 1234</td>
                             <td>2024.03.01</td>
-                            <td><a href="#">0001</a></td>
-                            <td><a href="#">0001</a></td>
-                            <td><a href="#">0001</a></td>  
+                            <td><a href="station_manage.html">0001</a></td>
+                            <td><a href="station_user_list.html">0001</a></td>
+                            <td><a href="station_charge.html">0001</a></td>  
                             <td><a href="#">0001</a></td>
                             <td>
                                 <div class="button__wrap gap10">
@@ -286,7 +286,7 @@
             </div>
         </div>
         <!-- 모달창 -->
-        <!-- 등록하기 -->
+        <!-- 등록 -->
         <div class="modal__wrap--bg" id="add-station">
             <div class="modal__wrap size-default add-staion">
                 <div class="modal-header">
@@ -317,7 +317,7 @@
                                     </div>
                                 </div>
                             </li>
-                            <li class="hide">
+                            <li class="detail-add hide">
                                 <div class="form-element__wrap">
                                     <label for="code04" class="font-type-h5-bold">상세주소</label>
                                     <span  class="form-element__inner input-type">
@@ -327,7 +327,7 @@
                             </li>                            
                         </ul>
                     </form>
-                    <div class="address-container">
+                    <div class="address-container exsample-list">
                         <dl>
                             <dt>· 도로명 + 건물번호</dt>
                             <dd>예) 올림픽로 35가길, 불정로 6</dd>
@@ -339,7 +339,7 @@
                 <div class="modal-footer">
                     <div class="button__wrap gap10 flex-end">
                         <button type="button" class="btn btn-cancel close-modal"  onclick="closeModal(event)">취소</button>
-                        <button type="button" class="btn btn-black">등록하기</button>
+                        <button type="button" class="btn btn-black">등록</button>
                     </div>
                 </div>
             </div>
@@ -374,13 +374,13 @@
                                 <div class="tit">서울 특별시 송파 올림픽로 35길(신천동)</div>
                                 <div class="add"><span class="label-default">지번</span> 특별시 송파구 신천동 20-6 파크리오</div>
                                 <div class="add"><span class="label-default">우편번호</span> 05507</div>
-                                <button type="button" class="btn btn-select-add">선택</button>
+                                <button type="button" class="btn btn-select-add" onclick="selectPost(event)">선택</button>
                             </li>
                             <li>
                                 <div class="tit">서울 특별시 송파 올림픽로 35길(신천동)</div>
                                 <div class="add"><span class="label-default">지번</span> 특별시 송파구 신천동 20-6 파크리오</div>
                                 <div class="add"><span class="label-default">우편번호</span> 05507</div>
-                                <button type="button" class="btn btn-select-add">선택</button>
+                                <button type="button" class="btn btn-select-add" onclick="selectPost(event)">선택</button>
                             </li>
                             <li>
                                 <div class="tit">서울 특별시 송파 올림픽로 35길(신천동)</div>
@@ -410,7 +410,7 @@
         <div class="modal__wrap--bg" id="edit-station">
             <div class="modal__wrap size-default ">
                 <div class="modal-header">
-                    <h3 class="font-type-h3">관리자 등록하기</h3>
+                    <h3 class="font-type-h3">관리자 등록</h3>
                     <button type="button" class="btn btn-icon-close close-modal" onclick="closeModal(event)">
                         <span class="irtext">닫기</span>
                     </button>
@@ -495,7 +495,7 @@
                 <div class="modal-footer">
                     <div class="button__wrap gap10 flex-end">
                         <button type="button" class="btn btn-cancel close-modal"  onclick="closeModal(event)">취소</button>
-                        <button type="button" class="btn btn-black" onclick="deleteRow(_thisParent)">삭제하기</button>
+                        <button type="button" class="btn btn-black" onclick="deleteRow(_thisParent)">삭제</button>
                     </div>
                 </div>
             </div>
@@ -522,6 +522,12 @@
             _this = event.target;            
             document.getElementById('address-form').value = ''
             _this.classList.add('hide')
+        }
+        const selectPost = event => {
+            document.querySelector('.add-staion').classList.remove('hide');
+            document.querySelector('.address-search').classList.add('hide');
+            document.querySelector('.detail-add').classList.remove('hide');
+            document.querySelector('.exsample-list').classList.add('hide');
         }
     </script>
     <script type="text/javascript" src="../assets/js/ui.js" ></script>    

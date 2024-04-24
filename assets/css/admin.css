@@ -159,10 +159,11 @@
 .full-between-area {width: 100%;display: flex; justify-content: space-between;margin-top: 16px;}
 .full-between-area .msg {font-size: 20px;line-height: 24px;color:#5A5C5F;display: flex;align-items: flex-end;padding-bottom: 5px;}
 .full-between-area .msg:only-child {padding-top: 15px;}
+.full-between-area .msg strong {margin-left: 4px;}
 .full-between-area .location {color:#909293;}
 .full-between-area .location strong {color:#222;}
-.staion-data {display: flex;gap: 16px;align-items: center;}
-.staion-data .data-info {width: 167px;}
+.staion-data {display: flex;gap: 32px;align-items: center;}
+.staion-data .data-info {min-width: 167px;flex-basis: auto;}
 .staion-data .data-info strong {margin-left:24px;}
 
 .station-board {display: flex;margin: 20px 0 0px;justify-content: space-between;align-items: center;height: 140px; padding: 0 40px;background-color: #fff;border-radius: 8px;box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, 0.05);}
