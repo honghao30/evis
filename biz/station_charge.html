@@ -42,18 +42,18 @@
         <!-- // 헤더 -->
         <div class="admin__content">
             <div class="full-between-area">
-                <h2 class="font-type-h2"><span class="color-primary">스테이션1</span>의 관리자</h2>
+                <h2 class="font-type-h2"><span class="color-primary">스테이션1</span>의 충전기</h2>
                 <p class="font-type-h6-regular location">
-                    홈 > 스테이션 1 > <strong>관리자</strong>
+                    홈 > 스테이션 1 > <strong>충전기</strong>
                 </p>
             </div>                        
             <div class="station-board">
                 <div class="staion-name">
                     <div class="staion-logo"><img src="../assets/images/admin/big-logo.svg" alt="" /></div>
                     <div class="staion-info">
-                        <p class="font-type-h3 color-black">스테이션 1</p>
-                        <p class="sub-info"><span>경기도 성남시 분당구 판교역로2번길 1 </span> </p>
-                        <p class="sub-info"><span>등록일</span> 2024.03.01 </p>
+                        <p class="font-type-h3 color-black">스테이션1</p>
+                        <p class="sub-info">경기도 성남시 분당구 판교역로2번길</p>
+                        <p class="sub-info">등록일 <strong>2024.03.01</strong> </p>
                     </div>
                 </div>
                 <div class="staion-data">
@@ -65,44 +65,149 @@
             </div>
             <div class="full-between-area">
                 <div class="msg">
-                    현재 <strong>1</strong>개의 <strong>관리자</strong>가 등록되어 있습니다.
-                </div>
+                    현재 <strong>1</strong>개의 <strong>충전기</strong>가 등록되어 있습니다.
+                </div>  
+                <div class="button__wrap">
+                    <button type="button" class="btn btn-black icon-plus open-modal" modal-id="add-charge" onclick="openModal(event)">충전기 등록</button>
+                </div>                             
             </div>
             <div class="table__wrap">                
                 <table class="table table-list">
                     <colgroup>
                         <col width="10%" />
-                        <col width="15%" />
-                        <col width="" />
-                        <col width="10%" />
-                        <col width="10%" />
-                        <col width="10%" />
-                        <col width="10%" />
+                        <col width="12%" />
+                        <col width="12%" />
+                        <col width="12%" />
+                        <col width="12%" />
+                        <col width="12%" />
+                        <col width="" />                                               
+                        <col width="10%" /> 
                     </colgroup>
                     <thead>
                         <tr>
                             <th scope="col">번호</th>
-                            <th scope="col">관리자 ID</th>
-                            <th scope="col">역할</th>
-                            <th scope="col">관리범주</th>
-                            <th scope="col">연락처</th>
-                            <th scope="col">이메일</th>
-                            <th scope="col">등록일</th>
+                            <th scope="col">Serial</th>
+                            <th scope="col">Vender</th>
+                            <th scope="col">Model</th>
+                            <th scope="col">컨넥터타입</th>
+                            <th scope="col">컨넥터 수</th>
+                            <th scope="col">설치장소</th>                                                       
+                            <th scope="col"></th>   
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td>1</td>
-                            <td>Admin1</td>
-                            <td>Station Manager</td>
-                            <td>스테이션1</td>
-                            <td>010-0000-0000</td>
-                            <td>asdffg@gmail.com</td>
-                            <td>2024.03.01</td>                              
-                        </tr>                                                                                                                                                                                              
+                            <td><a href="#" class="noline">CP-001</a></td>
+                            <td>LG456789876</td>
+                            <td>Samsung</td>
+                            <td>SSEVS1.5-1</td>
+                            <td>
+                                <span class="flag type1">AC단상</span>
+                            </td>
+                            <td>01</td>
+                            <td>1주차장 지하1층 벽면</td>                                
+                            <td>
+                                <div class="button__wrap gap10">
+                                    <a href="#" class="btn btn-icon-remove" modal-id="remove-business" onclick="confirmMsg(event)">
+                                        <span class="irtext">삭제</span>
+                                    </a>                      
+                                </div> 
+                            </td>    
+                        </tr>    
+                        <tr>
+                            <td><a href="#" class="noline" modal-id="charge-info"  onclick="openModal(event)">CP-001</a></td>
+                            <td>LG456789876</td>
+                            <td>Samsung</td>
+                            <td>SSEVS1.5-1</td>
+                            <td>
+                                <span class="flag type2">CCS1</span>
+                            </td>
+                            <td>01</td>
+                            <td>1주차장 지하1층 벽면</td> 
+                            <td>
+                                <div class="button__wrap gap10">
+                                    <a href="#" class="btn btn-icon-remove" modal-id="remove-business" onclick="confirmMsg(event)">
+                                        <span class="irtext">삭제</span>
+                                    </a>                      
+                                </div> 
+                            </td>                                                                          
+                        </tr>
+                        <tr>
+                            <td><a href="#" class="noline">CP-001</a></td>
+                            <td>LG456789876</td>
+                            <td>Samsung</td>
+                            <td>SSEVS1.5-1</td>
+                            <td>
+                                <span class="flag type3">차데모</span>
+                            </td>
+                            <td>01</td>
+                            <td>1주차장 지하1층 벽면</td>  
+                            <td>
+                                <div class="button__wrap gap10">
+                                    <a href="#" class="btn btn-icon-remove" modal-id="remove-business" onclick="confirmMsg(event)">
+                                        <span class="irtext">삭제</span>
+                                    </a>                      
+                                </div> 
+                            </td>                                                                                      
+                        </tr>
+                        <tr>
+                            <td><a href="#" class="noline">CP-001</a></td>
+                            <td>LG456789876</td>
+                            <td>Samsung</td>
+                            <td>SSEVS1.5-1</td>
+                            <td>
+                                <span class="flag type4">AC단상</span>
+                            </td>
+                            <td>01</td>
+                            <td>1주차장 지하1층 벽면</td> 
+                            <td>
+                                <div class="button__wrap gap10">
+                                    <a href="#" class="btn btn-icon-remove" modal-id="remove-business" onclick="confirmMsg(event)">
+                                        <span class="irtext">삭제</span>
+                                    </a>                      
+                                </div> 
+                            </td>                                                                                        
+                        </tr> 
+                        <tr>
+                            <td><a href="#" class="noline">CP-001</a></td>
+                            <td>LG456789876</td>
+                            <td>Samsung</td>
+                            <td>SSEVS1.5-1</td>
+                            <td>
+                                <span class="flag type5">CCS2</span>
+                            </td>
+                            <td>01</td>
+                            <td>1주차장 지하1층 벽면</td>
+                            <td>
+                                <div class="button__wrap gap10">
+                                    <a href="#" class="btn btn-icon-remove" modal-id="remove-business" onclick="confirmMsg(event)">
+                                        <span class="irtext">삭제</span>
+                                    </a>                      
+                                </div> 
+                            </td>                                
+                        </tr>
+                        <tr>
+                            <td><a href="#" class="noline">CP-001</a></td>
+                            <td>LG456789876</td>
+                            <td>Samsung</td>
+                            <td>SSEVS1.5-1</td>
+                            <td>
+                                <span class="flag type6">테슬라</span>
+                            </td>
+                            <td>01</td>
+                            <td>1주차장 지하1층 벽면</td>  
+                            <td>
+                                <div class="button__wrap gap10">
+                                    <a href="#" class="btn btn-icon-remove" modal-id="remove-business" onclick="confirmMsg(event)">
+                                        <span class="irtext">삭제</span>
+                                    </a>                      
+                                </div> 
+                            </td>                                
+                        </tr>                         
                     </tbody>
                 </table>
             </div>
+            
             <div class="pagination">
                 <a href="#" class="btn-first"><span class="irtext">처음으로</span></a>
                 <a href="#" class="btn-prev"><span class="irtext">이전</span></a>
@@ -111,6 +216,105 @@
             </div>
         </div>
     </div>   
+        <!-- 모달창 -->
+        <!-- 등록 -->
+        <div class="modal__wrap--bg" id="add-charge">
+            <div class="modal__wrap size-default ">
+                <div class="modal-header">
+                    <h3 class="font-type-h3">충전기 등록</h3>
+                    <button type="button" class="btn btn-icon-close close-modal" onclick="closeModal(event)">
+                        <span class="irtext">닫기</span>
+                    </button>
+                </div>
+                <div class="modal-cont">
+                    <form>
+                        <ul class="form-el-list">
+                            <li>
+                                <div class="form-element__wrap">
+                                    <label for="code01" class="font-type-h5-bold">충전기 이름</label>
+                                    <span  class="form-element__inner input-type">
+                                        <input type="text" class="font-type-h5-regular" value="" placeholder="충전기 이름 입력" id="code01" />
+                                    </span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="form-element__wrap">
+                                    <label for="code02" class="font-type-h5-bold">충전기 시리얼 번호</label>
+                                    <span  class="form-element__inner input-type">
+                                        <input type="text" class="font-type-h5-regular" value="" placeholder="충전기 시리얼 번호 입력" id="code02" />
+                                    </span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="form-element__wrap">
+                                    <label for="code03" class="font-type-h5-bold">충전기 벤더</label>
+                                    <span  class="form-element__inner input-type">
+                                        <input type="text" class="font-type-h5-regular" value="" placeholder="충전기 벤더 입력" id="code03" />
+                                    </span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="form-element__wrap">
+                                    <label for="code04" class="font-type-h5-bold">충전기 모델</label>
+                                    <span  class="form-element__inner input-type">
+                                        <input type="text" class="font-type-h5-regular" value="" placeholder="충전기 모델 입력" id="code04" />
+                                    </span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="form-element__wrap">
+                                    <label for="code05" class="font-type-h5-bold">컨넥터 수</label>
+                                    <span  class="form-element__inner input-type">
+                                        <input type="text" class="font-type-h5-regular" value="" placeholder="컨넥터 수 입력" id="code05" />
+                                    </span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="form-element__wrap">
+                                    <label for="code06" class="font-type-h5-bold">컨넥터 타입</label>
+                                    <span  class="form-element__inner select-wrap">
+                                        <select class="font-type-h5-regular" id="code06">
+                                            <option>AC 1상 (5핀) 완속</option>
+                                            <option>항목2</option>
+                                            <option>항목3</option>
+                                        </select>
+                                    </span>
+                                </div>
+                            </li>                              
+                            <li>
+                                <div class="form-element__wrap">
+                                    <label for="code07" class="font-type-h5-bold">설치장소</label>
+                                    <span  class="form-element__inner input-type">
+                                        <input type="text" class="font-type-h5-regular" value="" placeholder="설치장소 입력" id="code07" />
+                                    </span>
+                                </div>
+                            </li>                                                                                                             
+                        </ul>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <div class="button__wrap gap10 flex-end">
+                        <button type="button" class="btn btn-cancel close-modal"  onclick="closeModal(event)">취소</button>
+                        <button type="button" class="btn btn-black btn-add" disabled>등록하기</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 메시지 창 -->
+        <div class="modal__wrap--bg" id="remove-business">
+            <div class="modal__wrap size-default ">
+                <div class="modal-cont">
+                    <div class="font-type-h3 modal-confirm-msg">선택하신 항목을 삭제하시겠어요?</div>
+                </div>
+                <div class="modal-footer">
+                    <div class="button__wrap gap10 flex-end">
+                        <button type="button" class="btn btn-cancel close-modal"  onclick="closeModal(event)">취소</button>
+                        <button type="button" class="btn btn-black" onclick="deleteRow(_thisParent)">삭제</button>
+                    </div>
+                </div>
+            </div>
+        </div>                
+        <!-- //모달창 -->    
     <script type="text/javascript" src="../assets/js/ui.js" ></script>    
 </body>
 </html>

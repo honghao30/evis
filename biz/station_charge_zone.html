@@ -17,12 +17,9 @@
                     </a>
                 </h1>
                 <ul class="admin-menu">
-                    <li>
+                    <li class="is-active">
                         <a href="main.html">홈</a>
-                    </li>
-                    <li>
-                        <a href="manage.html">관리자</a>
-                    </li>                     
+                    </li>                  
                 </ul>
             </div>
             <!-- //헤더 left -->
@@ -194,16 +191,7 @@
             </div>
         </div>
     </div>          
-    <!-- //모달창 -->
-    <script type="text/javascript" src="../assets/js/ui.js" ></script>
-    <!-- // 메뉴 활성화 스크립트  -->
-    <script>
-        const currentPage = window.location.href;
-        if (currentPage.indexOf("manage") !== -1) {
-            document.querySelector('.admin-menu li:nth-child(2)').classList.add('is-active');            
-        } else {
-            document.querySelector('.admin-menu li:nth-child(1)').classList.add('is-active');
-        }
-    </script>
+    <!-- //모달창 -->              
+    <script type="text/javascript" src="../assets/js/ui.js" ></script>    
 </body>
 </html>
