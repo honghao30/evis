@@ -85,6 +85,134 @@
             </div>
         </div>
     </div>   
+    <!-- 모달창 -->
+    <!-- 비밀번호 확인 -->
+    <div class="modal__wrap--bg" id="check-userInfo">
+        <div class="modal__wrap size-default ">
+            <div class="modal-header">
+                <h3 class="font-type-h3">정보수정을 위한 비밀번호 재확인</h3>
+                <button type="button" class="btn btn-icon-close close-modal" onclick="closeModal(event)">
+                    <span class="irtext">닫기</span>
+                </button>
+            </div>
+            <div class="modal-cont">
+                <form>
+                    <ul class="form-el-list">
+                        <li>
+                            <div class="form-element__wrap">
+                                <label for="code01" class="font-type-h5-bold">관리자 ID</label>
+                                <span  class="form-element__inner input-type">
+                                    <input type="text" class="font-type-h5-regular" value="admin" placeholder="ID 입력" id="code01" />
+                                </span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="form-element__wrap">
+                                <label for="code02" class="font-type-h5-bold">기존 비밀번호</label>
+                                <span  class="form-element__inner input-type">
+                                    <input type="password" class="font-type-h5-regular" value="12234" placeholder="비밀번호 입력" id="code02" />
+                                </span>
+                            </div>
+                        </li>                                                                          
+                    </ul>
+                </form>
+                <p class="error-msg">비밀번호를 다시 확인해주세요</p>
+            </div>
+            <div class="modal-footer">
+                <div class="button__wrap gap10 flex-end">
+                    <button type="button" class="btn btn-cancel close-modal"  onclick="closeModal(event)">취소</button>
+                    <button type="button" class="btn btn-black">확인</button>
+                </div>
+            </div>
+        </div>
+    </div>       
+    <!-- 등록 -->
+    <div class="modal__wrap--bg" id="change-userInfo">
+        <div class="modal__wrap size-default ">
+            <div class="modal-header">
+                <h3 class="font-type-h3">관리자 정보수정</h3>
+                <button type="button" class="btn btn-icon-close close-modal" onclick="closeModal(event)">
+                    <span class="irtext">닫기</span>
+                </button>
+            </div>
+            <div class="modal-cont">
+                <form>
+                    <ul class="form-el-list">
+                        <li>
+                            <div class="form-element__wrap">
+                                <label for="code01" class="font-type-h5-bold">관리자 ID</label>
+                                <span  class="form-element__inner input-type">
+                                    <input type="text" class="font-type-h5-regular" value="admin" placeholder="ID 입력" id="code01" />
+                                </span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="form-element__wrap">
+                                <label for="code02" class="font-type-h5-bold">비밀번호</label>
+                                <span  class="form-element__inner input-type">
+                                    <input type="password" class="font-type-h5-regular" value="12234" placeholder="비밀번호 입력" id="code02" />
+                                </span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="form-element__wrap">
+                                <label for="code03" class="font-type-h5-bold">비밀번호 확인</label>
+                                <span  class="form-element__inner input-type">
+                                    <input type="password" class="font-type-h5-regular" value="12234" placeholder="비밀번호 재입력" id="code03" />
+                                </span>
+                            </div>
+                        </li>         
+                        <li>
+                            <div class="form-element__wrap">
+                                <label for="code03" class="font-type-h5-bold">연락처</label>
+                                <span  class="form-element__inner input-type">
+                                    <input type="text" class="font-type-h5-regular" value="" placeholder="연락처를 입력 하세요" id="code03" />
+                                </span>
+                            </div>                                
+                        </li>
+                        <li>
+                            <div class="form-element__wrap">
+                                <label for="code04" class="font-type-h5-bold">이메일</label>
+                                <span  class="form-element__inner input-type">
+                                    <input type="text" class="font-type-h5-regular" value="" placeholder="이메일을 입력 하세요" id="code04" />
+                                </span>
+                            </div>                                
+                        </li>                                                                        
+                        <li>
+                            <div class="form-element__wrap">
+                                <label for="code02" class="font-type-h5-bold">관리자 역할</label>
+                                <span  class="form-element__inner select-wrap">
+                                    <select class="font-type-h5-regular" id="code02">
+                                        <option>Super Manager</option>
+                                        <option>Super Manager</option>
+                                        <option>Super Manager</option>
+                                    </select>
+                                </span>
+                            </div>                                
+                        </li>
+                        <li>
+                            <div class="form-element__wrap">
+                                <label for="code05" class="font-type-h5-bold">관리범주 선택</label>
+                                <span  class="form-element__inner select-wrap">
+                                    <select class="font-type-h5-regular" id="code05">
+                                        <option>Evis 직영 비즈니스</option>
+                                        <option>Evis 직영 비즈니스</option>
+                                        <option>Evis 직영 비즈니스</option>
+                                    </select>
+                                </span>
+                            </div>                                
+                        </li>                                                                                  
+                    </ul>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <div class="button__wrap gap10 flex-end">
+                    <button type="button" class="btn btn-cancel close-modal"  onclick="closeModal(event)">취소</button>
+                    <button type="button" class="btn btn-black">등록</button>
+                </div>
+            </div>
+        </div>
+    </div>     
     <script type="text/javascript" src="../assets/js/ui.js" ></script>    
 </body>
 </html>
