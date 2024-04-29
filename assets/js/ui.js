@@ -82,6 +82,14 @@ document.addEventListener("click", function(e) {
 });
 
 const clearButton = document.getElementById('address-form');
-clearButton.addEventListener('input', () => {
+clearButton && clearButton.addEventListener('input', () => {
     document.querySelector('.btn-icon-clear-value').classList.remove('hide');
 })
+//비밀번호 보이고
+const togglePw = (event) => {
+    const target = event.target;
+    target.classList.toggle('is-active');
+
+    const pwInput = target.previousElementSibling;
+    pwInput.type = (pwInput.type === 'password') ? 'text' : 'password';
+};

@@ -112,35 +112,6 @@
     line-height: 20px;
 }
 
-/* 체크박스 */
-.checkbox {
-    display: flex;
-    align-items: center;
-}
-.checkbox input{display:none;}
-.checkbox input + label{cursor:pointer;}  
-.checkbox input + label:before{
-    content:"";
-    display:inline-block;
-    width:18px;
-    height:18px;
-    border:1px solid #222;
-    border-radius: 1px;
-    vertical-align:middle;
-    margin-right: 5px;
-}
-
-.checkbox input:checked + label:before{
-    content:"✔";
-    width:18px;
-    height:18px;
-    font-size: 13px;
-    text-align: center;
-    border:1px solid #222;
-    background-color: #222;
-    color:#fff;
-}
-
 /* 레이아웃 - 헤더 */
 .adm-wrap {width: 100%;}
 .header {width:auto;height:72px;padding: 0 32px;background-color: #35AD68;display:flex;align-items: center; justify-content:space-between;}
@@ -168,8 +139,8 @@
 
 .station-board {display: flex;margin: 20px 0 0px;justify-content: space-between;align-items: center;height: 140px; padding: 0 40px;background-color: #fff;border-radius: 8px;box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, 0.05);}
 .station-board .staion-name {display: flex;align-items: center;gap:24px;}
-.station-board .staion-name .sub-info {margin-top: 6px;font-size: 12px;color:#5A5C5F;}
-.station-board .staion-name .sub-info span {margin-left: 12px;color:#AFB5BC;}
+.station-board .staion-name .sub-info {margin-top: 6px;font-size: 16px;color:#5A5C5F;}
+.station-board .staion-name .sub-info span {color:#AFB5BC;}
 
 .page-subtitle {margin-top: 40px;}
 
@@ -198,3 +169,27 @@
 .address-container li .add .label-default {border: 1px solid #cfd4da;padding: 4px 6px;width: 33px;height: 22px;margin-right: 6px;font-size: 12px;color:#909293;font-weight: 500;line-height: 14px;}
 .address-container li .btn-select-add {position: absolute;right: 0;top: 16px;}
 .hide {display: none;}
+
+/* 스테이션 메인 */
+.box-category__wrap {width: 100%;max-width: 1280px;display: flex;align-items: center;justify-content: center;gap: 16px;margin: 100px auto 0;}
+.box-category__wrap .category__item {width: calc(100% / 4);height: 360px;border-radius: 32px;color:#fff;overflow: hidden;position: relative;display: flex;align-items: center; flex-direction: column;}
+.box-category__wrap .category__item .cate-title {font-size: 28px;font-weight: 700;line-height: 33px;padding-top: 70px;}
+.box-category__wrap .category__item a {display: block;position: absolute;left:0;bottom:0;text-align: center;width: 100%;height: 70px;line-height: 70px; background: rgba(0, 0, 0, 0.1);font-size: 20px;font-weight: 700;}
+.box-category__wrap .category__item.item01 {background-color: #35AD68;}
+.box-category__wrap .category__item.item02 {background-color: #0D6EFD;}
+.box-category__wrap .category__item.item03 {background-color: #984ED2;}
+.box-category__wrap .category__item.item04 {background-color: #FF7A00;}
+
+.set-email__wrap .description {margin-top: 20px;}
+.set-email__wrap .email-config {background-color: #fff;border-radius: 8px;margin: 20px 0;padding: 40px;}
+.set-email__wrap .email-config form {max-width: 640px;}
+.set-email__wrap .btn-black {width: 368px;}
+.set-email__wrap .email-config form .btn-password-view {margin-right: 10px;}
+
+.set-charge__wrap ul {display: flex;flex-direction: column;gap: 10px;margin:20px 0;}
+.set-charge__wrap ul li {display: flex;justify-content: space-between;background-color: #fff;border-radius: 8px;padding: 0 60px 0 40px;height: 80px;align-items: center;}
+.set-charge__wrap ul li .item {font-size: 20px;font-weight: 500;line-height: 23px;color:#222;position: relative;padding-left: 10px;}
+.set-charge__wrap ul li .item::before {content: '';display: block;position: absolute;left:0;top: 50%;transform: translateY(-50%); width: 3px;height: 3px;border-radius: 50%;background-color: #222;}
+.set-charge__wrap ul li .settting-controll {width:200px;display: flex;align-items: center;justify-content: space-between;}
+.set-charge__wrap ul li .settting-controll .radio-box {width: 100%;display: flex;align-items: center;justify-content: space-between;}
+.set-charge__wrap .btn-black {width: 368px;}

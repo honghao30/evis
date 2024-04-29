@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">    
+    <title>이비스프라임</title>    
+    <link rel="icon" type="image/svg+xml" href="" />
+    <link rel="stylesheet" href="../assets/css/common.css" />
+    <link rel="stylesheet" href="../assets/css/admin.css" />
+</head>
+<body>
+    <div class="adm-wrap">
+        <div class="header">
+            <div class="header__nav--left">
+                <h1 class="logo">
+                    <a href="/">
+                        <img src="../assets/images/admin/logo-wt.svg" alt="Evis Prime" />
+                    </a>
+                </h1>
+                <ul class="admin-menu">
+                    <li class="is-active">
+                        <a href="main.html">홈</a>
+                    </li>                  
+                </ul>
+            </div>
+            <!-- //헤더 left -->
+            <ul class="header_util--right">
+                <li>
+                    <a href="#">로그아웃</a>
+                </li>
+                <li>
+                    <a href="#" class="btn btn-icon-porson">
+                        <span class="irtext">정보</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="btn btn-icon-setting">
+                        <span class="irtext">설정</span>
+                    </a>
+                </li>                              
+            </ul>
+        </div>
+        <!-- // 헤더 -->
+        <div class="admin__content">
+            <h2 class="font-type-h2">이메일 서버 설정</h2>
+            <div class="set-email__wrap">
+                <p class="font-type-h4-middle color-black">이메일 서버 정보를 입력해주세요.</p>
+                <div class="email-config">
+                    <form>
+                        <ul class="form-el-list">
+                            <li>
+                                <div class="form-element__wrap">
+                                    <label for="code01" class="font-type-h5-bold">Protocol</label>
+                                    <span  class="form-element__inner input-type">
+                                        <input type="text" class="font-type-h5-regular" value="smtp" disabled placeholder="Protocol을 입력 하세요" id="code01" />
+                                    </span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="form-element__wrap">
+                                    <label for="code02" class="font-type-h5-bold">Host</label>
+                                    <span  class="form-element__inner select-wrap">
+                                        <select class="font-type-h5-regular"  id="code02">
+                                            <option>항목1</option>
+                                            <option>항목2</option>
+                                            <option>항목3</option>
+                                        </select>
+                                    </span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="form-element__wrap">
+                                    <label for="code04" class="font-type-h5-bold">Port</label>
+                                    <span  class="form-element__inner input-type">
+                                        <input type="text" class="font-type-h5-regular" value="33" placeholder="Port를 입력 하세요" id="code04" />
+                                    </span>
+                                </div>
+                            </li>                            
+                            <li>
+                                <div class="form-element__wrap">
+                                    <label for="code05" class="font-type-h5-bold">From</label>
+                                    <span  class="form-element__inner input-type">
+                                        <input type="text" class="font-type-h5-regular" value="From" placeholder="From을 입력 하세요" id="code05" />
+                                    </span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="form-element__wrap">
+                                    <label for="code06" class="font-type-h5-bold">Password</label>
+                                    <span  class="form-element__inner input-type">
+                                        <input type="password" class="font-type-h5-regular" value="12345" placeholder="Password을 입력 하세요" id="code06" />
+                                        <button type="button" class="btn btn-password-view" onclick="togglePw(event)"><span class="irtext">비밀번호보기</span></button>
+                                    </span>
+                                </div>
+                            </li>                            
+                        </ul>
+                    </form>
+                </div>
+                <p class="font-type-h5-regular color-gray01 notice-text">관리자 등록시 임시 비밀번호와 충전기 상태 정보등을 통보하려는 목적입니다. 이메일 서버의 포로토콜은 오직 SMTP만 지원됩니다.</p>
+                <div class="button__wrap flex-end">
+                    <button type="button" class="btn btn-black">설정하기</button>
+                </div>
+            </div>
+        </div>
+    </div>   
+    <script type="text/javascript" src="../assets/js/ui.js" ></script>    
+</body>
+</html>
