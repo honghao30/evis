@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">    
+    <title>이비스프라임</title>    
+    <link rel="icon" type="image/svg+xml" href="" />
+    <link rel="stylesheet" href="../assets/css/common.css" />
+    <link rel="stylesheet" href="../assets/css/admin.css" />
+</head>
+<body>
+    <div class="adm-wrap">
+        <div class="header">
+            <div class="header__nav--left">
+                <h1 class="logo">
+                    <a href="/">
+                        <img src="../assets/images/admin/logo-wt.svg" alt="Evis Prime" />
+                    </a>
+                </h1>
+                <ul class="admin-menu">
+                    <li class="is-active">
+                        <a href="main.html">홈</a>
+                    </li>                  
+                </ul>                
+            </div>
+            <!-- //헤더 left -->
+            <ul class="header_util--right">
+                <li>
+                    <a href="#">로그아웃</a>
+                </li>
+                <li>
+                    <a href="#" class="btn btn-icon-porson">
+                        <span class="irtext">정보</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="btn btn-icon-setting">
+                        <span class="irtext">설정</span>
+                    </a>
+                </li>                              
+            </ul>
+        </div>
+        <!-- // 헤더 -->
+        <div class="admin__content">
+            <div class="full-between-area">
+                <h2 class="font-type-h2">충전기 <span class="color-primary">CP-001</span>의 정보</h2>
+                <p class="font-type-h6-regular location">
+                    홈  >  충전기 > <strong>CP-001의 정보</strong>
+                </p>
+            </div>            
+            <div class="station-board">
+                <div class="staion-name">                    
+                    <div class="staion-info">
+                        <p class="font-type-h3 color-black">CP-001 <span class="font-type-h6-regular color-black">V1.6</span></p>
+                        <p class="sub-info"><span>Model</span> LG-H100 </p>
+                        <p class="sub-info"><span>Serial number</span> LG465443433 </p>
+                        <p class="sub-info"><span>Location</span> 1주차장 지하1층 좌측 벽면 </p>
+                    </div>
+                </div>
+                <div class="staion-data two-rows">
+                    <dl>
+                        <dt>Vender</dt>
+                        <dd>LG</dd>
+                        <dt>IccID</dt>
+                        <dd>null</dd>
+                        <dt>IMSI</dt>
+                        <dd>null</dd>         
+                        <dt>Meter type</dt>
+                        <dd>null</dd>      
+                        <dt>Meter Serial</dt>
+                        <dd>null</dd>                                                                                      
+                    </dl>
+                    <dl>
+                        <dt>F/W Version</dt>
+                        <dd>null</dd>
+                        <dt>F/W 갱신상태</dt>
+                        <dd>null</dd>
+                        <dt>F/W 갱신일시</dt>
+                        <dd>null</dd>         
+                        <dt>기기점검 상태</dt>
+                        <dd>null</dd>      
+                        <dt>기기 점검일시</dt>
+                        <dd>null</dd>                                                                                      
+                    </dl>
+                </div>
+            </div>  
+            <div class="content__wrap-cp">
+                <div class="full-between-area">
+                    <h2 class="font-type-h2">충전기 <span class="color-primary">CP-001</span> 제어</h2>
+                </div> 
+                <div class="cp-wrap__two-col">
+                    <div class="left-handler active">
+                        <form>
+                            <ul class="form-el-list">
+                                <li>
+                                    <div class="form-element__wrap">
+                                        <label for="code01" class="font-type-h5-bold">기본제어 (100)</label>
+                                        <span  class="form-element__inner select-wrap">
+                                            <select class="font-type-h5-regular">
+                                                <option>Change Availability</option>
+                                                <option>Change Availability</option>
+                                                <option>Change Availability</option>
+                                            </select>
+                                        </span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="form-element__wrap">
+                                        <label for="code02" class="font-type-h5-bold">리모터 충전 (100)</label>
+                                        <span  class="form-element__inner select-wrap">
+                                            <select class="font-type-h5-regular">
+                                                <option>Remote Start Transaction</option>
+                                                <option>Remote Start Transaction</option>
+                                                <option>Remote Start Transaction</option>
+                                            </select>
+                                        </span>
+                                    </div>
+                                </li>                        
+                                <li>
+                                    <div class="form-element__wrap">
+                                        <label for="code03" class="font-type-h5-bold">충전기 정보 가져오기 (100)</label>
+                                        <span  class="form-element__inner select-wrap">
+                                            <select class="font-type-h5-regular">
+                                                <option>Get Diagnostics</option>
+                                                <option>Get Diagnostics</option>
+                                                <option>Get Diagnostics</option>
+                                            </select>
+                                        </span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </form>
+                    </div>
+                    <!-- //left select -->
+                    <div class="right-display disable">
+                        <form>
+                            <ul class="form-el-list">
+                                <li>
+                                    <div class="form-element__wrap">
+                                        <label for="code01" class="font-type-h5-bold">충전기 컨넥터를 선택하세요 (100)</label>
+                                        <span  class="form-element__inner select-wrap">
+                                            <select class="font-type-h5-regular" id="code01" disabled>
+                                                <option>모든 커텍트</option>
+                                                <option>Change Availability</option>
+                                                <option>Change Availability</option>
+                                            </select>
+                                        </span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="form-element__wrap">
+                                        <label for="code02" class="font-type-h5-bold">충전기 가용성을 선택해 주세요 (100)</label>
+                                        <span  class="form-element__inner select-wrap">
+                                            <select class="font-type-h5-regular" id="code02"  disabled>
+                                                <option>사용하지 않도록 설정</option>
+                                                <option>Remote Start Transaction</option>
+                                                <option>Remote Start Transaction</option>
+                                            </select>
+                                        </span>
+                                    </div>
+                                </li>                        
+                            </ul>
+                        </form>
+                    </div>
+                    <!-- //right display --> 
+                </div>
+            </div>   
+            <div class="handle-case-bottom">
+                <div class="display-msg">
+                    제어 할 항목을 선택 하세요
+                </div>
+                <div class="button__wrap">
+                    <button type="button" class="btn btn-black btn-process" modal-id="run-process" onclick="openModal(event)">실행하기</button>
+                </div>
+                <!-- disabled -->
+            </div>
+        </div>
+    </div>   
+    <!-- 모달창 -->
+    <!-- 비밀번호 확인 -->
+    <div class="modal__wrap--bg" id="run-process">
+        <div class="modal__wrap size-default ">
+            <div class="modal-cont">
+                <div class="font-type-h3 color-black">선택하신 항목을 삭제하시겠어요?</div>
+                <div class="process__wrap">
+                    <div class="process__inner"></div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <div class="button__wrap gap10 flex-end">                    
+                    <button type="button" class="btn btn-black close-modal"  onclick="closeModal(event)">확인</button>
+                </div>
+            </div>
+        </div>
+    </div>        
+    <script type="text/javascript" src="../assets/js/ui.js" ></script>    
+</body>
+</html>
