@@ -88,6 +88,7 @@
 .form-element__wrap .form-element__inner input::placeholder,
 .form-element__wrap .form-element__inner textarea::placeholder {font-size: 18px;font-weight: 400;line-height: 21px;color:#AFB5BC;}
 .form-element__wrap .input-type {height: 56px;}
+.form-element__wrap .input-type input.text-r {text-align: right;padding-right: 20px;}
 .form-element__wrap .select-wrap {height: 56px;}
 .form-element__wrap .text-area {padding: 18px;align-items: normal; flex-direction: column;}
 .form-element__wrap .form-element__inner textarea {width: 100%;border: 0;height: 100%;color:#AFB5BC;resize: none;font-family: 'Pretendard', 'Malgun Gothic', '맑은고딕', sans-serif;}
