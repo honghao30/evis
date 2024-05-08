@@ -29,28 +29,34 @@
 /* flag */
 .flag {background-color: #fff;display: flex;align-items: center;gap: 2px;margin: 0 auto; border-radius: 100px;width: 93px;height: 32px;padding: 0 12px 0 6px;font-size: 15px;font-weight: 600;line-height: 17px;}
 .flag::before {content: '';display: block;width:24px;height:24px;}
-.flag.type1 {border: 1px solid #0D6EFD;color:#0D6EFD;}
-.flag.type1::before {background: url('../images/admin/icon-flag-ac.svg') no-repeat;}
-.flag.type2 {border: 1px solid #00BDE7;color:#00BDE7;}
-.flag.type2::before {background: url('../images/admin/icon-flag-ccs.svg') no-repeat;}
-.flag.type3 {border: 1px solid #00BDE7;color:#00BDE7;}
-.flag.type3::before {background: url('../images/admin/icon-flag-chademo.svg') no-repeat;}
-.flag.type4 {border: 1px solid #35AD68;color:#35AD68;}
-.flag.type4::before {background: url('../images/admin/icon-flag-ac3.svg') no-repeat;}
-.flag.type5 {border: 1px solid #984ED2;color:#984ED2;}
-.flag.type5::before {background: url('../images/admin/icon-flag-ccs2.svg') no-repeat;}
-.flag.type6 {border: 1px solid #FF4135;color:#FF4135;}
-.flag.type6::before {background: url('../images/admin/icon-flag-tesla.svg') no-repeat;}
+.flag.type1 {border: 1px solid #0D6EFD;background-color: #0D6EFD; color:#fff;}
+.flag.type1::before {background: url('../images/admin/icon-flag-ac.svg') no-repeat center;}
+.flag.type2 {border: 1px solid #00BDE7;background-color: #00BDE7;; color:#fff;}
+.flag.type2::before {background: url('../images/admin/icon-flag-ccs.svg') no-repeat center;}
+.flag.type3 {border: 1px solid #FF7A00;background-color: #FF7A00; color:#fff;}
+.flag.type3::before {background: url('../images/admin/icon-flag-chademo.svg') no-repeat  center;}
+.flag.type4 {border: 1px solid #35AD68; background-color: #35AD68; color:#fff;}
+.flag.type4::before {background: url('../images/admin/icon-flag-ac3.svg') no-repeat  center;}
+.flag.type5 {border: 1px solid #984ED2; background-color: #984ED2; color:#fff;}
+.flag.type5::before {background: url('../images/admin/icon-flag-ccs2.svg') no-repeat  center;}
+.flag.type6 {border: 1px solid #FF4135;background-color: #FF4135; color:#fff;}
+.flag.type6::before {background: url('../images/admin/icon-flag-tesla.svg') no-repeat center;}
 
 /* table */
 .table__wrap {margin-top: 12px;border-radius: 8px;overflow: hidden;}
 .table-list {width: 100%;}
 .table-list th {padding: 22px 0;background-color: #E2E3E7;text-align: center;font-size: 18px;line-height: 21px;color:#222;font-weight: 600;}
+.table-list th.title-gray {background-color: #CFD4DA;}
+.table-list td.title-gray {background-color: #F8F9FA;border-bottom: 1px solid #CFD4DA;}
 .table-list td {padding: 25px 0;text-align: center;color:#5A5C5F; font-size: 18px;line-height: 21px;border-bottom: 1px solid #E2E3E7;background-color: #FFFFFF;}
 .table-list td a {text-decoration: underline;color:#0D6EFD;}
 .table-list td a.noline {text-decoration: none;}
 .table-list tbody tr:hover td {background-color: #F8F9FA;}
-
+.table-list tbody th.tbody-tit-gray {background-color: #F8F9FA;border-bottom: 1px solid #CFD4DA;font-size: 18px;font-weight: 500;line-height: 21px;color:#222;}
+.billing-table td {border-right: 1px solid #E2E3E7;}
+.billing-table tr td:last-child {border-right:0}
+.billing-table tbody tr:last-child th,
+.billing-table tbody tr:last-child td {border-bottom:0}
 
 /* 버튼 */
 .gap10 {display: flex;justify-content: center; gap: 10px;}
@@ -161,7 +167,7 @@ select {
     background-color: #35AD68;
     position: absolute;
     left:-27px;
-    top: 3px;
+    top: 4px;
 }
 .radio-box [type="radio"]:focus-visible {    
     outline: 2px dotted #35AD68;

@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">    
+    <title>이비스프라임</title>    
+    <link rel="icon" type="image/svg+xml" href="" />
+    <link rel="stylesheet" href="../assets/css/common.css" />
+    <link rel="stylesheet" href="../assets/css/admin.css" />
+</head>
+<body>
+    <div class="adm-wrap">
+        <div class="header">
+            <div class="header__nav--left">
+                <h1 class="logo">
+                    <a href="/">
+                        <img src="../assets/images/admin/logo-wt.svg" alt="Evis Prime" />
+                    </a>
+                </h1>
+                <ul class="admin-menu">
+                    <li class="is-active">
+                        <a href="main.html">홈</a>
+                    </li>                  
+                </ul>
+            </div>
+            <!-- //헤더 left -->
+            <ul class="header_util--right">
+                <li>
+                    <a href="#">로그아웃</a>
+                </li>
+                <li>
+                    <a href="#" class="btn btn-icon-porson">
+                        <span class="irtext">정보</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="btn btn-icon-setting">
+                        <span class="irtext">설정</span>
+                    </a>
+                </li>                              
+            </ul>
+        </div>
+        <!-- // 헤더 -->
+        <div class="admin__content">
+            <div class="full-between-area">
+                <h2 class="font-type-h2"><span class="color-primary">스테이션1</span>의 충전기</h2>
+                <p class="font-type-h6-regular location">
+                    홈 > 스테이션 1 > <strong>충전기</strong>
+                </p>
+            </div>                        
+
+            <div class="full-between-area">
+                <div class="msg">
+                    현재 <strong>8</strong>개의 <strong>충전기</strong>가 등록되어 있습니다.
+                </div>  
+                <div class="button__wrap">
+                    <button type="button" class="btn btn-black icon-plus open-modal" modal-id="add-charge" onclick="openModal(event)">충전기 등록</button>
+                </div>                             
+            </div>
+            <div class="table__wrap">                
+                <table class="table table-list">
+                    <colgroup>
+                        <col width="9%" />
+                        <col width="9%" />
+                        <col width="9%" />
+                        <col width="7%" />
+                        <col width="7%" />                        
+                        <col width="" />  
+                        <col width="10%" />                                             
+                        <col width="10%" />                                             
+                        <col width="9%" /> 
+                        <col width="10%" /> 
+                        <col width="10%" /> 
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th scope="col" class="title-gray">이름</th>
+                            <th scope="col" class="title-gray">상태</th>
+                            <th scope="col" class="title-gray">타입</th>
+                            <th scope="col">수량</th>
+                            <th scope="col">상태</th>
+                            <th scope="col">진행율</th>
+                            <th scope="col">충전량</th>                                                       
+                            <th scope="col">충전시작</th>   
+                            <th scope="col">충전시간</th>   
+                            <th scope="col">충전종료</th>   
+                            <th scope="col">충전후 점유일시</th>   
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td rowspan="3" class="title-gray"><a href="#" class="noline">CP-001</a></td>
+                            <td rowspan="3" class="title-gray">충전중</td>
+                            <td rowspan="3" class="title-gray"><span class="flag type1">AC단상</span></td>
+                            <td>1</td>
+                            <td>준비중</td>
+                            <td>
+                                <div class="process-wrap">
+                                    <div class="data">50%</div>
+                                    <div class="process-graph">
+                                        <div class="processing-inner" style="width: 50%;"></div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>100wh</td>                                                            
+                            <td>2023.12.10 01:00 </td>    
+                            <td>01:00:00</td>    
+                            <td>2023.12.10 01:00 </td>  
+                            <td>2023.12.10 01:00 </td>  
+                        </tr>    
+                        <tr>
+                            <td>1</td>
+                            <td>준비중</td>
+                            <td>
+                                <div class="process-wrap">
+                                    <div class="data">50%</div>
+                                    <div class="process-graph">
+                                        <div class="processing-inner" style="width: 50%;"></div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>100wh</td>                                                            
+                            <td>2023.12.10 01:00 </td>    
+                            <td>01:00:00</td>    
+                            <td>2023.12.10 01:00 </td>  
+                            <td>2023.12.10 01:00 </td>  
+                        </tr>  
+                        <tr>
+                            <td>1</td>
+                            <td>준비중</td>
+                            <td>
+                                <div class="process-wrap">
+                                    <div class="data">50%</div>
+                                    <div class="process-graph">
+                                        <div class="processing-inner" style="width: 50%;"></div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>100wh</td>                                                            
+                            <td>2023.12.10 01:00 </td>    
+                            <td>01:00:00</td>    
+                            <td>2023.12.10 01:00 </td>  
+                            <td>2023.12.10 01:00 </td>  
+                        </tr>    
+                        <tr>
+                            <td rowspan="3" class="title-gray"><a href="#" class="noline">CP-001</a></td>
+                            <td rowspan="3" class="title-gray">충전중</td>
+                            <td rowspan="3" class="title-gray"><span class="flag type2">CCS1</span></td>
+                            <td>1</td>
+                            <td>준비중</td>
+                            <td>
+                                <div class="process-wrap">
+                                    <div class="data">50%</div>
+                                    <div class="process-graph">
+                                        <div class="processing-inner" style="width: 50%;"></div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>100wh</td>                                                            
+                            <td>2023.12.10 01:00 </td>    
+                            <td>01:00:00</td>    
+                            <td>2023.12.10 01:00 </td>  
+                            <td>2023.12.10 01:00 </td>  
+                        </tr>    
+                        <tr>
+                            <td>1</td>
+                            <td>준비중</td>
+                            <td>
+                                <div class="process-wrap">
+                                    <div class="data">50%</div>
+                                    <div class="process-graph">
+                                        <div class="processing-inner" style="width: 50%;"></div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>100wh</td>                                                            
+                            <td>2023.12.10 01:00 </td>    
+                            <td>01:00:00</td>    
+                            <td>2023.12.10 01:00 </td>  
+                            <td>2023.12.10 01:00 </td>  
+                        </tr>  
+                        <tr>
+                            <td>1</td>
+                            <td>준비중</td>
+                            <td>
+                                <div class="process-wrap">
+                                    <div class="data">50%</div>
+                                    <div class="process-graph">
+                                        <div class="processing-inner" style="width: 50%;"></div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>100wh</td>                                                            
+                            <td>2023.12.10 01:00 </td>    
+                            <td>01:00:00</td>    
+                            <td>2023.12.10 01:00 </td>  
+                            <td>2023.12.10 01:00 </td>  
+                        </tr>  
+                        <tr>
+                            <td class="title-gray"><a href="#" class="noline">CP-001</a></td>
+                            <td class="title-gray">충전중</td>
+                            <td class="title-gray"><span class="flag type3">차데모</span></td>
+                            <td>1</td>
+                            <td>준비중</td>
+                            <td>
+                                <div class="process-wrap">
+                                    <div class="data">50%</div>
+                                    <div class="process-graph">
+                                        <div class="processing-inner" style="width: 50%;"></div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>100wh</td>                                                            
+                            <td>2023.12.10 01:00 </td>    
+                            <td>01:00:00</td>    
+                            <td>2023.12.10 01:00 </td>  
+                            <td>2023.12.10 01:00 </td>  
+                        </tr>    
+                        <tr>
+                            <td class="title-gray"><a href="#" class="noline">CP-001</a></td>
+                            <td class="title-gray">충전중</td>
+                            <td class="title-gray"><span class="flag type4">AC단상</span></td>
+                            <td>1</td>
+                            <td>준비중</td>
+                            <td>
+                                <div class="process-wrap">
+                                    <div class="data">50%</div>
+                                    <div class="process-graph">
+                                        <div class="processing-inner" style="width: 50%;"></div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>100wh</td>                                                            
+                            <td>2023.12.10 01:00 </td>    
+                            <td>01:00:00</td>    
+                            <td>2023.12.10 01:00 </td>  
+                            <td>2023.12.10 01:00 </td>  
+                        </tr>      
+                        <tr>
+                            <td class="title-gray"><a href="#" class="noline">CP-001</a></td>
+                            <td class="title-gray">충전중</td>
+                            <td class="title-gray"><span class="flag type5">CCS2</span></td>
+                            <td>1</td>
+                            <td>준비중</td>
+                            <td>
+                                <div class="process-wrap">
+                                    <div class="data">50%</div>
+                                    <div class="process-graph">
+                                        <div class="processing-inner" style="width: 50%;"></div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>100wh</td>                                                            
+                            <td>2023.12.10 01:00 </td>    
+                            <td>01:00:00</td>    
+                            <td>2023.12.10 01:00 </td>  
+                            <td>2023.12.10 01:00 </td>  
+                        </tr>   
+                        <tr>
+                            <td class="title-gray"><a href="#" class="noline">CP-001</a></td>
+                            <td class="title-gray">충전중</td>
+                            <td class="title-gray"><span class="flag type6">테슬라</span></td>
+                            <td>1</td>
+                            <td>준비중</td>
+                            <td>
+                                <div class="process-wrap">
+                                    <div class="data">50%</div>
+                                    <div class="process-graph">
+                                        <div class="processing-inner" style="width: 50%;"></div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>100wh</td>                                                            
+                            <td>2023.12.10 01:00 </td>    
+                            <td>01:00:00</td>    
+                            <td>2023.12.10 01:00 </td>  
+                            <td>2023.12.10 01:00 </td>  
+                        </tr>                                                                                                                                                                                      
+                    </tbody>
+                </table>
+            </div>
+            
+            <div class="pagination">
+                <a href="#" class="btn-first"><span class="irtext">처음으로</span></a>
+                <a href="#" class="btn-prev"><span class="irtext">이전</span></a>
+                <a href="#" class="btn-next"><span class="irtext">다음</span></a>
+                <a href="#" class="btn-last"><span class="irtext">마지막페이지</span></a>
+            </div>
+        </div>
+    </div>   
+        <!-- 모달창 -->
+        <!-- 등록 -->
+        <div class="modal__wrap--bg" id="add-charge">
+            <div class="modal__wrap size-default ">
+                <div class="modal-header">
+                    <h3 class="font-type-h3">충전기 등록</h3>
+                    <button type="button" class="btn btn-icon-close close-modal" onclick="closeModal(event)">
+                        <span class="irtext">닫기</span>
+                    </button>
+                </div>
+                <div class="modal-cont">
+                    <form>
+                        <ul class="form-el-list">
+                            <li>
+                                <div class="form-element__wrap">
+                                    <label for="code01" class="font-type-h5-bold">충전기 이름</label>
+                                    <span  class="form-element__inner input-type">
+                                        <input type="text" class="font-type-h5-regular" value="" placeholder="충전기 이름 입력" id="code01" />
+                                    </span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="form-element__wrap">
+                                    <label for="code02" class="font-type-h5-bold">충전기 시리얼 번호</label>
+                                    <span  class="form-element__inner input-type">
+                                        <input type="text" class="font-type-h5-regular" value="" placeholder="충전기 시리얼 번호 입력" id="code02" />
+                                    </span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="form-element__wrap">
+                                    <label for="code03" class="font-type-h5-bold">충전기 벤더</label>
+                                    <span  class="form-element__inner input-type">
+                                        <input type="text" class="font-type-h5-regular" value="" placeholder="충전기 벤더 입력" id="code03" />
+                                    </span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="form-element__wrap">
+                                    <label for="code04" class="font-type-h5-bold">충전기 모델</label>
+                                    <span  class="form-element__inner input-type">
+                                        <input type="text" class="font-type-h5-regular" value="" placeholder="충전기 모델 입력" id="code04" />
+                                    </span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="form-element__wrap">
+                                    <label for="code05" class="font-type-h5-bold">컨넥터 수</label>
+                                    <span  class="form-element__inner input-type">
+                                        <input type="text" class="font-type-h5-regular" value="" placeholder="컨넥터 수 입력" id="code05" />
+                                    </span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="form-element__wrap">
+                                    <label for="code06" class="font-type-h5-bold">컨넥터 타입</label>
+                                    <span  class="form-element__inner select-wrap">
+                                        <select class="font-type-h5-regular" id="code06">
+                                            <option>AC 1상 (5핀) 완속</option>
+                                            <option>항목2</option>
+                                            <option>항목3</option>
+                                        </select>
+                                    </span>
+                                </div>
+                            </li>                              
+                            <li>
+                                <div class="form-element__wrap">
+                                    <label for="code07" class="font-type-h5-bold">설치장소</label>
+                                    <span  class="form-element__inner input-type">
+                                        <input type="text" class="font-type-h5-regular" value="" placeholder="설치장소 입력" id="code07" />
+                                    </span>
+                                </div>
+                            </li>                                                                                                             
+                        </ul>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <div class="button__wrap gap10 flex-end">
+                        <button type="button" class="btn btn-cancel close-modal"  onclick="closeModal(event)">취소</button>
+                        <button type="button" class="btn btn-black btn-add" disabled>등록하기</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 메시지 창 -->
+        <div class="modal__wrap--bg" id="remove-business">
+            <div class="modal__wrap size-default ">
+                <div class="modal-cont">
+                    <div class="font-type-h3 modal-confirm-msg">선택하신 항목을 삭제하시겠어요?</div>
+                </div>
+                <div class="modal-footer">
+                    <div class="button__wrap gap10 flex-end">
+                        <button type="button" class="btn btn-cancel close-modal"  onclick="closeModal(event)">취소</button>
+                        <button type="button" class="btn btn-black" onclick="deleteRow(_thisParent)">삭제</button>
+                    </div>
+                </div>
+            </div>
+        </div>                
+        <!-- //모달창 -->    
+    <script type="text/javascript" src="../assets/js/ui.js" ></script>    
+</body>
+</html>
