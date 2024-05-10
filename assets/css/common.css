@@ -93,11 +93,13 @@
 .form-element__wrap .text-area {padding: 18px;align-items: normal; flex-direction: column;}
 .form-element__wrap .form-element__inner textarea {width: 100%;border: 0;height: 100%;color:#AFB5BC;resize: none;font-family: 'Pretendard', 'Malgun Gothic', '맑은고딕', sans-serif;}
 .form-element__wrap .form-element__inner select {width: 100%;border: 0;height: 100%;color:#AFB5BC;resize: none;text-indent: 18px;}
+.form-element__wrap .form-element__inner select[readonly] {background-color: #F8F9FA;pointer-events: none;}
 .form-element__wrap .form-element__inner select option {padding: 10px;}
 .form-element__wrap .form-element__inner.select-wrap {position: relative;}
 .form-element__wrap .form-element__inner.select-wrap::after {content: '';width:24px;height:24px;background: url('../images/admin/icon-chevron-down.svg') no-repeat center; display: block;
     position: absolute;right: 10px;top: 50%;transform: translateY(-50%);}
 .form-element__wrap .form-element__inner .text-count {text-align: right;color:#AFB5BC;}
+.form-element__wrap .input-multi {display: flex;width: 100%;gap: 10px;}
 select {
     -webkit-appearance: none;
     -moz-appearance: none;

@@ -239,6 +239,59 @@
             </table>                                             
         </div>
         <div class="page-body-content">         
+            <h2  class="font-type-h2">상태 아이콘</h2>
+            <table class="table table-list">
+                <colgroup>
+                    <col width="15%" />                    
+                    <col width="" />
+                </colgroup>
+                <thead>
+                    <tr>                        
+                        <th scope="col">class</th>
+                        <th scope="col">Example</th>
+                    </tr>
+                </thead>                
+                <tbody>
+                    <tr>                        
+                        <td>.flag type1</td>
+                        <td>
+                            <span class="flag type1">AC단상</span>
+                        </td>
+                    </tr>
+                    <tr>                        
+                        <td>.flag type2</td>
+                        <td>
+                            <span class="flag type2">CCS1</span>
+                        </td>
+                    </tr>
+                    <tr>                        
+                        <td>.flag type3</td>
+                        <td>
+                            <span class="flag type3">차데모</span>
+                        </td>
+                    </tr> 
+                    <tr>                        
+                        <td>.flag type4</td>
+                        <td>
+                            <span class="flag type4">AC단상</span>
+                        </td>
+                    </tr>
+                    <tr>                        
+                        <td>.flag type5</td>
+                        <td>
+                            <span class="flag type5">CCS2</span>
+                        </td>
+                    </tr>    
+                    <tr>                        
+                        <td>.flag type6</td>
+                        <td>
+                            <span class="flag type6">테슬라</span>
+                        </td>
+                    </tr>                                                                                              
+                </tbody>
+            </table>
+        </div>        
+        <div class="page-body-content">         
             <h2  class="font-type-h2">폼 요소</h2>
             <table class="table table-list">
                 <colgroup>
@@ -265,7 +318,36 @@
                                 </span>
                             </div>
                         </td>
-                    </tr>   
+                    </tr>  
+                    <tr>
+                        <td>Input type multi</td>
+                        <td>.form-element__wrap .input-multi</td>
+                        <td>
+                            <div class="form-element__wrap">
+                                <label for="code01" class="font-type-h5-bold">지점명</label>
+                                <div class="input-multi">
+                                    <span  class="form-element__inner input-type">
+                                        <input type="text" class="font-type-h5-regular" value="" placeholder="부산 광역시" id="code01" />
+                                    </span>
+                                    <span  class="form-element__inner input-type">
+                                        <input type="text" class="font-type-h5-regular" value="" placeholder="일련 번호" id="code01" />
+                                    </span>  
+                                </div>                              
+                            </div>
+                        </td>
+                    </tr>                     
+                    <tr>
+                        <td>Input type 비활성화</td>
+                        <td>input 에 disabled 추가</td>
+                        <td>
+                            <div class="form-element__wrap">
+                                <label for="code01" class="font-type-h5-bold">지점명</label>
+                                <span  class="form-element__inner input-type">
+                                    <input type="text" class="font-type-h5-regular" disabled value="" placeholder="부산 광역시" id="code01" />
+                                </span>
+                            </div>
+                        </td>
+                    </tr>  
                     <tr>
                         <td>Select type</td>
                         <td>.form-element__wrap</td>
@@ -281,7 +363,23 @@
                                 </span>
                             </div>
                         </td>
-                    </tr>                     
+                    </tr>
+                    <tr>
+                        <td>Select type readOnly</td>
+                        <td>.form-element__wrap</td>
+                        <td>
+                            <div class="form-element__wrap">
+                                <label for="code01" class="font-type-h5-bold">지점명</label>
+                                <span  class="form-element__inner select-wrap">
+                                    <select class="font-type-h5-regular" readonly>
+                                        <option>항목1</option>
+                                        <option>항목2</option>
+                                        <option>항목3</option>
+                                    </select>
+                                </span>
+                            </div>
+                        </td>
+                    </tr>                      
                     <tr>
                         <td>textArea type</td>
                         <td>.form-element__wrap</td>
