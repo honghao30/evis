@@ -75,19 +75,21 @@
             <div class="table__wrap">                
                 <table class="table table-list">
                     <colgroup>
-                        <col width="11%" />
-                        <col width="12%" />
-                        <col width="12%" />                        
-                        <col width="12%" />
-                        <col width="11%" />
-                        <col width="11%" />
-                        <col width="11%" />
-                        <col width="11%" />                        
-                        <col width="" />
+                        <col width="10%" />
+                        <col width="10%" />
+                        <col width="10%" />
+                        <col width="10%" />                        
+                        <col width="10%" />
+                        <col width="10%" />
+                        <col width="10%" />
+                        <col width="10%" />
+                        <col width="10%" />                        
+                        <col width="10%" />
                     </colgroup>
                     <thead>
                         <tr>
                             <th scope="col">사용자ID</th>
+                            <th scope="col">Token ID</th>
                             <th scope="col">ParentID</th>
                             <th scope="col">등록날짜</th>
                             <th scope="col">만기날짜</th>
@@ -101,6 +103,7 @@
                     <tbody>
                         <tr>
                             <td><a href="station_user_detail.html">USER-001</a></td>
+                            <td>P-01</td>
                             <td>P-01</td>
                             <td>2024.03.01</td>
                             <td>2024.03.01</td>
@@ -146,11 +149,20 @@
                         <li>
                             <div class="form-element__wrap">
                                 <label for="code01" class="font-type-h5-bold">사용자ID</label>
-                                <span  class="form-element__inner input-type">
-                                    <input type="text" class="font-type-h5-regular" value="" placeholder="사용자ID를 입력 하세요" id="code01" />
+                                <span  class="form-element__inner input-type has-text-button">
+                                    <input type="text" class="font-type-h5-regular" value="" placeholder="아이디 입력" id="code011" />
+                                    <button type="button" class="btn-text-button color-blue">중복확인</button>
                                 </span>
                             </div>
                         </li>
+                        <li>
+                            <div class="form-element__wrap">
+                                <label for="code05" class="font-type-h5-bold">Token ID</label>
+                                <span  class="form-element__inner input-type">
+                                    <input type="text" class="font-type-h5-regular" value="" placeholder="Token ID를 입력 하세요" id="code05" />
+                                </span>
+                            </div>
+                        </li>                         
                         <li>
                             <div class="form-element__wrap">
                                 <label for="code02" class="font-type-h5-bold">ParentID</label>
@@ -190,7 +202,7 @@
     <div class="modal__wrap--bg" id="edit-business">
         <div class="modal__wrap size-default ">
             <div class="modal-header">
-                <h3 class="font-type-h3">Business 정보 수정</h3>
+                <h3 class="font-type-h3">사용자 정보수정</h3>
                 <button type="button" class="btn btn-icon-close close-modal" onclick="closeModal(event)">
                     <span class="irtext">닫기</span>
                 </button>
@@ -206,6 +218,14 @@
                                 </span>
                             </div>
                         </li>
+                        <li>
+                            <div class="form-element__wrap">
+                                <label for="code05" class="font-type-h5-bold">Token ID</label>
+                                <span  class="form-element__inner input-type">
+                                    <input type="text" class="font-type-h5-regular" value="" placeholder="Token ID를 입력 하세요" id="code05" />
+                                </span>
+                            </div>
+                        </li>                          
                         <li>
                             <div class="form-element__wrap">
                                 <label for="code02" class="font-type-h5-bold">ParentID</label>
@@ -248,7 +268,7 @@
             <div class="modal-footer">
                 <div class="button__wrap gap10 flex-end">
                     <button type="button" class="btn btn-cancel close-modal"  onclick="closeModal(event)">취소</button>
-                    <button type="button" class="btn btn-black">수정</button>
+                    <button type="button" class="btn btn-black">수정하기</button>
                 </div>
             </div>
         </div>

@@ -1,22 +1,24 @@
 @import url('base.css');
 /* font */
-.font-type-h1 {font-size: 72px;font-weight: 800;line-height: 85px;color:#000;}
-.font-type-h2 {font-size: 28px;font-weight: 700;line-height: 33px;color:#111;}
-.font-type-h3 {font-size: 24px;font-weight: 700;line-height: 28px;color:#111;}
-.font-type-h4-bold {font-size: 20px;font-weight: 700;line-height: 23px;color:#111;}
-.font-type-h4-middle {font-size: 20px;font-weight: 500;line-height: 23px;color:#111;}
-.font-type-h4-regular {font-size: 20px;font-weight: 400;line-height: 23px;color:#111;}
-.font-type-h5-bold {font-size: 18px;font-weight: 600;line-height: 21px;color:#111;}
-.font-type-h5-middle {font-size: 18px;font-weight: 500;line-height: 21px;color:#111;}
-.font-type-h5-regular {font-size: 18px;font-weight: 400;line-height: 21px;color:#111;}
-.font-type-h6-bold {font-size: 16px;font-weight: 600;line-height: 19px;color:#111;}
-.font-type-h6-middle {font-size: 16px;font-weight: 500;line-height:19px;color:#111;}
-.font-type-h6-regular {font-size: 16px;font-weight: 400;line-height: 19px;color:#111;}
-.font-type-cont-semi {font-size: 15px;font-weight: 600;line-height: 17px;color:#111;}
-.font-type-cont-regular {font-size: 15px;font-weight: 500;line-height: 17px;color:#111;}
+.font-type-h1 {font-size: 72px;font-weight: 800;line-height: 85px;}
+.font-type-h2 {font-size: 28px;font-weight: 700;line-height: 33px;}
+.font-type-h3 {font-size: 24px;font-weight: 700;line-height: 28px;}
+.font-type-h4-bold {font-size: 20px;font-weight: 700;line-height: 23px;}
+.font-type-h4-middle {font-size: 20px;font-weight: 500;line-height: 23px;}
+.font-type-h4-regular {font-size: 20px;font-weight: 400;line-height: 23px;}
+.font-type-h5-bold {font-size: 18px;font-weight: 600;line-height: 21px;}
+.font-type-h5-middle {font-size: 18px;font-weight: 500;line-height: 21px;}
+.font-type-h5-regular {font-size: 18px;font-weight: 400;line-height: 21px;}
+.font-type-h6-bold {font-size: 16px;font-weight: 600;line-height: 19px;}
+.font-type-h6-middle {font-size: 16px;font-weight: 500;line-height:19px;}
+.font-type-h6-regular {font-size: 16px;font-weight: 400;line-height: 19px;}
+.font-type-cont-semi {font-size: 15px;font-weight: 600;line-height: 17px;}
+.font-type-cont-regular {font-size: 15px;font-weight: 500;line-height: 17px;}
 
 /* color */
 .color-primary {color:#35AD68;}
+.color-blue {color:#0D6EFD;}
+.color-sky {color: #00BDE7;}
 .color-black {color:#222;}
 .color-gray01 {color:#5A5C5F;}
 .color-gray02 {color:#909293;}
@@ -25,21 +27,20 @@
 .color-gray05 {color:#E2E3E7;}
 .color-gray06 {color:#EFF0F2;}
 .color-gray07 {color:#F8F9FA;}
+.color-red {color:#FF4135;}
+.color-red-org {color:#FF7A00;}
+.color-orange {color:#FFA800;}
+.color-light-org {color:#FFEAE9;}
+.color-light-green {color:#E3FBE0;}
 
 /* flag */
-.flag {background-color: #fff;display: flex;align-items: center;gap: 2px;margin: 0 auto; border-radius: 100px;width: 93px;height: 32px;padding: 0 12px 0 6px;font-size: 15px;font-weight: 600;line-height: 17px;}
+.flag {background-color: #fff;display: flex;align-items: center;gap: 2px;margin: 0 auto; border-radius: 100px;width: 95px;height: 32px;padding: 0 12px 0 6px;font-size: 15px;font-weight: 600;line-height: 17.9px;color:#222;border: 1px solid #fff;background: #EFF0F2;}
 .flag::before {content: '';display: block;width:24px;height:24px;}
-.flag.type1 {border: 1px solid #0D6EFD;background-color: #0D6EFD; color:#fff;}
 .flag.type1::before {background: url('../images/admin/icon-flag-ac.svg') no-repeat center;}
-.flag.type2 {border: 1px solid #00BDE7;background-color: #00BDE7;; color:#fff;}
-.flag.type2::before {background: url('../images/admin/icon-flag-ccs.svg') no-repeat center;}
-.flag.type3 {border: 1px solid #FF7A00;background-color: #FF7A00; color:#fff;}
-.flag.type3::before {background: url('../images/admin/icon-flag-chademo.svg') no-repeat  center;}
-.flag.type4 {border: 1px solid #35AD68; background-color: #35AD68; color:#fff;}
+.flag.type2::before {background: url('../images/admin/icon_flag_union.svg') no-repeat center;}
+.flag.type3::before {background: url('../images/admin/icon-flag-ccs.svg') no-repeat  center;}
 .flag.type4::before {background: url('../images/admin/icon-flag-ac3.svg') no-repeat  center;}
-.flag.type5 {border: 1px solid #984ED2; background-color: #984ED2; color:#fff;}
-.flag.type5::before {background: url('../images/admin/icon-flag-ccs2.svg') no-repeat  center;}
-.flag.type6 {border: 1px solid #FF4135;background-color: #FF4135; color:#fff;}
+.flag.type5::before {background: url('../images/admin/icon-flag-ccs5.svg') no-repeat  center;}
 .flag.type6::before {background: url('../images/admin/icon-flag-tesla.svg') no-repeat center;}
 
 /* table */
@@ -80,6 +81,7 @@
 .btn-select-add {background-color: #E3FBE0;color:#35AD68;width: 46px; height: 32px;font-size: 15px;font-weight: 500;line-height: 17px;}
 .button__wrap {display: flex;}
 .button__wrap.flex-end {justify-content: flex-end;}
+.btn-text-button {font-size: 15px;font-weight: 500;line-height: 17px;}
 
 /* 폼요소 */
 .form-element__wrap {display: flex;flex-direction: column;align-items: flex-start;gap: 10px;width: 100%;}
@@ -89,6 +91,8 @@
 .form-element__wrap .form-element__inner textarea::placeholder {font-size: 18px;font-weight: 400;line-height: 21px;color:#AFB5BC;}
 .form-element__wrap .input-type {height: 56px;}
 .form-element__wrap .input-type input.text-r {text-align: right;padding-right: 20px;}
+.form-element__wrap .input-type.has-text-button {position: relative;}
+.form-element__wrap .input-type.has-text-button .btn-text-button {position: absolute;right: 16px;top: 50%;transform: translateY(-50%);}
 .form-element__wrap .select-wrap {height: 56px;}
 .form-element__wrap .text-area {padding: 18px;align-items: normal; flex-direction: column;}
 .form-element__wrap .form-element__inner textarea {width: 100%;border: 0;height: 100%;color:#AFB5BC;resize: none;font-family: 'Pretendard', 'Malgun Gothic', '맑은고딕', sans-serif;}

@@ -111,6 +111,11 @@
     font-size: 18px;
     line-height: 20px;
 }
+.temp-password {margin-top: 8px;padding-bottom: 10px;}
+
+/* 에러 페이지 */
+.error__wrap {display: flex;align-items: center;justify-content: center;flex-direction: column; width: 100%;height: 100vh;background: url('../images/admin/bg_full.svg') no-repeat center center;background-size: cover;}
+.error__wrap .erro_msg {display: flex;align-items: center;justify-content: center;flex-direction: column; gap: 24px;text-align: center;}
 
 /* 레이아웃 - 헤더 */
 .adm-wrap {width: 100%;}
@@ -132,10 +137,13 @@
 .full-between-area .msg:only-child {padding-top: 15px;}
 .full-between-area .msg strong {margin-left: 4px;}
 .full-between-area .location {color:#909293;}
-.full-between-area .location strong {color:#222;}
+.full-between-area .location strong {color:#222;text-align: center;}
 .staion-data {display: flex;gap: 32px;align-items: center;}
-.staion-data .data-info {min-width: 167px;flex-basis: auto;}
-.staion-data .data-info strong {margin-left:24px;}
+.staion-data .data-info {min-width: 88px;flex-basis: auto;display: flex; align-items: center; justify-content: center; flex-direction: column;margin-left: 100px;}
+.staion-data .data-info:only-child,
+.staion-data .data-info:first-child {margin-left: 0;}
+.staion-data .data-info strong {display: block;margin-top: 12px;}
+.staion-data .data-info .gray_box_sm {border-radius: 100px;background: #EFF0F2;vertical-align: middle; padding: 5px 12px 5px 12px;font-size: 12px;font-weight: 500;line-height: 14.32px;color:#5A5C5F;}
 .staion-data.two-rows {flex-direction: column;gap:0;padding: 15px 0;}
 .staion-data.two-rows dl {display: flex;width: 100%;justify-content: space-between;gap:16px;padding: 24px 0;}
 .staion-data.two-rows dl+dl {border-top: 1px solid #E2E3E7;}
@@ -144,7 +152,7 @@
 
 .station-board {display: flex;margin: 20px 0 0px;justify-content: space-between;align-items: center;min-height: 140px; padding: 0 40px;background-color: #fff;border-radius: 8px;box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, 0.05);}
 .station-board .staion-name {display: flex;align-items: center;gap:24px;}
-.station-board .staion-name .sub-info {margin-top: 6px;font-size: 16px;color:#5A5C5F;}
+.station-board .staion-name .sub-info {margin-top: 6px;font-size: 15px;font-weight: 400;line-height: 17.9px;color:#5A5C5F;}
 .station-board .staion-name .sub-info span {color:#AFB5BC;}
 
 .page-subtitle {margin-top: 40px;}
