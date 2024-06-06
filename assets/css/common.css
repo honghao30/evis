@@ -103,13 +103,14 @@
 .form-element__wrap .form-element__inner.select-wrap::after {content: '';width:24px;height:24px;background: url('../images/admin/icon-chevron-down.svg') no-repeat center; display: block;
     position: absolute;right: 10px;top: 50%;transform: translateY(-50%);}
 .form-element__wrap .form-element__inner .text-count {text-align: right;color:#AFB5BC;}
-.form-element__wrap .input-multi {display: flex;width: 100%;gap: 10px;}
+.form-element__wrap .input-multi {display: flex;width: 100%;gap: 10px;align-items: center;}
 select {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
     background-image: none;
 }
+.form-element__wrap.flex-end {justify-content: flex-end;}
 .form-el-list.table-row-type {display: flex; flex-wrap: wrap;}
 .form-el-list.table-row-type li {width: calc(50% - 32px);margin-bottom:8px;}
 .form-el-list.table-row-type li .form-element__wrap {flex-direction: row;justify-content: flex-start;align-items: center;}

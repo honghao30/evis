@@ -233,12 +233,14 @@
 /* tab */
 .billing-tab__wrap {display: flex;flex-direction: column; margin-top: 33px;}
 .tab-header-group ul {display: flex;align-items: center;justify-content: flex-start;gap: 8px;}
-.billing-tab__wrap .btn-tab {display: flex;justify-content: center;align-items: center; width: 74px;height: 39px;border-radius: 16px;background-color: #CFD4DA;font-size: 15px;font-weight: 600;line-height: 17px;color:#fff;}
+.billing-tab__wrap .btn-tab {display: flex;justify-content: center;align-items: center; padding: 0 24px;height: 48px;border-radius: 24px;background-color: #E2E3E7;font-size: 15px;font-weight: 600;line-height: 17px;color:#5A5C5F;}
 .tab-header-group ul li {display: flex;align-items: center;justify-content: flex-start;gap: 8px;}
-.tab-header-group ul li.is-active {color: #35AD68;}
-.tab-header-group ul li.is-active .btn-tab  {background-color: #35AD68;}
+.tab-header-group ul li .btn-tab.is-active  {background-color: #222;color:#fff;}
 .tab-header-group .description {font-size: 20px;font-weight: 700;line-height: 23px;}
+.tab-content {display: none;}
+.tab-content.is-active {display:block;}
 .table-list tbody th.tbody-tit-gray .form-element__wrap {max-width: 260px;margin:0 auto; flex-direction: row;align-items: center;}
+.table__wrap.billing-wrap {border:2px solid #222;overflow:hidden;border-radius: 8px;}
 .table-list tbody th.tbody-tit-gray  .form-element__wrap .input-type {height: 40px;}
 .table-list tbody th.tbody-tit-gray .form-element__wrap .form-element__inner {width: calc(100% - 60px);}
 .input-list {display: flex;width: 100%;max-width: 260px;margin: 0 auto;flex-direction: column;gap: 6px;}
@@ -257,7 +259,27 @@
 .station-billing-table li.date-select .form-element__wrap.has-unit-before .input-type {max-width: 286px;}
 .station-billing-table li.date-select .form-element__wrap.has-unit-before .unit-label {background-color: #F8F9FA;height: 100%;width: 124px;font-size: 16px;font-weight: 400;line-height: 19px;border-right: 1px solid #CFD4DA;display: flex;align-items: center;justify-content: center;}
 .station-billing-table li.date-select .form-element__wrap.has-unit-before .form-element__inner {padding:0;overflow: hidden;}
+.billing-table.seasion td {padding: 16px;}
 .form-element__wrap.has-unit .form-element__control {display: flex;gap: 24px;}
 .form-element__wrap.has-unit .form-element__control .input-type:first-of-type {width: 416px;}
 .form-element__wrap.has-unit .form-element__control .input-type:last-of-type {width: 200px;}
 .station-billing-table .form-element__wrap.has-unit {height: auto;}
+.bulling_apply_data {text-align: right;padding:24px 48px 32px 0;}
+.bulling_apply_data .form-element__wrap {flex-direction: row;align-items: center;justify-content: flex-end;}
+.bulling_apply_data .form-element__wrap label {width: 93px;}
+.bulling_apply_data .form-element__wrap .date_form {width:260px;}
+.bulling_apply_data .form-element__wrap .time_form {width:160px;}
+.bulling_apply_data .form-element__wrap .input-multi {width: fit-content;}
+.button__wrap.bulling-btn {display: flex;justify-content: flex-end;padding: 0 48px 32px 0;align-items: center;}
+.billing-data-setbox {display: flex;align-items: center;justify-content: center;min-height: 600px;border:2px solid #222;overflow:hidden;border-radius: 8px;background-color: #fff;margin-top: 12px;flex-direction: column;}
+.billing-data-inbox {width: 416px;flex:1;display: flex;align-items: center;justify-content: center;}
+.billing-data-inbox .station-billing-table li .form-element__wrap.has-unit .form-element__control {width: 100%;gap:0;}
+.billing-data-inbox .form-element__wrap.has-unit .form-element__control .input-type:last-of-type {width: 100%;}
+.billing-data-inbox .station-billing-table li.date-select .form-element__control {gap:20px;}
+.billing-data-inbox  .get-day {width: 248px;}
+.billing-data-inbox  .get-time {width: 150px;}
+.billing-data-setbox .button__wrap.bulling-btn {width: 100%;}
+.biling_whitebox_wrap {background-color: #fff;overflow:hidden;border-radius: 8px;padding: 32px 48px;}
+.biling_whitebox_wrap .billing-table__white-box {box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.05);;margin-bottom: 0;display: flex;align-items: center;justify-content: center;}
+.biling_whitebox_wrap .station-billing-table li.date-select .form-element__wrap.has-unit-before .unit-label {width: 164px;}
+.btn-text-gray-link {padding: 7px 12px; background: #EFF5FF;border-radius: 12px;color:#0D6EFD;font-size: 12px;font-weight: bold;}

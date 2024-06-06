@@ -93,3 +93,20 @@ const togglePw = (event) => {
     const pwInput = target.previousElementSibling;
     pwInput.type = (pwInput.type === 'password') ? 'text' : 'password';
 };
+
+// 탭
+const tabs = document.querySelectorAll('.btn-tab');
+const contents = document.querySelectorAll('.tab-content');
+
+tabs && tabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+        // Remove active class from all tabs and contents
+        tabs.forEach(t => t.classList.remove('is-active'));
+        contents.forEach(c => c.classList.remove('is-active'));
+
+        // Add active class to the clicked tab and corresponding content
+        tab.classList.add('is-active');
+        const tabId = tab.getAttribute('data-tab');
+        document.getElementById(tabId).classList.add('is-active');
+    });
+});

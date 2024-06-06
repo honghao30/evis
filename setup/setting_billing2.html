@@ -39,7 +39,7 @@
             <div class="full-between-area">
                 <h2 class="font-type-h2">스테이션 과금 설정</h2>
             </div>           
-            <div class="billing-tab__wrap">
+            <div class="billing-tab__wrap biling_whitebox_wrap">
                 <div class="billing-table__white-box">
                     <ul class="station-billing-table">
                         <li class="date-select">
@@ -67,6 +67,7 @@
                                         <option>저압-선택 1</option>
                                     </select>
                                 </span>
+                                <p style="text-align: right;width: 100%;"><a href="#" class="btn-text-gray-link">요금리스트 보기</a></p>
                             </div>                            
                         </li> 
                         <li>
@@ -102,105 +103,6 @@
 
         </div>
     </div>   
-        <!-- 모달창 -->
-        <!-- 등록 -->
-        <div class="modal__wrap--bg" id="add-charge">
-            <div class="modal__wrap size-default ">
-                <div class="modal-header">
-                    <h3 class="font-type-h3">충전기 등록</h3>
-                    <button type="button" class="btn btn-icon-close close-modal" onclick="closeModal(event)">
-                        <span class="irtext">닫기</span>
-                    </button>
-                </div>
-                <div class="modal-cont">
-                    <form>
-                        <ul class="form-el-list">
-                            <li>
-                                <div class="form-element__wrap">
-                                    <label for="code01" class="font-type-h5-bold">충전기 이름</label>
-                                    <span  class="form-element__inner input-type">
-                                        <input type="text" class="font-type-h5-regular" value="" placeholder="충전기 이름 입력" id="code01" />
-                                    </span>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="form-element__wrap">
-                                    <label for="code02" class="font-type-h5-bold">충전기 시리얼 번호</label>
-                                    <span  class="form-element__inner input-type">
-                                        <input type="text" class="font-type-h5-regular" value="" placeholder="충전기 시리얼 번호 입력" id="code02" />
-                                    </span>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="form-element__wrap">
-                                    <label for="code03" class="font-type-h5-bold">충전기 벤더</label>
-                                    <span  class="form-element__inner input-type">
-                                        <input type="text" class="font-type-h5-regular" value="" placeholder="충전기 벤더 입력" id="code03" />
-                                    </span>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="form-element__wrap">
-                                    <label for="code04" class="font-type-h5-bold">충전기 모델</label>
-                                    <span  class="form-element__inner input-type">
-                                        <input type="text" class="font-type-h5-regular" value="" placeholder="충전기 모델 입력" id="code04" />
-                                    </span>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="form-element__wrap">
-                                    <label for="code05" class="font-type-h5-bold">컨넥터 수</label>
-                                    <span  class="form-element__inner input-type">
-                                        <input type="text" class="font-type-h5-regular" value="" placeholder="컨넥터 수 입력" id="code05" />
-                                    </span>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="form-element__wrap">
-                                    <label for="code06" class="font-type-h5-bold">컨넥터 타입</label>
-                                    <span  class="form-element__inner select-wrap">
-                                        <select class="font-type-h5-regular" id="code06">
-                                            <option>AC 1상 (5핀) 완속</option>
-                                            <option>항목2</option>
-                                            <option>항목3</option>
-                                        </select>
-                                    </span>
-                                </div>
-                            </li>                              
-                            <li>
-                                <div class="form-element__wrap">
-                                    <label for="code07" class="font-type-h5-bold">설치장소</label>
-                                    <span  class="form-element__inner input-type">
-                                        <input type="text" class="font-type-h5-regular" value="" placeholder="설치장소 입력" id="code07" />
-                                    </span>
-                                </div>
-                            </li>                                                                                                             
-                        </ul>
-                    </form>
-                </div>
-                <div class="modal-footer">
-                    <div class="button__wrap gap10 flex-end">
-                        <button type="button" class="btn btn-cancel close-modal"  onclick="closeModal(event)">취소</button>
-                        <button type="button" class="btn btn-black btn-add" disabled>등록하기</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- 메시지 창 -->
-        <div class="modal__wrap--bg" id="remove-business">
-            <div class="modal__wrap size-default ">
-                <div class="modal-cont">
-                    <div class="font-type-h3 modal-confirm-msg">선택하신 항목을 삭제하시겠어요?</div>
-                </div>
-                <div class="modal-footer">
-                    <div class="button__wrap gap10 flex-end">
-                        <button type="button" class="btn btn-cancel close-modal"  onclick="closeModal(event)">취소</button>
-                        <button type="button" class="btn btn-black" onclick="deleteRow(_thisParent)">삭제</button>
-                    </div>
-                </div>
-            </div>
-        </div>                
-        <!-- //모달창 -->    
     <script type="text/javascript" src="../assets/js/ui.js" ></script>    
 </body>
 </html>

@@ -43,456 +43,1033 @@
                 <div class="tab-header-group">
                     <ul>
                         <li class="is-active">
-                            <button type="button" class="btn btn-tab">설정1</button>
-                            <span class="description">저압의 설정값을 입력하세요</span>
+                            <button type="button" class="btn btn-tab is-active" data-tab="tab1">저압요금</button>                            
                         </li>
                         <li>
-                            <button type="button" class="btn btn-tab">설정2</button>
+                            <button type="button" class="btn btn-tab" data-tab="tab2">고압요금</button>
                         </li>     
                         <li>
-                            <button type="button" class="btn btn-tab">설정2</button>
-                        </li>                                              
+                            <button type="button" class="btn btn-tab"  data-tab="tab3">계절·시간대별</button>
+                        </li>    
+                        <li>
+                            <button type="button" class="btn btn-tab"  data-tab="tab4">기후단가</button>
+                        </li>
+                        <li>
+                            <button type="button" class="btn btn-tab"  data-tab="tab5">연료비조정단가</button>
+                        </li>                                                                                               
                     </ul>
                 </div>
                 <div class="tab-contents">
-                    <div class="table__wrap">
-                        <table class="table table-list billing-table">
-                            <colgroup>
-                                <col width="40%" />
-                                <col width="20%" />
-                                <col width="20%" />
-                                <col width="20%" /> 
-                            </colgroup>
-                            <thead>
-                                <tr>
-                                    <th scope="col">저압 기본요금 (원/kw)</th>
-                                    <th scope="col">여름(6월~8월)</th>
-                                    <th scope="col">봄・가을(3월5월/9월~10월)</th>
-                                    <th scope="col">겨울(11월~2월)</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <th class="tbody-tit-gray">
-                                        <div class="form-element__wrap">
-                                            <label for="code01" class="font-type-h5-bold">선택 1</label>
-                                            <span  class="form-element__inner input-type">
-                                                <input type="text" class="font-type-h5-regular" value="" placeholder="요금 입력" id="code01" />
-                                            </span>
-                                        </div>
+                    <div class="tab-content is-active" id="tab1">
+                        <div class="table__wrap  billing-wrap">
+                            <table class="table table-list billing-table">
+                                <colgroup>
+                                    <col width="25%" />
+                                    <col width="25%" />
+                                    <col width="25%" />
+                                    <col width="25%" /> 
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th scope="col">저압 기본요금 (원/kw)</th>
+                                        <th scope="col">여름(6월~8월)</th>
+                                        <th scope="col">봄・가을(3월5월/9월~10월)</th>
+                                        <th scope="col">겨울(11월~2월)</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th class="tbody-tit-gray">
+                                            <div class="form-element__wrap">
+                                                <label for="code01" class="font-type-h5-bold">선택 1</label>
+                                                <span  class="form-element__inner input-type">
+                                                    <input type="text" class="font-type-h5-regular" value="" placeholder="요금 입력" id="code01" />
+                                                </span>
+                                            </div>
 
-                                    </th>
-                                    <td>
-                                        <ul class="input-list">
-                                            <li>
-                                                <div class="form-element__wrap">                                                    
-                                                    <span  class="form-element__inner input-type">
-                                                        <input type="text" class="font-type-h5-regular" value="" placeholder="경부하값 입력" id="code02" />
-                                                    </span>
-                                                </div>                                                
-                                            </li>
-                                            <li>
-                                                <div class="form-element__wrap">                                                    
-                                                    <span  class="form-element__inner input-type">
-                                                        <input type="text" class="font-type-h5-regular" value="" placeholder="중간부하값 입력" id="code03" />
-                                                    </span>
-                                                </div>                                                
-                                            </li>
-                                            <li>
-                                                <div class="form-element__wrap">                                                    
-                                                    <span  class="form-element__inner input-type">
-                                                        <input type="text" class="font-type-h5-regular" value="" placeholder="최대부하값 입력" id="code04" />
-                                                    </span>
-                                                </div>                                                
-                                            </li>                                                                                          
-                                        </ul>
-                                    </td>
-                                    <td>
-                                        <ul class="input-list">
-                                            <li>
-                                                <div class="form-element__wrap">                                                    
-                                                    <span  class="form-element__inner input-type">
-                                                        <input type="text" class="font-type-h5-regular" value="" placeholder="경부하값 입력" id="code05" />
-                                                    </span>
-                                                </div>                                                
-                                            </li>
-                                            <li>
-                                                <div class="form-element__wrap">                                                    
-                                                    <span  class="form-element__inner input-type">
-                                                        <input type="text" class="font-type-h5-regular" value="" placeholder="중간부하값 입력" id="code06" />
-                                                    </span>
-                                                </div>                                                
-                                            </li>
-                                            <li>
-                                                <div class="form-element__wrap">                                                    
-                                                    <span  class="form-element__inner input-type">
-                                                        <input type="text" class="font-type-h5-regular" value="" placeholder="최대부하값 입력" id="code07" />
-                                                    </span>
-                                                </div>                                                
-                                            </li>                                                                                          
-                                        </ul>                                        
-                                    </td>
-                                    <td>
-                                        <ul class="input-list">
-                                            <li>
-                                                <div class="form-element__wrap">                                                    
-                                                    <span  class="form-element__inner input-type">
-                                                        <input type="text" class="font-type-h5-regular" value="" placeholder="경부하값 입력" id="code08" />
-                                                    </span>
-                                                </div>                                                
-                                            </li>
-                                            <li>
-                                                <div class="form-element__wrap">                                                    
-                                                    <span  class="form-element__inner input-type">
-                                                        <input type="text" class="font-type-h5-regular" value="" placeholder="중간부하값 입력" id="code09" />
-                                                    </span>
-                                                </div>                                                
-                                            </li>
-                                            <li>
-                                                <div class="form-element__wrap">                                                    
-                                                    <span  class="form-element__inner input-type">
-                                                        <input type="text" class="font-type-h5-regular" value="" placeholder="최대부하값 입력" id="code10" />
-                                                    </span>
-                                                </div>                                                
-                                            </li>                                                                                          
-                                        </ul>                                         
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th class="tbody-tit-gray">
-                                        <div class="form-element__wrap">
-                                            <label for="code11" class="font-type-h5-bold">선택 2</label>
-                                            <span  class="form-element__inner input-type">
-                                                <input type="text" class="font-type-h5-regular" value="" placeholder="요금 입력" id="code11" />
-                                            </span>
-                                        </div>
+                                        </th>
+                                        <td>
+                                            <ul class="input-list">
+                                                <li>
+                                                    <div class="form-element__wrap">                                                    
+                                                        <span  class="form-element__inner input-type">
+                                                            <input type="text" class="font-type-h5-regular" value="" placeholder="경부하값 입력" id="code02" />
+                                                        </span>
+                                                    </div>                                                
+                                                </li>
+                                                <li>
+                                                    <div class="form-element__wrap">                                                    
+                                                        <span  class="form-element__inner input-type">
+                                                            <input type="text" class="font-type-h5-regular" value="" placeholder="중간부하값 입력" id="code03" />
+                                                        </span>
+                                                    </div>                                                
+                                                </li>
+                                                <li>
+                                                    <div class="form-element__wrap">                                                    
+                                                        <span  class="form-element__inner input-type">
+                                                            <input type="text" class="font-type-h5-regular" value="" placeholder="최대부하값 입력" id="code04" />
+                                                        </span>
+                                                    </div>                                                
+                                                </li>                                                                                          
+                                            </ul>
+                                        </td>
+                                        <td>
+                                            <ul class="input-list">
+                                                <li>
+                                                    <div class="form-element__wrap">                                                    
+                                                        <span  class="form-element__inner input-type">
+                                                            <input type="text" class="font-type-h5-regular" value="" placeholder="경부하값 입력" id="code05" />
+                                                        </span>
+                                                    </div>                                                
+                                                </li>
+                                                <li>
+                                                    <div class="form-element__wrap">                                                    
+                                                        <span  class="form-element__inner input-type">
+                                                            <input type="text" class="font-type-h5-regular" value="" placeholder="중간부하값 입력" id="code06" />
+                                                        </span>
+                                                    </div>                                                
+                                                </li>
+                                                <li>
+                                                    <div class="form-element__wrap">                                                    
+                                                        <span  class="form-element__inner input-type">
+                                                            <input type="text" class="font-type-h5-regular" value="" placeholder="최대부하값 입력" id="code07" />
+                                                        </span>
+                                                    </div>                                                
+                                                </li>                                                                                          
+                                            </ul>                                        
+                                        </td>
+                                        <td>
+                                            <ul class="input-list">
+                                                <li>
+                                                    <div class="form-element__wrap">                                                    
+                                                        <span  class="form-element__inner input-type">
+                                                            <input type="text" class="font-type-h5-regular" value="" placeholder="경부하값 입력" id="code08" />
+                                                        </span>
+                                                    </div>                                                
+                                                </li>
+                                                <li>
+                                                    <div class="form-element__wrap">                                                    
+                                                        <span  class="form-element__inner input-type">
+                                                            <input type="text" class="font-type-h5-regular" value="" placeholder="중간부하값 입력" id="code09" />
+                                                        </span>
+                                                    </div>                                                
+                                                </li>
+                                                <li>
+                                                    <div class="form-element__wrap">                                                    
+                                                        <span  class="form-element__inner input-type">
+                                                            <input type="text" class="font-type-h5-regular" value="" placeholder="최대부하값 입력" id="code10" />
+                                                        </span>
+                                                    </div>                                                
+                                                </li>                                                                                          
+                                            </ul>                                         
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th class="tbody-tit-gray">
+                                            <div class="form-element__wrap">
+                                                <label for="code11" class="font-type-h5-bold">선택 2</label>
+                                                <span  class="form-element__inner input-type">
+                                                    <input type="text" class="font-type-h5-regular" value="" placeholder="요금 입력" id="code11" />
+                                                </span>
+                                            </div>
 
-                                    </th>
-                                    <td>
-                                        <ul class="input-list">
-                                            <li>
-                                                <div class="form-element__wrap">                                                    
-                                                    <span  class="form-element__inner input-type">
-                                                        <input type="text" class="font-type-h5-regular" value="" placeholder="경부하값 입력" id="code12" />
-                                                    </span>
-                                                </div>                                                
-                                            </li>
-                                            <li>
-                                                <div class="form-element__wrap">                                                    
-                                                    <span  class="form-element__inner input-type">
-                                                        <input type="text" class="font-type-h5-regular" value="" placeholder="중간부하값 입력" id="code13" />
-                                                    </span>
-                                                </div>                                                
-                                            </li>
-                                            <li>
-                                                <div class="form-element__wrap">                                                    
-                                                    <span  class="form-element__inner input-type">
-                                                        <input type="text" class="font-type-h5-regular" value="" placeholder="최대부하값 입력" id="code14" />
-                                                    </span>
-                                                </div>                                                
-                                            </li>                                                                                          
-                                        </ul>
-                                    </td>
-                                    <td>
-                                        <ul class="input-list">
-                                            <li>
-                                                <div class="form-element__wrap">                                                    
-                                                    <span  class="form-element__inner input-type">
-                                                        <input type="text" class="font-type-h5-regular" value="" placeholder="경부하값 입력" id="code15" />
-                                                    </span>
-                                                </div>                                                
-                                            </li>
-                                            <li>
-                                                <div class="form-element__wrap">                                                    
-                                                    <span  class="form-element__inner input-type">
-                                                        <input type="text" class="font-type-h5-regular" value="" placeholder="중간부하값 입력" id="code16" />
-                                                    </span>
-                                                </div>                                                
-                                            </li>
-                                            <li>
-                                                <div class="form-element__wrap">                                                    
-                                                    <span  class="form-element__inner input-type">
-                                                        <input type="text" class="font-type-h5-regular" value="" placeholder="최대부하값 입력" id="code17" />
-                                                    </span>
-                                                </div>                                                
-                                            </li>                                                                                          
-                                        </ul>                                        
-                                    </td>
-                                    <td>
-                                        <ul class="input-list">
-                                            <li>
-                                                <div class="form-element__wrap">                                                    
-                                                    <span  class="form-element__inner input-type">
-                                                        <input type="text" class="font-type-h5-regular" value="" placeholder="경부하값 입력" id="code18" />
-                                                    </span>
-                                                </div>                                                
-                                            </li>
-                                            <li>
-                                                <div class="form-element__wrap">                                                    
-                                                    <span  class="form-element__inner input-type">
-                                                        <input type="text" class="font-type-h5-regular" value="" placeholder="중간부하값 입력" id="code19" />
-                                                    </span>
-                                                </div>                                                
-                                            </li>
-                                            <li>
-                                                <div class="form-element__wrap">                                                    
-                                                    <span  class="form-element__inner input-type">
-                                                        <input type="text" class="font-type-h5-regular" value="" placeholder="최대부하값 입력" id="code20" />
-                                                    </span>
-                                                </div>                                                
-                                            </li>                                                                                          
-                                        </ul>                                         
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th class="tbody-tit-gray">
-                                        <div class="form-element__wrap">
-                                            <label for="code31" class="font-type-h5-bold">선택 3</label>
-                                            <span  class="form-element__inner input-type">
-                                                <input type="text" class="font-type-h5-regular" value="" placeholder="요금 입력" id="code31" />
-                                            </span>
-                                        </div>
+                                        </th>
+                                        <td>
+                                            <ul class="input-list">
+                                                <li>
+                                                    <div class="form-element__wrap">                                                    
+                                                        <span  class="form-element__inner input-type">
+                                                            <input type="text" class="font-type-h5-regular" value="" placeholder="경부하값 입력" id="code12" />
+                                                        </span>
+                                                    </div>                                                
+                                                </li>
+                                                <li>
+                                                    <div class="form-element__wrap">                                                    
+                                                        <span  class="form-element__inner input-type">
+                                                            <input type="text" class="font-type-h5-regular" value="" placeholder="중간부하값 입력" id="code13" />
+                                                        </span>
+                                                    </div>                                                
+                                                </li>
+                                                <li>
+                                                    <div class="form-element__wrap">                                                    
+                                                        <span  class="form-element__inner input-type">
+                                                            <input type="text" class="font-type-h5-regular" value="" placeholder="최대부하값 입력" id="code14" />
+                                                        </span>
+                                                    </div>                                                
+                                                </li>                                                                                          
+                                            </ul>
+                                        </td>
+                                        <td>
+                                            <ul class="input-list">
+                                                <li>
+                                                    <div class="form-element__wrap">                                                    
+                                                        <span  class="form-element__inner input-type">
+                                                            <input type="text" class="font-type-h5-regular" value="" placeholder="경부하값 입력" id="code15" />
+                                                        </span>
+                                                    </div>                                                
+                                                </li>
+                                                <li>
+                                                    <div class="form-element__wrap">                                                    
+                                                        <span  class="form-element__inner input-type">
+                                                            <input type="text" class="font-type-h5-regular" value="" placeholder="중간부하값 입력" id="code16" />
+                                                        </span>
+                                                    </div>                                                
+                                                </li>
+                                                <li>
+                                                    <div class="form-element__wrap">                                                    
+                                                        <span  class="form-element__inner input-type">
+                                                            <input type="text" class="font-type-h5-regular" value="" placeholder="최대부하값 입력" id="code17" />
+                                                        </span>
+                                                    </div>                                                
+                                                </li>                                                                                          
+                                            </ul>                                        
+                                        </td>
+                                        <td>
+                                            <ul class="input-list">
+                                                <li>
+                                                    <div class="form-element__wrap">                                                    
+                                                        <span  class="form-element__inner input-type">
+                                                            <input type="text" class="font-type-h5-regular" value="" placeholder="경부하값 입력" id="code18" />
+                                                        </span>
+                                                    </div>                                                
+                                                </li>
+                                                <li>
+                                                    <div class="form-element__wrap">                                                    
+                                                        <span  class="form-element__inner input-type">
+                                                            <input type="text" class="font-type-h5-regular" value="" placeholder="중간부하값 입력" id="code19" />
+                                                        </span>
+                                                    </div>                                                
+                                                </li>
+                                                <li>
+                                                    <div class="form-element__wrap">                                                    
+                                                        <span  class="form-element__inner input-type">
+                                                            <input type="text" class="font-type-h5-regular" value="" placeholder="최대부하값 입력" id="code20" />
+                                                        </span>
+                                                    </div>                                                
+                                                </li>                                                                                          
+                                            </ul>                                         
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th class="tbody-tit-gray">
+                                            <div class="form-element__wrap">
+                                                <label for="code31" class="font-type-h5-bold">선택 3</label>
+                                                <span  class="form-element__inner input-type">
+                                                    <input type="text" class="font-type-h5-regular" value="" placeholder="요금 입력" id="code31" />
+                                                </span>
+                                            </div>
 
-                                    </th>
-                                    <td>
-                                        <ul class="input-list">
-                                            <li>
-                                                <div class="form-element__wrap">                                                    
-                                                    <span  class="form-element__inner input-type">
-                                                        <input type="text" class="font-type-h5-regular" value="" placeholder="경부하값 입력" id="code32" />
-                                                    </span>
-                                                </div>                                                
-                                            </li>
-                                            <li>
-                                                <div class="form-element__wrap">                                                    
-                                                    <span  class="form-element__inner input-type">
-                                                        <input type="text" class="font-type-h5-regular" value="" placeholder="중간부하값 입력" id="code33" />
-                                                    </span>
-                                                </div>                                                
-                                            </li>
-                                            <li>
-                                                <div class="form-element__wrap">                                                    
-                                                    <span  class="form-element__inner input-type">
-                                                        <input type="text" class="font-type-h5-regular" value="" placeholder="최대부하값 입력" id="code34" />
-                                                    </span>
-                                                </div>                                                
-                                            </li>                                                                                          
-                                        </ul>
-                                    </td>
-                                    <td>
-                                        <ul class="input-list">
-                                            <li>
-                                                <div class="form-element__wrap">                                                    
-                                                    <span  class="form-element__inner input-type">
-                                                        <input type="text" class="font-type-h5-regular" value="" placeholder="경부하값 입력" id="code35" />
-                                                    </span>
-                                                </div>                                                
-                                            </li>
-                                            <li>
-                                                <div class="form-element__wrap">                                                    
-                                                    <span  class="form-element__inner input-type">
-                                                        <input type="text" class="font-type-h5-regular" value="" placeholder="중간부하값 입력" id="code36" />
-                                                    </span>
-                                                </div>                                                
-                                            </li>
-                                            <li>
-                                                <div class="form-element__wrap">                                                    
-                                                    <span  class="form-element__inner input-type">
-                                                        <input type="text" class="font-type-h5-regular" value="" placeholder="최대부하값 입력" id="code37" />
-                                                    </span>
-                                                </div>                                                
-                                            </li>                                                                                          
-                                        </ul>                                        
-                                    </td>
-                                    <td>
-                                        <ul class="input-list">
-                                            <li>
-                                                <div class="form-element__wrap">                                                    
-                                                    <span  class="form-element__inner input-type">
-                                                        <input type="text" class="font-type-h5-regular" value="" placeholder="경부하값 입력" id="code38" />
-                                                    </span>
-                                                </div>                                                
-                                            </li>
-                                            <li>
-                                                <div class="form-element__wrap">                                                    
-                                                    <span  class="form-element__inner input-type">
-                                                        <input type="text" class="font-type-h5-regular" value="" placeholder="중간부하값 입력" id="code39" />
-                                                    </span>
-                                                </div>                                                
-                                            </li>
-                                            <li>
-                                                <div class="form-element__wrap">                                                    
-                                                    <span  class="form-element__inner input-type">
-                                                        <input type="text" class="font-type-h5-regular" value="" placeholder="최대부하값 입력" id="code30" />
-                                                    </span>
-                                                </div>                                                
-                                            </li>                                                                                          
-                                        </ul>                                         
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th class="tbody-tit-gray">
-                                        <div class="form-element__wrap">
-                                            <label for="code41" class="font-type-h5-bold">선택 4</label>
-                                            <span  class="form-element__inner input-type">
-                                                <input type="text" class="font-type-h5-regular" value="" placeholder="요금 입력" id="code41" />
-                                            </span>
-                                        </div>
+                                        </th>
+                                        <td>
+                                            <ul class="input-list">
+                                                <li>
+                                                    <div class="form-element__wrap">                                                    
+                                                        <span  class="form-element__inner input-type">
+                                                            <input type="text" class="font-type-h5-regular" value="" placeholder="경부하값 입력" id="code32" />
+                                                        </span>
+                                                    </div>                                                
+                                                </li>
+                                                <li>
+                                                    <div class="form-element__wrap">                                                    
+                                                        <span  class="form-element__inner input-type">
+                                                            <input type="text" class="font-type-h5-regular" value="" placeholder="중간부하값 입력" id="code33" />
+                                                        </span>
+                                                    </div>                                                
+                                                </li>
+                                                <li>
+                                                    <div class="form-element__wrap">                                                    
+                                                        <span  class="form-element__inner input-type">
+                                                            <input type="text" class="font-type-h5-regular" value="" placeholder="최대부하값 입력" id="code34" />
+                                                        </span>
+                                                    </div>                                                
+                                                </li>                                                                                          
+                                            </ul>
+                                        </td>
+                                        <td>
+                                            <ul class="input-list">
+                                                <li>
+                                                    <div class="form-element__wrap">                                                    
+                                                        <span  class="form-element__inner input-type">
+                                                            <input type="text" class="font-type-h5-regular" value="" placeholder="경부하값 입력" id="code35" />
+                                                        </span>
+                                                    </div>                                                
+                                                </li>
+                                                <li>
+                                                    <div class="form-element__wrap">                                                    
+                                                        <span  class="form-element__inner input-type">
+                                                            <input type="text" class="font-type-h5-regular" value="" placeholder="중간부하값 입력" id="code36" />
+                                                        </span>
+                                                    </div>                                                
+                                                </li>
+                                                <li>
+                                                    <div class="form-element__wrap">                                                    
+                                                        <span  class="form-element__inner input-type">
+                                                            <input type="text" class="font-type-h5-regular" value="" placeholder="최대부하값 입력" id="code37" />
+                                                        </span>
+                                                    </div>                                                
+                                                </li>                                                                                          
+                                            </ul>                                        
+                                        </td>
+                                        <td>
+                                            <ul class="input-list">
+                                                <li>
+                                                    <div class="form-element__wrap">                                                    
+                                                        <span  class="form-element__inner input-type">
+                                                            <input type="text" class="font-type-h5-regular" value="" placeholder="경부하값 입력" id="code38" />
+                                                        </span>
+                                                    </div>                                                
+                                                </li>
+                                                <li>
+                                                    <div class="form-element__wrap">                                                    
+                                                        <span  class="form-element__inner input-type">
+                                                            <input type="text" class="font-type-h5-regular" value="" placeholder="중간부하값 입력" id="code39" />
+                                                        </span>
+                                                    </div>                                                
+                                                </li>
+                                                <li>
+                                                    <div class="form-element__wrap">                                                    
+                                                        <span  class="form-element__inner input-type">
+                                                            <input type="text" class="font-type-h5-regular" value="" placeholder="최대부하값 입력" id="code30" />
+                                                        </span>
+                                                    </div>                                                
+                                                </li>                                                                                          
+                                            </ul>                                         
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th class="tbody-tit-gray">
+                                            <div class="form-element__wrap">
+                                                <label for="code41" class="font-type-h5-bold">선택 4</label>
+                                                <span  class="form-element__inner input-type">
+                                                    <input type="text" class="font-type-h5-regular" value="" placeholder="요금 입력" id="code41" />
+                                                </span>
+                                            </div>
 
-                                    </th>
-                                    <td>
-                                        <ul class="input-list">
-                                            <li>
-                                                <div class="form-element__wrap">                                                    
-                                                    <span  class="form-element__inner input-type">
-                                                        <input type="text" class="font-type-h5-regular" value="" placeholder="전체시간 입력" id="code42" />
-                                                    </span>
-                                                </div>                                                
-                                            </li>                                                                                       
-                                        </ul>
-                                    </td>
-                                    <td>
-                                        <ul class="input-list">
-                                            <li>
-                                                <div class="form-element__wrap">                                                    
-                                                    <span  class="form-element__inner input-type">
-                                                        <input type="text" class="font-type-h5-regular" value="" placeholder="전체시간 입력" id="code45" />
-                                                    </span>
-                                                </div>                                                
-                                            </li>                                                                                        
-                                        </ul>                                        
-                                    </td>
-                                    <td>
-                                        <ul class="input-list">
-                                            <li>
-                                                <div class="form-element__wrap">                                                    
-                                                    <span  class="form-element__inner input-type">
-                                                        <input type="text" class="font-type-h5-regular" value="" placeholder="전체시간 입력" id="code48" />
-                                                    </span>
-                                                </div>                                                
-                                            </li>                                                                                        
-                                        </ul>                                         
-                                    </td>
-                                </tr>                                                                                                   
-                            </tbody>
-                        </table>
+                                        </th>
+                                        <td>
+                                            <ul class="input-list">
+                                                <li>
+                                                    <div class="form-element__wrap">                                                    
+                                                        <span  class="form-element__inner input-type">
+                                                            <input type="text" class="font-type-h5-regular" value="" placeholder="전체시간 입력" id="code42" />
+                                                        </span>
+                                                    </div>                                                
+                                                </li>                                                                                       
+                                            </ul>
+                                        </td>
+                                        <td>
+                                            <ul class="input-list">
+                                                <li>
+                                                    <div class="form-element__wrap">                                                    
+                                                        <span  class="form-element__inner input-type">
+                                                            <input type="text" class="font-type-h5-regular" value="" placeholder="전체시간 입력" id="code45" />
+                                                        </span>
+                                                    </div>                                                
+                                                </li>                                                                                        
+                                            </ul>                                        
+                                        </td>
+                                        <td>
+                                            <ul class="input-list">
+                                                <li>
+                                                    <div class="form-element__wrap">                                                    
+                                                        <span  class="form-element__inner input-type">
+                                                            <input type="text" class="font-type-h5-regular" value="" placeholder="전체시간 입력" id="code48" />
+                                                        </span>
+                                                    </div>                                                
+                                                </li>                                                                                        
+                                            </ul>                                         
+                                        </td>
+                                    </tr>                                                                                                   
+                                </tbody>
+                            </table>
+                            <div class="bulling_apply_data">
+                                <div class="form-element__wrap flex-end">
+                                    <label for="code01" class="font-type-h5-bold">적용일시</label>
+                                    <div class="input-multi">
+                                        <span class="form-element__inner input-type date_form">
+                                            <input type="date" class="font-type-h5-regular" value="" placeholder="날짜입력" id="code01">
+                                        </span>
+                                        <span class="form-element__inner input-type time_form">
+                                            <input type="time" class="font-type-h5-regular" value="" placeholder="시간입력" >
+                                        </span>  
+                                    </div>                              
+                                </div>                            
+                            </div>
+                            <div class="button__wrap bulling-btn">                            
+                                <button type="button" class="btn btn-black mx368">적용</button>
+                            </div>                    
+                        </div>
                     </div>
-                    <div class="gray-box-full__wrap">
-                        <div class="text">적용일시  2023-07-01 12:00:00</div>
-                        <div class="form-element__wrap">
-                            <label for="code61" class="font-type-h5-bold">기후 환경 요금 단가</label>
-                            <span  class="form-element__inner input-type">
-                                <input type="text" class="font-type-h5-regular" value="" placeholder="요금 입력" id="code61" />
-                            </span>
+                    <div class="tab-content" id="tab2">
+                        <div class="table__wrap  billing-wrap">
+                            <table class="table table-list billing-table">
+                                <colgroup>
+                                    <col width="25%" />
+                                    <col width="25%" />
+                                    <col width="25%" />
+                                    <col width="25%" /> 
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th scope="col">고압 기본요금 (원/kw)</th>
+                                        <th scope="col">여름(6월~8월)</th>
+                                        <th scope="col">봄・가을(3월5월/9월~10월)</th>
+                                        <th scope="col">겨울(11월~2월)</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th class="tbody-tit-gray">
+                                            <div class="form-element__wrap">
+                                                <label for="code01" class="font-type-h5-bold">선택 1</label>
+                                                <span  class="form-element__inner input-type">
+                                                    <input type="text" class="font-type-h5-regular" value="" placeholder="요금 입력" id="code01" />
+                                                </span>
+                                            </div>
+
+                                        </th>
+                                        <td>
+                                            <ul class="input-list">
+                                                <li>
+                                                    <div class="form-element__wrap">                                                    
+                                                        <span  class="form-element__inner input-type">
+                                                            <input type="text" class="font-type-h5-regular" value="" placeholder="경부하값 입력" id="code02" />
+                                                        </span>
+                                                    </div>                                                
+                                                </li>
+                                                <li>
+                                                    <div class="form-element__wrap">                                                    
+                                                        <span  class="form-element__inner input-type">
+                                                            <input type="text" class="font-type-h5-regular" value="" placeholder="중간부하값 입력" id="code03" />
+                                                        </span>
+                                                    </div>                                                
+                                                </li>
+                                                <li>
+                                                    <div class="form-element__wrap">                                                    
+                                                        <span  class="form-element__inner input-type">
+                                                            <input type="text" class="font-type-h5-regular" value="" placeholder="최대부하값 입력" id="code04" />
+                                                        </span>
+                                                    </div>                                                
+                                                </li>                                                                                          
+                                            </ul>
+                                        </td>
+                                        <td>
+                                            <ul class="input-list">
+                                                <li>
+                                                    <div class="form-element__wrap">                                                    
+                                                        <span  class="form-element__inner input-type">
+                                                            <input type="text" class="font-type-h5-regular" value="" placeholder="경부하값 입력" id="code05" />
+                                                        </span>
+                                                    </div>                                                
+                                                </li>
+                                                <li>
+                                                    <div class="form-element__wrap">                                                    
+                                                        <span  class="form-element__inner input-type">
+                                                            <input type="text" class="font-type-h5-regular" value="" placeholder="중간부하값 입력" id="code06" />
+                                                        </span>
+                                                    </div>                                                
+                                                </li>
+                                                <li>
+                                                    <div class="form-element__wrap">                                                    
+                                                        <span  class="form-element__inner input-type">
+                                                            <input type="text" class="font-type-h5-regular" value="" placeholder="최대부하값 입력" id="code07" />
+                                                        </span>
+                                                    </div>                                                
+                                                </li>                                                                                          
+                                            </ul>                                        
+                                        </td>
+                                        <td>
+                                            <ul class="input-list">
+                                                <li>
+                                                    <div class="form-element__wrap">                                                    
+                                                        <span  class="form-element__inner input-type">
+                                                            <input type="text" class="font-type-h5-regular" value="" placeholder="경부하값 입력" id="code08" />
+                                                        </span>
+                                                    </div>                                                
+                                                </li>
+                                                <li>
+                                                    <div class="form-element__wrap">                                                    
+                                                        <span  class="form-element__inner input-type">
+                                                            <input type="text" class="font-type-h5-regular" value="" placeholder="중간부하값 입력" id="code09" />
+                                                        </span>
+                                                    </div>                                                
+                                                </li>
+                                                <li>
+                                                    <div class="form-element__wrap">                                                    
+                                                        <span  class="form-element__inner input-type">
+                                                            <input type="text" class="font-type-h5-regular" value="" placeholder="최대부하값 입력" id="code10" />
+                                                        </span>
+                                                    </div>                                                
+                                                </li>                                                                                          
+                                            </ul>                                         
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th class="tbody-tit-gray">
+                                            <div class="form-element__wrap">
+                                                <label for="code11" class="font-type-h5-bold">선택 2</label>
+                                                <span  class="form-element__inner input-type">
+                                                    <input type="text" class="font-type-h5-regular" value="" placeholder="요금 입력" id="code11" />
+                                                </span>
+                                            </div>
+
+                                        </th>
+                                        <td>
+                                            <ul class="input-list">
+                                                <li>
+                                                    <div class="form-element__wrap">                                                    
+                                                        <span  class="form-element__inner input-type">
+                                                            <input type="text" class="font-type-h5-regular" value="" placeholder="경부하값 입력" id="code12" />
+                                                        </span>
+                                                    </div>                                                
+                                                </li>
+                                                <li>
+                                                    <div class="form-element__wrap">                                                    
+                                                        <span  class="form-element__inner input-type">
+                                                            <input type="text" class="font-type-h5-regular" value="" placeholder="중간부하값 입력" id="code13" />
+                                                        </span>
+                                                    </div>                                                
+                                                </li>
+                                                <li>
+                                                    <div class="form-element__wrap">                                                    
+                                                        <span  class="form-element__inner input-type">
+                                                            <input type="text" class="font-type-h5-regular" value="" placeholder="최대부하값 입력" id="code14" />
+                                                        </span>
+                                                    </div>                                                
+                                                </li>                                                                                          
+                                            </ul>
+                                        </td>
+                                        <td>
+                                            <ul class="input-list">
+                                                <li>
+                                                    <div class="form-element__wrap">                                                    
+                                                        <span  class="form-element__inner input-type">
+                                                            <input type="text" class="font-type-h5-regular" value="" placeholder="경부하값 입력" id="code15" />
+                                                        </span>
+                                                    </div>                                                
+                                                </li>
+                                                <li>
+                                                    <div class="form-element__wrap">                                                    
+                                                        <span  class="form-element__inner input-type">
+                                                            <input type="text" class="font-type-h5-regular" value="" placeholder="중간부하값 입력" id="code16" />
+                                                        </span>
+                                                    </div>                                                
+                                                </li>
+                                                <li>
+                                                    <div class="form-element__wrap">                                                    
+                                                        <span  class="form-element__inner input-type">
+                                                            <input type="text" class="font-type-h5-regular" value="" placeholder="최대부하값 입력" id="code17" />
+                                                        </span>
+                                                    </div>                                                
+                                                </li>                                                                                          
+                                            </ul>                                        
+                                        </td>
+                                        <td>
+                                            <ul class="input-list">
+                                                <li>
+                                                    <div class="form-element__wrap">                                                    
+                                                        <span  class="form-element__inner input-type">
+                                                            <input type="text" class="font-type-h5-regular" value="" placeholder="경부하값 입력" id="code18" />
+                                                        </span>
+                                                    </div>                                                
+                                                </li>
+                                                <li>
+                                                    <div class="form-element__wrap">                                                    
+                                                        <span  class="form-element__inner input-type">
+                                                            <input type="text" class="font-type-h5-regular" value="" placeholder="중간부하값 입력" id="code19" />
+                                                        </span>
+                                                    </div>                                                
+                                                </li>
+                                                <li>
+                                                    <div class="form-element__wrap">                                                    
+                                                        <span  class="form-element__inner input-type">
+                                                            <input type="text" class="font-type-h5-regular" value="" placeholder="최대부하값 입력" id="code20" />
+                                                        </span>
+                                                    </div>                                                
+                                                </li>                                                                                          
+                                            </ul>                                         
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th class="tbody-tit-gray">
+                                            <div class="form-element__wrap">
+                                                <label for="code31" class="font-type-h5-bold">선택 3</label>
+                                                <span  class="form-element__inner input-type">
+                                                    <input type="text" class="font-type-h5-regular" value="" placeholder="요금 입력" id="code31" />
+                                                </span>
+                                            </div>
+
+                                        </th>
+                                        <td>
+                                            <ul class="input-list">
+                                                <li>
+                                                    <div class="form-element__wrap">                                                    
+                                                        <span  class="form-element__inner input-type">
+                                                            <input type="text" class="font-type-h5-regular" value="" placeholder="경부하값 입력" id="code32" />
+                                                        </span>
+                                                    </div>                                                
+                                                </li>
+                                                <li>
+                                                    <div class="form-element__wrap">                                                    
+                                                        <span  class="form-element__inner input-type">
+                                                            <input type="text" class="font-type-h5-regular" value="" placeholder="중간부하값 입력" id="code33" />
+                                                        </span>
+                                                    </div>                                                
+                                                </li>
+                                                <li>
+                                                    <div class="form-element__wrap">                                                    
+                                                        <span  class="form-element__inner input-type">
+                                                            <input type="text" class="font-type-h5-regular" value="" placeholder="최대부하값 입력" id="code34" />
+                                                        </span>
+                                                    </div>                                                
+                                                </li>                                                                                          
+                                            </ul>
+                                        </td>
+                                        <td>
+                                            <ul class="input-list">
+                                                <li>
+                                                    <div class="form-element__wrap">                                                    
+                                                        <span  class="form-element__inner input-type">
+                                                            <input type="text" class="font-type-h5-regular" value="" placeholder="경부하값 입력" id="code35" />
+                                                        </span>
+                                                    </div>                                                
+                                                </li>
+                                                <li>
+                                                    <div class="form-element__wrap">                                                    
+                                                        <span  class="form-element__inner input-type">
+                                                            <input type="text" class="font-type-h5-regular" value="" placeholder="중간부하값 입력" id="code36" />
+                                                        </span>
+                                                    </div>                                                
+                                                </li>
+                                                <li>
+                                                    <div class="form-element__wrap">                                                    
+                                                        <span  class="form-element__inner input-type">
+                                                            <input type="text" class="font-type-h5-regular" value="" placeholder="최대부하값 입력" id="code37" />
+                                                        </span>
+                                                    </div>                                                
+                                                </li>                                                                                          
+                                            </ul>                                        
+                                        </td>
+                                        <td>
+                                            <ul class="input-list">
+                                                <li>
+                                                    <div class="form-element__wrap">                                                    
+                                                        <span  class="form-element__inner input-type">
+                                                            <input type="text" class="font-type-h5-regular" value="" placeholder="경부하값 입력" id="code38" />
+                                                        </span>
+                                                    </div>                                                
+                                                </li>
+                                                <li>
+                                                    <div class="form-element__wrap">                                                    
+                                                        <span  class="form-element__inner input-type">
+                                                            <input type="text" class="font-type-h5-regular" value="" placeholder="중간부하값 입력" id="code39" />
+                                                        </span>
+                                                    </div>                                                
+                                                </li>
+                                                <li>
+                                                    <div class="form-element__wrap">                                                    
+                                                        <span  class="form-element__inner input-type">
+                                                            <input type="text" class="font-type-h5-regular" value="" placeholder="최대부하값 입력" id="code30" />
+                                                        </span>
+                                                    </div>                                                
+                                                </li>                                                                                          
+                                            </ul>                                         
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th class="tbody-tit-gray">
+                                            <div class="form-element__wrap">
+                                                <label for="code41" class="font-type-h5-bold">선택 4</label>
+                                                <span  class="form-element__inner input-type">
+                                                    <input type="text" class="font-type-h5-regular" value="" placeholder="요금 입력" id="code41" />
+                                                </span>
+                                            </div>
+
+                                        </th>
+                                        <td>
+                                            <ul class="input-list">
+                                                <li>
+                                                    <div class="form-element__wrap">                                                    
+                                                        <span  class="form-element__inner input-type">
+                                                            <input type="text" class="font-type-h5-regular" value="" placeholder="전체시간 입력" id="code42" />
+                                                        </span>
+                                                    </div>                                                
+                                                </li>                                                                                       
+                                            </ul>
+                                        </td>
+                                        <td>
+                                            <ul class="input-list">
+                                                <li>
+                                                    <div class="form-element__wrap">                                                    
+                                                        <span  class="form-element__inner input-type">
+                                                            <input type="text" class="font-type-h5-regular" value="" placeholder="전체시간 입력" id="code45" />
+                                                        </span>
+                                                    </div>                                                
+                                                </li>                                                                                        
+                                            </ul>                                        
+                                        </td>
+                                        <td>
+                                            <ul class="input-list">
+                                                <li>
+                                                    <div class="form-element__wrap">                                                    
+                                                        <span  class="form-element__inner input-type">
+                                                            <input type="text" class="font-type-h5-regular" value="" placeholder="전체시간 입력" id="code48" />
+                                                        </span>
+                                                    </div>                                                
+                                                </li>                                                                                        
+                                            </ul>                                         
+                                        </td>
+                                    </tr>                                                                                                   
+                                </tbody>
+                            </table>
+                            <div class="bulling_apply_data">
+                                <div class="form-element__wrap flex-end">
+                                    <label for="code01" class="font-type-h5-bold">적용일시</label>
+                                    <div class="input-multi">
+                                        <span class="form-element__inner input-type date_form">
+                                            <input type="date" class="font-type-h5-regular" value="" placeholder="날짜입력" id="code01">
+                                        </span>
+                                        <span class="form-element__inner input-type time_form">
+                                            <input type="time" class="font-type-h5-regular" value="" placeholder="시간입력" >
+                                        </span>  
+                                    </div>                              
+                                </div>                            
+                            </div>
+                            <div class="button__wrap bulling-btn">                            
+                                <button type="button" class="btn btn-black mx368">적용</button>
+                            </div>                        
+                        </div>
+                    </div>
+                    <div class="tab-content" id="tab3">
+                        <div class="table__wrap  billing-wrap">
+                            <table class="table table-list billing-table seasion">
+                                <colgroup>
+                                    <col width="25%" />
+                                    <col width="25%" />
+                                    <col width="25%" />
+                                    <col width="25%" /> 
+                                </colgroup>
+                                <thead>
+                                    <tr>                                        
+                                        <th scope="col">여름(6월~8월)</th>
+                                        <th scope="col">봄・가을(3월5월/9월~10월)</th>
+                                        <th scope="col">겨울(11월~2월)</th>
+                                        <th scope="col">제주도</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <div class="form-element__wrap">                                                
+                                                <div class="input-multi">
+                                                    <span  class="form-element__inner input-type">
+                                                        <input type="text" class="font-type-h5-regular" value="" placeholder="경부하 시간대" id="code01" />
+                                                    </span> 
+                                                    <span> ~ </span>
+                                                    <span  class="form-element__inner input-type">
+                                                        <input type="text" class="font-type-h5-regular" value="" placeholder="경부하 시간대" id="code01" />
+                                                    </span>  
+                                                </div>                              
+                                            </div>  
+                                        </td>
+                                        <td>
+                                            <div class="form-element__wrap">                                                
+                                                <div class="input-multi">
+                                                    <span  class="form-element__inner input-type">
+                                                        <input type="text" class="font-type-h5-regular" value="" placeholder="경부하 시간대" id="code01" />
+                                                    </span> 
+                                                    <span> ~ </span>
+                                                    <span  class="form-element__inner input-type">
+                                                        <input type="text" class="font-type-h5-regular" value="" placeholder="경부하 시간대" id="code01" />
+                                                    </span>  
+                                                </div>                              
+                                            </div>                                        
+                                        </td>
+                                        <td>
+                                            <div class="form-element__wrap">                                                
+                                                <div class="input-multi">
+                                                    <span  class="form-element__inner input-type">
+                                                        <input type="text" class="font-type-h5-regular" value="" placeholder="경부하 시간대" id="code01" />
+                                                    </span> 
+                                                    <span> ~ </span>
+                                                    <span  class="form-element__inner input-type">
+                                                        <input type="text" class="font-type-h5-regular" value="" placeholder="경부하 시간대" id="code01" />
+                                                    </span>  
+                                                </div>                              
+                                            </div>                                          
+                                        </td>
+                                        <td>
+                                            <div class="form-element__wrap">                                                
+                                                <div class="input-multi">
+                                                    <span  class="form-element__inner input-type">
+                                                        <input type="text" class="font-type-h5-regular" value="" placeholder="경부하 시간대" id="code01" />
+                                                    </span> 
+                                                    <span> ~ </span>
+                                                    <span  class="form-element__inner input-type">
+                                                        <input type="text" class="font-type-h5-regular" value="" placeholder="경부하 시간대" id="code01" />
+                                                    </span>  
+                                                </div>                              
+                                            </div>                                      
+                                        </td>                                        
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="form-element__wrap">                                                
+                                                <div class="input-multi">
+                                                    <span  class="form-element__inner input-type">
+                                                        <input type="text" class="font-type-h5-regular" value="" placeholder="중부하 시간대" id="code01" />
+                                                    </span> 
+                                                    <span> ~ </span>
+                                                    <span  class="form-element__inner input-type">
+                                                        <input type="text" class="font-type-h5-regular" value="" placeholder="중부하 시간대" id="code01" />
+                                                    </span>  
+                                                </div>                              
+                                            </div>  
+                                        </td>
+                                        <td>
+                                            <div class="form-element__wrap">                                                
+                                                <div class="input-multi">
+                                                    <span  class="form-element__inner input-type">
+                                                        <input type="text" class="font-type-h5-regular" value="" placeholder="중부하 시간대" id="code01" />
+                                                    </span> 
+                                                    <span> ~ </span>
+                                                    <span  class="form-element__inner input-type">
+                                                        <input type="text" class="font-type-h5-regular" value="" placeholder="중부하 시간대" id="code01" />
+                                                    </span>  
+                                                </div>                              
+                                            </div>                                        
+                                        </td>
+                                        <td>
+                                            <div class="form-element__wrap">                                                
+                                                <div class="input-multi">
+                                                    <span  class="form-element__inner input-type">
+                                                        <input type="text" class="font-type-h5-regular" value="" placeholder="중부하 시간대" id="code01" />
+                                                    </span> 
+                                                    <span> ~ </span>
+                                                    <span  class="form-element__inner input-type">
+                                                        <input type="text" class="font-type-h5-regular" value="" placeholder="중부하 시간대" id="code01" />
+                                                    </span>  
+                                                </div>                              
+                                            </div>                                          
+                                        </td>
+                                        <td>
+                                            <div class="form-element__wrap">                                                
+                                                <div class="input-multi">
+                                                    <span  class="form-element__inner input-type">
+                                                        <input type="text" class="font-type-h5-regular" value="" placeholder="중부하 시간대" id="code01" />
+                                                    </span> 
+                                                    <span> ~ </span>
+                                                    <span  class="form-element__inner input-type">
+                                                        <input type="text" class="font-type-h5-regular" value="" placeholder="중부하 시간대" id="code01" />
+                                                    </span>  
+                                                </div>                              
+                                            </div>                                      
+                                        </td>                                        
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="form-element__wrap">                                                
+                                                <div class="input-multi">
+                                                    <span  class="form-element__inner input-type">
+                                                        <input type="text" class="font-type-h5-regular" value="" placeholder="중부하 시간대" id="code01" />
+                                                    </span> 
+                                                    <span> ~ </span>
+                                                    <span  class="form-element__inner input-type">
+                                                        <input type="text" class="font-type-h5-regular" value="" placeholder="중부하 시간대" id="code01" />
+                                                    </span>  
+                                                </div>                              
+                                            </div>  
+                                        </td>
+                                        <td>
+                                            <div class="form-element__wrap">                                                
+                                                <div class="input-multi">
+                                                    <span  class="form-element__inner input-type">
+                                                        <input type="text" class="font-type-h5-regular" value="" placeholder="중부하 시간대" id="code01" />
+                                                    </span> 
+                                                    <span> ~ </span>
+                                                    <span  class="form-element__inner input-type">
+                                                        <input type="text" class="font-type-h5-regular" value="" placeholder="중부하 시간대" id="code01" />
+                                                    </span>  
+                                                </div>                              
+                                            </div>                                        
+                                        </td>
+                                        <td>
+                                            <div class="form-element__wrap">                                                
+                                                <div class="input-multi">
+                                                    <span  class="form-element__inner input-type">
+                                                        <input type="text" class="font-type-h5-regular" value="" placeholder="중부하 시간대" id="code01" />
+                                                    </span> 
+                                                    <span> ~ </span>
+                                                    <span  class="form-element__inner input-type">
+                                                        <input type="text" class="font-type-h5-regular" value="" placeholder="중부하 시간대" id="code01" />
+                                                    </span>  
+                                                </div>                              
+                                            </div>                                          
+                                        </td>
+                                        <td>
+                                            <div class="form-element__wrap">                                                
+                                                <div class="input-multi">
+                                                    <span  class="form-element__inner input-type">
+                                                        <input type="text" class="font-type-h5-regular" value="" placeholder="중부하 시간대" id="code01" />
+                                                    </span> 
+                                                    <span> ~ </span>
+                                                    <span  class="form-element__inner input-type">
+                                                        <input type="text" class="font-type-h5-regular" value="" placeholder="중부하 시간대" id="code01" />
+                                                    </span>  
+                                                </div>                              
+                                            </div>                                      
+                                        </td>                                        
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="form-element__wrap">                                                
+                                                <div class="input-multi">
+                                                    <span  class="form-element__inner input-type">
+                                                        <input type="text" class="font-type-h5-regular" value="" placeholder="중부하 시간대" id="code01" />
+                                                    </span> 
+                                                    <span> ~ </span>
+                                                    <span  class="form-element__inner input-type">
+                                                        <input type="text" class="font-type-h5-regular" value="" placeholder="중부하 시간대" id="code01" />
+                                                    </span>  
+                                                </div>                              
+                                            </div>  
+                                        </td>
+                                        <td>
+                                            <div class="form-element__wrap">                                                
+                                                <div class="input-multi">
+                                                    <span  class="form-element__inner input-type">
+                                                        <input type="text" class="font-type-h5-regular" value="" placeholder="중부하 시간대" id="code01" />
+                                                    </span> 
+                                                    <span> ~ </span>
+                                                    <span  class="form-element__inner input-type">
+                                                        <input type="text" class="font-type-h5-regular" value="" placeholder="중부하 시간대" id="code01" />
+                                                    </span>  
+                                                </div>                              
+                                            </div>                                        
+                                        </td>
+                                        <td>
+                                            <div class="form-element__wrap">                                                
+                                                <div class="input-multi">
+                                                    <span  class="form-element__inner input-type">
+                                                        <input type="text" class="font-type-h5-regular" value="" placeholder="중부하 시간대" id="code01" />
+                                                    </span> 
+                                                    <span> ~ </span>
+                                                    <span  class="form-element__inner input-type">
+                                                        <input type="text" class="font-type-h5-regular" value="" placeholder="중부하 시간대" id="code01" />
+                                                    </span>  
+                                                </div>                              
+                                            </div>                                          
+                                        </td>
+                                        <td>
+                                            <div class="form-element__wrap">                                                
+                                                <div class="input-multi">
+                                                    <span  class="form-element__inner input-type">
+                                                        <input type="text" class="font-type-h5-regular" value="" placeholder="중부하 시간대" id="code01" />
+                                                    </span> 
+                                                    <span> ~ </span>
+                                                    <span  class="form-element__inner input-type">
+                                                        <input type="text" class="font-type-h5-regular" value="" placeholder="중부하 시간대" id="code01" />
+                                                    </span>  
+                                                </div>                              
+                                            </div>                                      
+                                        </td>                                        
+                                    </tr>                                                                                                  
+                                </tbody>
+                            </table>
+                            <div class="bulling_apply_data">
+                                <div class="form-element__wrap flex-end">
+                                    <label for="code01" class="font-type-h5-bold">적용일시</label>
+                                    <div class="input-multi">
+                                        <span class="form-element__inner input-type date_form">
+                                            <input type="date" class="font-type-h5-regular" value="" placeholder="날짜입력" id="code01">
+                                        </span>
+                                        <span class="form-element__inner input-type time_form">
+                                            <input type="time" class="font-type-h5-regular" value="" placeholder="시간입력" >
+                                        </span>  
+                                    </div>                              
+                                </div>                            
+                            </div>
+                            <div class="button__wrap bulling-btn">                            
+                                <button type="button" class="btn btn-black mx368">적용</button>
+                            </div>                        
                         </div>                        
                     </div>
-                </div>
-                <div class="button__wrap  gap10 flex-end">
-                    <button type="button" class="btn btn-black mx368">등록</button>
+                    <div class="tab-content" id="tab4">
+                        <div class="billing-data-setbox">
+                            <div class="billing-data-inbox">
+                                <ul class="station-billing-table">
+                                    <li>
+                                        <div class="form-element__wrap has-unit">           
+                                            <label for="code01" class="font-type-h5-bold">기후환경 요금 단가</label>      
+                                            <div class="form-element__control">               
+                                                <span  class="form-element__inner input-type">
+                                                    <input type="text" class="font-type-h5-regular text-r" value="" placeholder="요금입력" />
+                                                    <span class="unit-label">원</span>
+                                                </span>
+                                            </div>    
+                                        </div>                            
+                                    </li>                                     
+                                    <li class="date-select">
+                                        <div class="form-element__wrap has-unit-before">           
+                                            <label for="code01" class="font-type-h5-bold">적용일시</label>                     
+                                            <div class="form-element__control">
+                                                <span  class="form-element__inner input-type get-day">                                                    
+                                                    <input type="date" class="font-type-h5-regular text-r" value="" placeholder="00:00" />                                    
+                                                </span>
+                                                <span  class="form-element__inner input-type get-time">          
+                                                    <input type="time" class="font-type-h5-regular text-r" value="" placeholder="00:00" />                                    
+                                                </span>       
+                                            </div>                         
+                                        </div>                            
+                                    </li> 
+                                </ul>  
+                            </div>
+                            <div class="button__wrap bulling-btn">                            
+                                <button type="button" class="btn btn-black mx368">적용</button>
+                            </div> 
+                        </div>
+                    </div>
+                    <div class="tab-content" id="tab5">
+                        <div class="billing-data-setbox">
+                            <div class="billing-data-inbox">
+                                <ul class="station-billing-table">
+                                    <li>
+                                        <div class="form-element__wrap has-unit">           
+                                            <label for="code01" class="font-type-h5-bold">기후환경 요금 단가</label>      
+                                            <div class="form-element__control">               
+                                                <span  class="form-element__inner input-type">
+                                                    <input type="text" class="font-type-h5-regular text-r" value="" placeholder="요금입력" />
+                                                    <span class="unit-label">원</span>
+                                                </span>
+                                            </div>    
+                                        </div>                            
+                                    </li>                                     
+                                    <li class="date-select">
+                                        <div class="form-element__wrap has-unit-before">           
+                                            <label for="code01" class="font-type-h5-bold">적용일시</label>                     
+                                            <div class="form-element__control">
+                                                <span  class="form-element__inner input-type get-day">                                                    
+                                                    <input type="date" class="font-type-h5-regular text-r" value="" placeholder="00:00" />                                    
+                                                </span>
+                                                <span  class="form-element__inner input-type get-time">          
+                                                    <input type="time" class="font-type-h5-regular text-r" value="" placeholder="00:00" />                                    
+                                                </span>       
+                                            </div>                         
+                                        </div>                            
+                                    </li> 
+                                </ul>  
+                            </div>
+                            <div class="button__wrap bulling-btn">                            
+                                <button type="button" class="btn btn-black mx368">적용</button>
+                            </div> 
+                        </div>
+                    </div>                                                            
                 </div>
             </div>             
 
         </div>
     </div>   
-        <!-- 모달창 -->
-        <!-- 등록 -->
-        <div class="modal__wrap--bg" id="add-charge">
-            <div class="modal__wrap size-default ">
-                <div class="modal-header">
-                    <h3 class="font-type-h3">충전기 등록</h3>
-                    <button type="button" class="btn btn-icon-close close-modal" onclick="closeModal(event)">
-                        <span class="irtext">닫기</span>
-                    </button>
-                </div>
-                <div class="modal-cont">
-                    <form>
-                        <ul class="form-el-list">
-                            <li>
-                                <div class="form-element__wrap">
-                                    <label for="code01" class="font-type-h5-bold">충전기 이름</label>
-                                    <span  class="form-element__inner input-type">
-                                        <input type="text" class="font-type-h5-regular" value="" placeholder="충전기 이름 입력" id="code01" />
-                                    </span>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="form-element__wrap">
-                                    <label for="code02" class="font-type-h5-bold">충전기 시리얼 번호</label>
-                                    <span  class="form-element__inner input-type">
-                                        <input type="text" class="font-type-h5-regular" value="" placeholder="충전기 시리얼 번호 입력" id="code02" />
-                                    </span>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="form-element__wrap">
-                                    <label for="code03" class="font-type-h5-bold">충전기 벤더</label>
-                                    <span  class="form-element__inner input-type">
-                                        <input type="text" class="font-type-h5-regular" value="" placeholder="충전기 벤더 입력" id="code03" />
-                                    </span>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="form-element__wrap">
-                                    <label for="code04" class="font-type-h5-bold">충전기 모델</label>
-                                    <span  class="form-element__inner input-type">
-                                        <input type="text" class="font-type-h5-regular" value="" placeholder="충전기 모델 입력" id="code04" />
-                                    </span>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="form-element__wrap">
-                                    <label for="code05" class="font-type-h5-bold">컨넥터 수</label>
-                                    <span  class="form-element__inner input-type">
-                                        <input type="text" class="font-type-h5-regular" value="" placeholder="컨넥터 수 입력" id="code05" />
-                                    </span>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="form-element__wrap">
-                                    <label for="code06" class="font-type-h5-bold">컨넥터 타입</label>
-                                    <span  class="form-element__inner select-wrap">
-                                        <select class="font-type-h5-regular" id="code06">
-                                            <option>AC 1상 (5핀) 완속</option>
-                                            <option>항목2</option>
-                                            <option>항목3</option>
-                                        </select>
-                                    </span>
-                                </div>
-                            </li>                              
-                            <li>
-                                <div class="form-element__wrap">
-                                    <label for="code07" class="font-type-h5-bold">설치장소</label>
-                                    <span  class="form-element__inner input-type">
-                                        <input type="text" class="font-type-h5-regular" value="" placeholder="설치장소 입력" id="code07" />
-                                    </span>
-                                </div>
-                            </li>                                                                                                             
-                        </ul>
-                    </form>
-                </div>
-                <div class="modal-footer">
-                    <div class="button__wrap gap10 flex-end">
-                        <button type="button" class="btn btn-cancel close-modal"  onclick="closeModal(event)">취소</button>
-                        <button type="button" class="btn btn-black btn-add" disabled>등록하기</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- 메시지 창 -->
-        <div class="modal__wrap--bg" id="remove-business">
-            <div class="modal__wrap size-default ">
-                <div class="modal-cont">
-                    <div class="font-type-h3 modal-confirm-msg">선택하신 항목을 삭제하시겠어요?</div>
-                </div>
-                <div class="modal-footer">
-                    <div class="button__wrap gap10 flex-end">
-                        <button type="button" class="btn btn-cancel close-modal"  onclick="closeModal(event)">취소</button>
-                        <button type="button" class="btn btn-black" onclick="deleteRow(_thisParent)">삭제</button>
-                    </div>
-                </div>
-            </div>
-        </div>                
-        <!-- //모달창 -->    
+  
     <script type="text/javascript" src="../assets/js/ui.js" ></script>    
 </body>
 </html>
