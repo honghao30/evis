@@ -67,19 +67,16 @@
                 <div class="msg">
                     현재 <strong>2</strong>개의 <strong>관리자</strong>가 등록되어 있습니다.
                 </div>   
-                <div class="button__wrap">
-                    <button type="button" class="btn btn-black icon-plus open-modal" modal-id="add-business" onclick="openModal(event)">관리자 등록</button>
-                </div>
             </div>
             <div class="table__wrap">                
                 <table class="table table-list">
                     <colgroup>
-                        <col width="5%" />
-                        <col width="10%" />
-                        <col width="15%" />                        
-                        <col width="10%" />
+                        <col width="12%" />
+                        <col width="15%" />
                         <col width="" />
-                        <col width="10%" />                                               
+                        <col width="15%" />
+                        <col width="15%" />
+                        <col width="15%" />                                                
                     </colgroup>
                     <thead>
                         <tr>
@@ -119,82 +116,6 @@
              </div> -->
         </div>
         <!-- 모달창 -->
-        <!-- 등록 -->
-        <div class="modal__wrap--bg" id="add-business">
-            <div class="modal__wrap size-default ">
-                <div class="modal-header">
-                    <h3 class="font-type-h3">관리자 등록</h3>
-                    <button type="button" class="btn btn-icon-close close-modal" onclick="closeModal(event)">
-                        <span class="irtext">닫기</span>
-                    </button>
-                </div>
-                <div class="modal-cont">
-                    <form>
-                        <ul class="form-el-list">
-                            <li>
-                                <div class="form-element__wrap">
-                                    <label for="code01" class="font-type-h5-bold">관리자 ID</label>
-                                    <span  class="form-element__inner input-type">
-                                        <input type="text" class="font-type-h5-regular" value="" placeholder="관리자 ID를 입력 하세요" id="code01" />
-                                    </span>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="form-element__wrap">
-                                    <label for="code01" class="font-type-h5-bold">비밀번호</label>
-                                    <span  class="form-element__inner input-type">
-                                        <input type="password" class="font-type-h5-regular" value="" placeholder="비밀번호를 입력 하세요" id="code01" />
-                                    </span>
-                                </div>
-                            </li>            
-                            <li>
-                                <div class="form-element__wrap">
-                                    <label for="code01" class="font-type-h5-bold">비밀번호 확인</label>
-                                    <span  class="form-element__inner input-type">
-                                        <input type="password" class="font-type-h5-regular" value="" placeholder="비밀번호 확인를 입력 하세요" id="code01" />
-                                    </span>
-                                </div>
-                            </li>                                             
-                            <li>
-                                <div class="form-element__wrap">
-                                    <label for="code02" class="font-type-h5-bold">관리자 역할</label>
-                                    <span  class="form-element__inner select-wrap">
-                                        <select class="font-type-h5-regular" id="code02">
-                                            <option>Super Manager</option>
-                                            <option>Super Manager</option>
-                                            <option>Super Manager</option>
-                                        </select>
-                                    </span>
-                                </div>                                
-                            </li>
-                            <li>
-                                <div class="form-element__wrap">
-                                    <label for="code03" class="font-type-h5-bold">연락처</label>
-                                    <span  class="form-element__inner input-type">
-                                        <input type="text" class="font-type-h5-regular" value="" placeholder="연락처를 입력 하세요" id="code03" />
-                                    </span>
-                                </div>                                
-                            </li>
-                            <li>
-                                <div class="form-element__wrap">
-                                    <label for="code04" class="font-type-h5-bold">이메일</label>
-                                    <span  class="form-element__inner input-type">
-                                        <input type="text" class="font-type-h5-regular" value="" placeholder="이메일을 입력 하세요" id="code04" />
-                                    </span>
-                                </div>                                
-                            </li>
-                        </ul>
-                    </form>
-                </div>
-                <div class="modal-footer">
-                    <div class="button__wrap gap10 flex-end">
-                        <button type="button" class="btn btn-cancel close-modal"  onclick="closeModal(event)">취소</button>
-                        <button type="button" class="btn btn-black btn-add" disabled>등록</button>
-                    </div>
-                </div>
-            </div>
-        </div>               
-        <!-- //모달창 -->
     </div>   
     <script type="text/javascript" src="../assets/js/ui.js" ></script>
     <!-- // 메뉴 활성화 스크립트  -->

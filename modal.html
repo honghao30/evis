@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">    
+    <title>이비스프라임</title>    
+    <link rel="icon" type="image/svg+xml" href="" />
+    <link rel="stylesheet" href="./assets/css/common.css" />
+    <link rel="stylesheet" href="./assets/css/admin.css" />
+    <style>        
+        .page-title {padding: 10px;font-size: 20px;color:#fff;font-weight: 800;height: 80px;background: rgba(22, 184, 96, 1);display: flex;align-items: center;}
+        .page-body {padding: 30px 20px;}              
+        .guide-table {margin-top: 10px 0;width: 100%;}
+        .guide-table th {font-size: 13px;text-align:center;font-weight: 400;height: 40px;color: #222222;text-align: center;border-right: 1px #E2E3E7 solid;border-bottom: 1px #E2E3E7 solid;background-color: rgba(226, 227, 231, 1);}
+        .guide-table tbody td {height: 40px;background: #fff; font-size: 13px; color: #5A5C5F;text-align: center;border-right: 1px #E2E3E7 solid; border-bottom: 1px #E2E3E7 solid;padding: 5px 10px;}
+        .guide-table tbody tr:hover td {background-color: #F8F9FA;}
+        .guide-table thead tr th:last-child {border-right:0;}
+        .guide-table tbody tr th:last-child {border-right:0;}
+        .guide-table tbody tr td:last-child {border-right:0;}
+        .guide-table td.text-l {text-align: left;}
+        .page-body-content {padding: 20px 20px;}
+    </style>    
+</head>
+<body>
+   <div class="guide-wrap">
+        <div class="page-title">
+            <h1>이비스프라임 퍼블리싱 가이드</h1>
+        </div>        
+
+        <div class="page-body-content">         
+            <h2  class="font-type-h2">모달 모음</h2>                      
+            <table class="table table-list">
+                <colgroup>
+                    <col width="15%" />
+                    <col width="15%" />
+                    <col width="" />
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th scope="col">Core class</th>
+                        <th scope="col">class</th>
+                        <th scope="col">Example</th>
+                    </tr>
+                </thead>                
+                <tbody>
+                    <tr>
+                        <td>default modal</td>
+                        <td>.open-modal <br> modal-id="add-business"<br> onclick="openModal(event)"</td>
+                        <td>
+                            <div class="button__wrap"> 
+                                <button type="button" class="btn btn-black  open-modal" modal-id="add-business" onclick="openModal(event)"> 일반 모달</button>
+                            </div>
+                        </td>
+                    </tr>                    
+                    <tr>
+                        <td>확인 메시지</td>
+                        <td>.open-modal <br> modal-id="add-business"<br> onclick="openModal(event)"</td>
+                        <td>
+                            <div class="button__wrap"> 
+                                <button type="button" class="btn btn-black open-modal"  modal-id="remove-business" onclick="confirmMsg(event)"> confirm 메시지</button>
+                            </div>
+                        </td>
+                    </tr> 
+                    <tr>
+                        <td>등록 확인</td>
+                        <td>.open-modal <br> modal-id="add-business"<br> onclick="openModal(event)"</td>
+                        <td>
+                            <div class="button__wrap"> 
+                                <button type="button" class="btn btn-black open-modal"  modal-id="add-success" onclick="confirmMsg(event)"> confirm 메시지</button>
+                            </div>
+                        </td>
+                    </tr>                                                                                                                 
+                </tbody>
+            </table>                                             
+        </div>               
+   </div> 
+    <!-- // 모달  -->
+        <div class="modal__wrap--bg" id="add-business">
+            <div class="modal__wrap size-default ">
+                <div class="modal-header">
+                    <h3 class="font-type-h3">Business 정보 등록</h3>
+                    <button type="button" class="btn btn-icon-close close-modal" onclick="closeModal(event)">
+                        <span class="irtext">닫기</span>
+                    </button>
+                </div>
+                <div class="modal-cont">
+                    <form>
+                        <ul class="form-el-list">
+                            <li>
+                                <div class="form-element__wrap">
+                                    <label for="code01" class="font-type-h5-bold">지점명</label>
+                                    <span  class="form-element__inner input-type">
+                                        <input type="text" class="font-type-h5-regular" value="" placeholder="지점명을 입력 하세요" id="code01" />
+                                    </span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="form-element__wrap">
+                                    <label for="code02" class="font-type-h5-bold">특성</label>
+                                    <span  class="form-element__inner text-area">
+                                        <textarea name="" id="code02" class="font-type-h5-regular" maxlength="1000"  placeholder="특성을 입력 하세요"  style="height: 119px;"></textarea>  
+                                        <p class="font-type-cont-regular text-count"><span>0</span>/1000</p>                                  
+                                    </span>
+                                </div>                                
+                            </li>
+                        </ul>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <div class="button__wrap gap10 flex-end">
+                        <button type="button" class="btn btn-cancel close-modal"  onclick="closeModal(event)">취소</button>
+                        <button type="button" class="btn btn-black btn-add" disabled>등록</button>
+                    </div>
+                </div>
+            </div>
+        </div>   
+        <!-- 메시지 창 -->
+        <div class="modal__wrap--bg" id="remove-business">
+            <div class="modal__wrap size-default ">
+                <div class="modal-cont">
+                    <div class="font-type-h3 color-black">선택하신 항목을 삭제하시겠어요?</div>
+                </div>
+                <div class="modal-footer">
+                    <div class="button__wrap gap10 flex-end">
+                        <button type="button" class="btn btn-black close-modal"  onclick="closeModal(event)">취소</button>
+                        <button type="button" class="btn btn-black">삭제</button>
+                    </div>
+                </div>
+            </div>
+        </div>     
+        <!-- 등록 확인   -->
+        <div class="modal__wrap--bg" id="add-success">
+            <div class="modal__wrap size-default ">
+                <div class="modal-cont">
+                    <div class="font-type-h3 color-black">등록이 완료 되었습니다.</div>
+                </div>
+                <div class="modal-footer">
+                    <div class="button__wrap gap10 flex-end">
+                        <button type="button" class="btn btn-black close-modal"  onclick="closeModal(event)">확인</button>                        
+                    </div>
+                </div>
+            </div>
+        </div>           
+    <script type="text/javascript" src="./assets/js/ui.js" ></script>
+</body>
+</html>

@@ -45,71 +45,80 @@
         <!-- // 헤더 -->
         <div class="admin__content">
             <div class="full-between-area">
-                <h2 class="font-type-h2"><span class="color-primary">USER-001</span> 의 정보</h2>
+                <h2 class="font-type-h2">스테이션 1의 <span class="color-primary">관리자</span></h2>
                 <p class="font-type-h6-regular location">
-                    홈 > 스테이션 1 > <strong>USER-001</strong>
+                    홈 > 스테이션1 > <strong>관리자</strong>
                 </p>
             </div>
             <div class="station-board">
-                <div class="staion-name">                    
+                <div class="staion-name">
+                    <div class="staion-logo"><img src="../assets/images/admin/big-logo.svg" alt="" /></div>
                     <div class="staion-info">
-                        <p class="font-type-h3 color-black">USER-001</p>                        
-                        <p class="sub-info font-type-h6-regular">등록일 <strong>2024.03.01</strong></p>
+                        <p class="font-type-h3 color-black">스테이션1</p>
+                        <p class="sub-info">경기도 성남시 분당구 판교역로2번길</p>
+                        <p class="sub-info"><span>등록일</span> 2024-03-10</p>
+                        <p class="sub-info"><span>일련번호</span> 20240310</p>                        
                     </div>
                 </div>
                 <div class="staion-data">
-                    <div class="data-info font-type-h5-middle color-gray02">Parent <strong class="font-type-h4-bold color-black">P-01</strong></div>
-                    <div class="data-info font-type-h5-middle color-gray02">만기일<strong class="font-type-h4-bold color-black">NULL</strong></div>
-                    <div class="data-info font-type-h5-middle color-gray02">동・호수<strong class="font-type-h4-bold color-black">110동 1201</strong></div>
-                    <div class="data-info font-type-h5-middle color-gray02">충전여부<strong class="font-type-h4-bold color-black">O <span class="gray_box_sm">ID q1244ttgtghh</span></strong></div>
-                    <div class="data-info font-type-h5-middle color-gray02">보류여부<strong class="font-type-h4-bold color-black">O</strong></div>
-                    <div class="data-info font-type-h5-middle color-gray02">예약여부<strong class="font-type-h4-bold color-black">X <span class="gray_box_sm">ID q1244ttgtghh</span></strong></div>
+                    <div class="data-info font-type-h5-middle color-gray02">관리자 <strong class="font-type-h2 color-black">1</strong></div>
+                    <div class="data-info font-type-h5-middle color-gray02">사용자<strong class="font-type-h2 color-black">10</strong></div>
+                    <div class="data-info font-type-h5-middle color-gray02">충전기<strong class="font-type-h2 color-black">10</strong></div>
+                    <div class="data-info font-type-h5-middle color-gray02">충전구역<strong class="font-type-h2 color-black">10</strong></div>
                 </div>
-            </div>      
-            <div class="font-type-h3 color-black page-subtitle">
-                <strong class="color-primary">USER-001</strong>
-                사용자 충전 이력
-            </div>      
+            </div>
             <div class="full-between-area">
                 <div class="msg">
-                    현재 <strong>2</strong>개의 <strong>충전내역</strong>이 등록되어 있습니다.
-                </div>                 
+                    현재 <strong>6</strong>개의 <strong>관리자</strong>가 등록되어 있습니다.
+                </div>               
             </div>
             <div class="table__wrap">                
                 <table class="table table-list">
                     <colgroup>
-                        <col width="" />
-                        <col width="16%" />
-                        <col width="16%" />
-                        <col width="16%" />                        
-                        <col width="20%" />
+                        <col width="10%" />
+                        <col width="12%" />
+                        <col width="" />   
+                        <col width="12%" />
+                        <col width="12%" />
+                        <col width="12%" />                                                                    
                     </colgroup>
                     <thead>
                         <tr>
-                            <th scope="col">충전기간</th>
-                            <th scope="col">충전전력량</th>
-                            <th scope="col">충전 종료이유</th>
-                            <th scope="col">사용충전기 ID</th>
-                            <th scope="col">사용 컨넥터ID</th>
+                            <th scope="col">번호</th>
+                            <th scope="col">관리자 ID</th>
+                            <th scope="col">역할</th>
+                            <th scope="col">연락처</th>
+                            <th scope="col">이메일</th>
+                            <th scope="col">등록일</th>                            
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td>023.12.10 01:00 ~ 2023-12-12 02:30</td>                            
-                            <td><i class="icon-flash-on"></i> 100wh</td>
-                            <td>Local</td>
-                            <td>CP-001</td>  
-                            <td>1</td> 
-                        </tr>
+                            <td>1</td>
+                            <td>admin1</td>
+                            <td>station manage</td>
+                            <td>010-0000-0000</td>
+                            <td></td>
+                            <td>2024-05-10</td>                            
+                        </tr>    
+                        <tr>
+                            <td>2</td>
+                            <td>admin1</td>
+                            <td>station manage</td>
+                            <td>010-0000-0000</td>
+                            <td></td>
+                            <td>2024-05-10</td>                            
+                        </tr>                                                                                                                                                                                                                                                                                                           
                     </tbody>
                 </table>
             </div>
-             <!-- <div class="pagination">
+            
+            <div class="pagination">
                 <a href="#" class="btn-first"><span class="irtext">처음으로</span></a>
                 <a href="#" class="btn-prev"><span class="irtext">이전</span></a>
                 <a href="#" class="btn-next"><span class="irtext">다음</span></a>
                 <a href="#" class="btn-last"><span class="irtext">마지막페이지</span></a>
-             </div> -->
+            </div>
         </div>
     </div>   
 

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">    
+    <title>이비스프라임</title>    
+    <link rel="icon" type="image/svg+xml" href="" />
+    <link rel="stylesheet" href="../assets/css/common.css" />
+    <link rel="stylesheet" href="../assets/css/admin.css" />
+    <style>        
+        .page-title {padding: 10px;font-size: 20px;color:#fff;font-weight: 800;height: 80px;background: rgba(22, 184, 96, 1);display: flex;align-items: center;}
+        .page-body {padding: 30px 20px;}              
+        .guide-table {margin-top: 10px 0;width: 100%;}
+        .guide-table th {font-size: 13px;text-align:center;font-weight: 400;height: 40px;color: #222222;text-align: center;border-right: 1px #E2E3E7 solid;border-bottom: 1px #E2E3E7 solid;background-color: rgba(226, 227, 231, 1);}
+        .guide-table tbody td {height: 40px;background: #fff; font-size: 13px; color: #5A5C5F;text-align: center;border-right: 1px #E2E3E7 solid; border-bottom: 1px #E2E3E7 solid;padding: 5px 10px;}
+        .guide-table tbody tr:hover td {background-color: #F8F9FA;}
+        .guide-table thead tr th:last-child {border-right:0;}
+        .guide-table tbody tr th:last-child {border-right:0;}
+        .guide-table tbody tr td:last-child {border-right:0;}
+        .guide-table td.text-l {text-align: left;}
+        .page-body-content {padding: 20px 20px;}
+    </style>    
+</head>
+<body class="modal_open">
+   <div class="guide-wrap">
+        <div class="page-title">
+            <h1>이비스프라임 퍼블리싱 가이드</h1>
+        </div>        
+
+        <div class="page-body-content">         
+            <h2  class="font-type-h2">모달 모음</h2>                      
+            <table class="table table-list">
+                <colgroup>
+                    <col width="15%" />
+                    <col width="15%" />
+                    <col width="" />
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th scope="col">Core class</th>
+                        <th scope="col">class</th>
+                        <th scope="col">Example</th>
+                    </tr>
+                </thead>                
+                <tbody>
+                    <tr>
+                        <td>스테이션 상세정보</td>
+                        <td>.open-modal <br> modal-id="add-business"<br> onclick="openModal(event)"</td>
+                        <td>
+                            <div class="button__wrap"> 
+                                <button type="button" class="btn btn-black  open-modal" modal-id="view_detail" onclick="openModal(event)"> 일반 모달</button>
+                            </div>
+                        </td>
+                    </tr>                                                                                
+                </tbody>
+            </table>                                             
+        </div>               
+   </div> 
+    <!-- // 모달  -->
+    <div class="modal__wrap--bg is-active" id="view_detail">
+        <div class="modal__wrap size-default ">
+            <div class="modal-header">
+                <h3 class="font-type-h3">스테이션 1의 정보</h3>
+                <button type="button" class="btn btn-icon-close close-modal" onclick="closeModal(event)">
+                    <span class="irtext">닫기</span>
+                </button>
+            </div>
+            <div class="modal-cont">
+                <form>
+                    <ul class="form-el-list">
+                        <li>
+                            <div class="form-element__wrap">
+                                <label for="code01" class="font-type-h5-bold">명칭</label>
+                                <span  class="form-element__inner input-type">
+                                    <input type="text" class="font-type-h5-regular" value="이비스프라임 (2023.04.17 등록)" placeholder="관리자 ID를 입력 하세요" id="code01" />
+                                </span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="form-element__wrap">
+                                <label for="code02" class="font-type-h5-bold">주소</label>
+                                <span  class="form-element__inner input-type">
+                                    <input type="text" class="font-type-h5-regular" value="서울 송파구 석촌호수로 20길 5 (05610) 수정빌딩" placeholder="주소를 입력 하세요" id="code02" />
+                                </span>
+                            </div>                                
+                        </li>
+                        <li>
+                            <div class="form-element__wrap">
+                                <label for="code010" class="font-type-h5-bold">일련번호</label>
+                                <span  class="form-element__inner input-type">
+                                    <input type="text" class="font-type-h5-regular" value="1234567" placeholder="일련번호를 입력 하세요" id="code010" />
+                                </span>
+                            </div>
+                        </li>                            
+                        <li>
+                            <div class="form-element__wrap">
+                                <label for="code03" class="font-type-h5-bold">소속 비즈니스</label>
+                                <span  class="form-element__inner input-type">
+                                    <input type="text" class="font-type-h5-regular" value="소속 비즈니스" placeholder="소속 비즈니스를 입력 하세요" id="code03" />
+                                </span>
+                            </div>                                
+                        </li>                                                                                                             
+                    </ul>
+                    <ul class="form-el-list harf-width">
+                        <li>
+                            <div class="form-element__wrap">
+                                <label for="code06" class="font-type-h5-bold">관리자 수</label>
+                                <span  class="form-element__inner input-type">
+                                    <input type="text" class="font-type-h5-regular" value="5" placeholder="관리자 수를 입력 하세요" id="code06" />
+                                </span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="form-element__wrap">
+                                <label for="code07" class="font-type-h5-bold">사용자 수</label>
+                                <span  class="form-element__inner input-type">
+                                    <input type="text" class="font-type-h5-regular" value="4" placeholder="사용자 수를 입력 하세요" id="code07" />
+                                </span>
+                            </div>                                
+                        </li>
+                        <li>
+                            <div class="form-element__wrap">
+                                <label for="code06" class="font-type-h5-bold">충전기 수</label>
+                                <span  class="form-element__inner input-type">
+                                    <input type="text" class="font-type-h5-regular" value="5" placeholder="충전기 수를 입력 하세요" id="code08" />
+                                </span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="form-element__wrap">
+                                <label for="code07" class="font-type-h5-bold">충전기 설치구역 수</label>
+                                <span  class="form-element__inner input-type">
+                                    <input type="text" class="font-type-h5-regular" value="4" placeholder="충전기 설치구역 수를 입력 하세요" id="code09" />
+                                </span>
+                            </div>                                
+                        </li>                                                                                                                                   
+                    </ul>                        
+                </form>
+            </div>
+            <div class="modal-footer">
+                <div class="button__wrap gap10 flex-end">
+                    <button type="button" class="btn btn-black close-modal"  onclick="closeModal(event)">확인</button>
+                </div>
+            </div>
+        </div>
+    </div>    
+    <script type="text/javascript" src="../assets/js/ui.js" ></script>    
+</body>
+</html>
