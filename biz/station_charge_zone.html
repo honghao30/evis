@@ -51,8 +51,10 @@
                 <div class="staion-name">
                     <div class="staion-logo"><img src="../assets/images/admin/big-logo.svg" alt="" /></div>
                     <div class="staion-info">
-                        <p class="font-type-h3 color-black">스테이션1</p>
-                        <p class="sub-info">경기도 성남시 분당구 판교역로2번길 <span>등록일 : 2024-03-10</span></p>
+                        <p class="font-type-h3 color-black">스테이션 1</p>
+                        <p class="sub-info"><span>경기도 성남시 분당구 판교역로2번길 1 </span> </p>
+                        <p class="sub-info"><span>등록일</span> 2024.03.01 </p>
+                        <p class="sub-info"><span>일련번호</span> 20240301 </p>
                     </div>
                 </div>
                 <div class="staion-data">
@@ -65,19 +67,16 @@
             <div class="full-between-area">
                 <div class="msg">
                     현재 <strong>1</strong>개의 <strong>충전구역</strong>이 등록되어 있습니다.
-                </div>   
-                <div class="button__wrap">
-                    <button type="button" class="btn btn-black icon-plus open-modal" modal-id="add=charge-zone" onclick="openModal(event)">충전구역 등록</button>
-                </div>                
+                </div>                 
             </div>
             <div class="table__wrap">                
                 <table class="table table-list">
                     <colgroup>
                         <col width="10%" />
-                        <col width="10%" />                        
-                        <col width="10%" />   
+                        <col width="20%" />                        
+                        <col width="20%" />   
                         <col width="" />                       
-                        <col width="10%" /> 
+                        <col width="20%" /> 
                     </colgroup>
                     <thead>
                         <tr>
@@ -94,15 +93,7 @@
                             <td>1주차장 지하2층</td>
                             <td>20344555</td>
                             <td>2024.03.01</td>                         
-                            <td>
-                                <div class="button__wrap gap10">
-                                    <a href="#" class="btn btn-icon-write" modal-id="edit=charge-zone" onclick="openModal(event)">
-                                        <span class="irtext">편집</span>
-                                    </a>                                    
-                                    <a href="#" class="btn btn-icon-remove" modal-id="remove-business" onclick="confirmMsg(event)">
-                                        <span class="irtext">삭제</span>
-                                    </a>                      
-                                </div>                                 
+                            <td>                                
                             </td>      
                         </tr>                                                                                                                                                                                                                                                                                                   
                     </tbody>
@@ -116,101 +107,7 @@
                 <a href="#" class="btn-last"><span class="irtext">마지막페이지</span></a>
             </div>
         </div>
-    </div>   
-    <!-- 모달창 -->
-    <!-- 등록 -->
-    <div class="modal__wrap--bg" id="add=charge-zone">
-        <div class="modal__wrap size-large ">
-            <div class="modal-header">
-                <h3 class="font-type-h3">충전구역 등록</h3>
-                <button type="button" class="btn btn-icon-close close-modal" onclick="closeModal(event)">
-                    <span class="irtext">닫기</span>
-                </button>
-            </div>
-            <div class="modal-cont">
-                <form>
-                    <ul class="form-el-list">
-                        <li>
-                            <div class="form-element__wrap">
-                                <label for="code01" class="font-type-h5-bold">지점명</label>
-                                <span  class="form-element__inner input-type">
-                                    <input type="text" class="font-type-h5-regular" value="" placeholder="지점명 입력 " id="code01" />
-                                </span>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="form-element__wrap">
-                                <label for="code02" class="font-type-h5-bold">일련번호</label>
-                                <span  class="form-element__inner input-type">
-                                    <input type="text" class="font-type-h5-regular" value="" placeholder="일련번호 입력 " id="code02" />
-                                </span>
-                            </div>
-                        </li>                        
-                    </ul>
-                </form>
-            </div>
-            <div class="modal-footer">
-                <div class="button__wrap gap10 flex-end">                        
-                    <button type="button" class="btn btn-cancel close-modal"  onclick="closeModal(event)">취소</button>
-                    <button type="button" class="btn btn-black btn-add" disabled>등록</button>
-                </div>
-            </div>
-        </div>
-    </div>         
-    <!-- 수정 -->
-    <div class="modal__wrap--bg" id="edit=charge-zone">
-        <div class="modal__wrap size-large ">
-            <div class="modal-header">
-                <h3 class="font-type-h3">충전구역 정보 수정</h3>
-                <button type="button" class="btn btn-icon-close close-modal" onclick="closeModal(event)">
-                    <span class="irtext">닫기</span>
-                </button>
-            </div>
-            <div class="modal-cont">
-                <form>
-                    <ul class="form-el-list">
-                        <li>
-                            <div class="form-element__wrap">
-                                <label for="code01" class="font-type-h5-bold">지점명</label>
-                                <span  class="form-element__inner input-type">
-                                    <input type="text" class="font-type-h5-regular" value="" placeholder="지점명 입력 " id="code01" />
-                                </span>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="form-element__wrap">
-                                <label for="code02" class="font-type-h5-bold">일련번호</label>
-                                <span  class="form-element__inner input-type">
-                                    <input type="text" class="font-type-h5-regular" value="" placeholder="일련번호 입력 " id="code02" />
-                                </span>
-                            </div>
-                        </li>                         
-                    </ul>
-                </form>
-            </div>
-            <div class="modal-footer">
-                <div class="button__wrap gap10 flex-end">                        
-                    <button type="button" class="btn btn-cancel close-modal"  onclick="closeModal(event)">취소</button>
-                    <button type="button" class="btn btn-black btn-add" disabled>등록</button>
-                </div>
-            </div>
-        </div>
-    </div>         
-    <!-- 메시지 창 -->
-    <div class="modal__wrap--bg" id="remove-business">
-        <div class="modal__wrap size-default ">
-            <div class="modal-cont">
-                <div class="font-type-h3 modal-confirm-msg">선택하신 항목을 삭제하시겠어요?</div>
-            </div>
-            <div class="modal-footer">
-                <div class="button__wrap gap10 flex-end">
-                    <button type="button" class="btn btn-cancel close-modal"  onclick="closeModal(event)">취소</button>
-                    <button type="button" class="btn btn-black" onclick="deleteRow(_thisParent)">삭제</button>
-                </div>
-            </div>
-        </div>
-    </div>          
-    <!-- //모달창 -->              
+    </div>              
     <script type="text/javascript" src="../assets/js/ui.js" ></script>    
 </body>
 </html>
